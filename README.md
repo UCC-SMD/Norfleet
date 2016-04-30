@@ -7,5 +7,5 @@
   Norfleet is a Web-Based Social Media application currently under development by the UCC-SMD Collective. 
   As the application is currently under development we don't have much to show for right now.
   
-  In the meantime, feel free to read and comment on our wiki or install the latest version and help us test for bugs!
+  **In the meantime, feel free to read and comment on our wiki or install the latest version and help us test for bugs!**
   
