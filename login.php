@@ -108,6 +108,13 @@
      
 ?> 
 <h1>Login</h1> 
+
+<link href="images/web_assets/favicon.ico" rel="icon" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/font-awesome.min.css" rel="stylesheet" />
+
+
+
 <form action="login.php" method="post"> 
     Username:<br /> 
     <input type="text" name="username" value="<?php echo $submitted_username; ?>" /> 
