@@ -27,10 +27,7 @@
 
 		// select database
 		mysql_select_db($dbname) or die ("Unable to select database!");
-		
-		//search
-		$search = mysql_escape_string($_POST('search'));
-		
+
 		// create query
 		$query = "SELECT * FROM symbols";
        
