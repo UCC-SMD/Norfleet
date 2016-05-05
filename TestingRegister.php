@@ -199,3 +199,5 @@
     <br /><br /> 
     <input type="submit" value="Register" /> 
 </form>
+<b>If you have a username:</b>
+<a href="TestingRegister.php">Login</a>
