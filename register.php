@@ -187,6 +187,11 @@
     } 
      
 ?> 
+
+<link href="images/web_assets/favicon.ico" rel="icon" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/font-awesome.min.css" rel="stylesheet" />
+
 <h1>Register</h1> 
 <form action="register.php" method="post"> 
     Username:<br /> 
