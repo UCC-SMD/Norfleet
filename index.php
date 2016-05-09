@@ -20,7 +20,7 @@
 		<link href="images/web_assets/favicon.ico" rel="icon" />
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/sb-admin.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 		<link href="css/ourstyle.css" rel="stylesheet" />
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -60,17 +60,17 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><!-- <i class="fa fa-user"></i> --> Mr. Web Developer <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#"><!-- <i class="fa fa-fw fa-user"></i> --> Profile</a>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
                         </li>
                         <li>
-                            <a href="#"><!-- <i class="fa fa-fw fa-envelope"></i> --> Inbox</a>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
                         </li>
                         <li>
-                            <a href="#"><!-- <i class="fa fa-fw fa-gear"></i> --> Settings</a>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="#"><!-- <i class="fa fa-fw fa-power-off"></i> --> Log Out</a>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
                     </ul>
                 </li>
@@ -80,19 +80,19 @@
                 <ul class="nav navbar-nav side-nav">
                     <br>
                     <li class="active">
-                        <a href="index.php"><!-- <i class="fa fa-fw fa-dashboard"></i> --> Dashboard</a>
+                        <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="charts.html"><!-- i class="fa fa-fw fa-bar-chart-o"></i> --> Comments </a>
+                        <a href="charts.html"><i class="fa fa-fw fa-comments"></i> Comments </a>
                     </li>
                     <li>
-                        <a href="charts.html"><!-- i class="fa fa-fw fa-bar-chart-o"></i> --> Hashtags </a>
+                        <a href="charts.html"><i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
                     </li>
                     <li>
-                        <a href="tables.html"><!-- <i class="fa fa-fw fa-table"></i> --> Meantions </a>
+                        <a href="tables.html"><i class="fa fa-fw fa-users"></i> Meantions </a>
                     </li>
                     <li>
-                        <a href="forms.html"><!-- <i class="fa fa-fw fa-edit"></i> --> Trending Events</a>
+                        <a href="forms.html"><i class="fa fa-fw fa-map-o"></i> Trending Events</a>
                     </li>
                 </ul>
             </div>
@@ -136,7 +136,7 @@
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <!-- <i class="fa fa-comments fa-5x"></i> -->
+                                        <i class="fa fa-comments fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <div class="huge">26</div>
@@ -148,7 +148,7 @@
                             <a href="#">
                                 <div class="panel-footer">
                                     <span class="pull-left">View Comments </span>
-                                    <span class="pull-right"><!-- <i class="fa fa-arrow-circle-right"> --></i></span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                     <div class="clearfix"></div>
                                 </div>
                             </a>
@@ -159,7 +159,7 @@
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <!-- <i class="fa fa-tasks fa-5x"></i> -->
+                                        <i class="fa fa-bullhorn fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
                                     <!-- Pull this from something -->
@@ -171,7 +171,7 @@
                             <a href="#">
                                 <div class="panel-footer">
                                     <span class="pull-left">View Hashtags</span>
-                                    <span class="pull-right"><!-- <i class="fa fa-arrow-circle-right"> --></i></span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                     <div class="clearfix"></div>
                                 </div>
                             </a>
@@ -182,7 +182,7 @@
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <!-- <i class="fa fa-shopping-cart fa-5x"></i> -->
+                                        <i class="fa fa-users fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
                                     <!-- Pull this from something -->
@@ -194,7 +194,7 @@
                             <a href="#">
                                 <div class="panel-footer">
                                     <span class="pull-left">View Meantions</span>
-                                    <span class="pull-right"><!-- <i class="fa fa-arrow-circle-right"> --></i></span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                     <div class="clearfix"></div>
                                 </div>
                             </a>
@@ -205,7 +205,7 @@
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <!-- <i class="fa fa-support fa-5x"></i>-->                                    
+                                         <i class="fa fa-map-o fa-5x"></i>                                    
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <!-- Pull this from something -->
@@ -217,7 +217,7 @@
                             <a href="#">
                                 <div class="panel-footer">
                                     <span class="pull-left">View Trending Events</span>
-                                    <span class="pull-right"><!-- <i class="fa fa-arrow-circle-right"></i> --></span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                     <div class="clearfix"></div>
                                 </div>
                             </a>
