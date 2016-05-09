@@ -21,10 +21,9 @@
 </div>
 
 <script type="text/javascript">
-    window.errormessages = "error, form requires: ";
+    window.errormessages = "error, form requires:";
     function displayerrormessages() {
         document.getElementById('hello').innerHTML = errormessages;
-        // alert(errormessages);
         document.getElementById('fuck').style.visibility = 'visible';
     }
 </script>
@@ -48,7 +47,7 @@
         { 
             //javascript code goes here! 
             echo "<script>
-            errormessages+='username';
+            errormessages+=' username';
             displayerrormessages();
             
             </script>";
@@ -60,11 +59,15 @@
             // // exercise for you to implement yourself. 
             // die("Please enter a username."); 
         }
-         
+        
         // Ensure that the user has entered a non-empty password 
         if(empty($_POST['password'])) 
         { 
-            // echo "<script>alert(\"fuck you\");</script>";
+            echo "<script>
+            errormessages+=' password';
+            displayerrormessages();
+            
+            </script>";
         } 
          
         // Make sure the user entered a valid E-Mail address 
@@ -74,6 +77,11 @@
         if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) 
         { 
             // echo "<script>alert(\"fuck you\");</script>";
+            echo "<script>
+            errormessages+=' email';
+            displayerrormessages();
+            
+            </script>";
         } 
          
         // We will use this SQL query to see whether the username entered by the 
