@@ -74,7 +74,7 @@
                                     <div class="media-body">
                                         <h5 class="media-heading"><strong>John Smith</strong>
                                         </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p class="small text-muted"><!-- <i class="fa fa-clock-o"></i> --> Yesterday at 4:32 PM</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur...</p>
                                     </div>
                                 </div>

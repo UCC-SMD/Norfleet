@@ -33,9 +33,9 @@
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                    <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a> -->
                     <ul class="dropdown-menu message-dropdown">
-                        <li class="message-preview">
+                        <!-- <li class="message-preview">
                             <a href="#">
                                 <div class="media">
                                     <span class="pull-left">
@@ -44,7 +44,7 @@
                                     <div class="media-body">
                                         <h5 class="media-heading"><strong>Sample User</strong>
                                         </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> TimeStamp</p>
+                                        <p class="small text-muted"><i span class="fa fa-clock-o"></i> TimeStamp</p>
                                         <p>Sample Text</p>
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@
                                     </div>
                                 </div>
                             </a>
-                        </li>
+                        </li> -->
 
 
                        <!--  Save this until everything else works -->
@@ -101,20 +101,20 @@
                     </ul>
                 </li> -->
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Mr. Web Developer <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><!-- <i class="fa fa-user"></i> --> Mr. Web Developer <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                            <a href="#"><!-- <i class="fa fa-fw fa-user"></i> --> Profile</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                            <a href="#"><!-- <i class="fa fa-fw fa-envelope"></i> --> Inbox</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                            <a href="#"><!-- <i class="fa fa-fw fa-gear"></i> --> Settings</a>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            <a href="#"><!-- <i class="fa fa-fw fa-power-off"></i> --> Log Out</a>
                         </li>
                     </ul>
                 </li>
@@ -122,27 +122,27 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
+                    <br>
+
                     <li class="active">
-                        <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                        <a href="index.php"><!-- <i class="fa fa-fw fa-dashboard"></i> --> Dashboard</a>
                     </li>
                     <li>
-                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> User Statistics</a>
+                        <a href="charts.html"><!-- i class="fa fa-fw fa-bar-chart-o"></i> --> Comments </a>
                     </li>
                     <li>
-                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
+                        <a href="charts.html"><!-- i class="fa fa-fw fa-bar-chart-o"></i> --> Hashtags </a>
                     </li>
                     <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
+                        <a href="tables.html"><!-- <i class="fa fa-fw fa-table"></i> --> Meantions </a>
                     </li>
                     <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+                        <a href="forms.html"><!-- <i class="fa fa-fw fa-edit"></i> --> Trending Events</a>
                     </li>
-                    <li>
-                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
+                
+                    <!-- li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <!-- <i class="fa fa-fw fa-caret-down"></i> --><!-- </a> --> 
+<!--                         <ul id="demo" class="collapse">
                             <li>
                                 <a href="#">Dropdown Item 1</a>
                             </li>
@@ -150,13 +150,7 @@
                                 <a href="#">Dropdown Item 2</a>
                             </li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
-                    </li>
-                    <li>
-                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -183,14 +177,14 @@
                 </div>
                 <!-- /.row -->
 
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-12">
                         <div class="alert alert-info alert-dismissable">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                             <i class="fa fa-info-circle"></i>  <strong>I am a banner alert</strong> Click here <a href="index.php" class="alert-link"> to reload the page!</a> 
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- /.row -->
 
                 <div class="row">
@@ -199,7 +193,7 @@
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <i class="fa fa-comments fa-5x"></i>
+                                        <!-- <i class="fa fa-comments fa-5x"></i> -->
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <div class="huge">26</div>
@@ -222,7 +216,7 @@
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <i class="fa fa-tasks fa-5x"></i>
+                                        <!-- <i class="fa fa-tasks fa-5x"></i> -->
                                     </div>
                                     <div class="col-xs-9 text-right">
                                     <!-- Pull this from something -->
@@ -234,7 +228,7 @@
                             <a href="#">
                                 <div class="panel-footer">
                                     <span class="pull-left">View </span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <span class="pull-right"><!-- <i class="fa fa-arrow-circle-right"> --></i></span>
                                     <div class="clearfix"></div>
                                 </div>
                             </a>
@@ -245,7 +239,7 @@
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <i class="fa fa-shopping-cart fa-5x"></i>
+                                        <!-- <i class="fa fa-shopping-cart fa-5x"></i> -->
                                     </div>
                                     <div class="col-xs-9 text-right">
                                     <!-- Pull this from something -->
@@ -257,7 +251,7 @@
                             <a href="#">
                                 <div class="panel-footer">
                                     <span class="pull-left">View </span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <span class="pull-right"><!-- <i class="fa fa-arrow-circle-right"> --></i></span>
                                     <div class="clearfix"></div>
                                 </div>
                             </a>
@@ -268,7 +262,7 @@
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <i class="fa fa-support fa-5x"></i>
+                                        <!-- <i class="fa fa-support fa-5x"></i>-->                                    
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <!-- Pull this from something -->
@@ -280,7 +274,7 @@
                             <a href="#">
                                 <div class="panel-footer">
                                     <span class="pull-left">View </span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <span class="pull-right"><!-- <i class="fa fa-arrow-circle-right"></i> --></span>
                                     <div class="clearfix"></div>
                                 </div>
                             </a>
@@ -307,7 +301,7 @@
                     <div class="col-lg-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> Twitter-like thing!</h3>
+                                <h3 class="panel-title"><!-- <i class="fa fa-clock-o fa-fw"></i> --> Twitter-like thing!</h3>
                             </div>
                             <div class="panel-body">
                                 <div class="list-group">
