@@ -89,8 +89,8 @@
             $_SESSION['user'] = $row; 
              
             // Redirect the user to the private members-only page. 
-            header("Location: edit.php"); 
-            die("Redirecting to: edit.php"); 
+            header("Location: MemberPage.php"); 
+            die("Redirecting to: MemberPage.php"); 
         } 
         else 
         { 
@@ -108,7 +108,7 @@
      
 ?> 
 <h1>Login</h1> 
-<form action="login.php" method="post"> 
+<form action="TestingHomePage.php" method="post"> 
     Username:<br /> 
     <input type="text" name="username" value="<?php echo $submitted_username; ?>" /> 
     <br /><br /> 
