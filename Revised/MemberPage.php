@@ -9,13 +9,13 @@
 		if(empty($_SESSION['user'])) { 
   
 			// If they are not, we redirect them to the login page. 
-			$location = "http://" . $_SERVER['HTTP_HOST'] . "/login.php";
+			$location = "http://" . $_SERVER['HTTP_HOST'] . "/TestingHomePage.php";
 			echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL='.$location.'">';
 			//exit;
          
         	// Remember that this die statement is absolutely critical.  Without it, 
         	// people can view your members-only content without logging in. 
-        	die("Redirecting to login.php"); 
+        	die("Redirecting to TestingHomePage.php"); 
     	} 
 		
 		// To access $_SESSION['user'] values put in an array, show user his username
@@ -41,10 +41,10 @@
     		echo "<table cellpadding=10 border=1>";
     		while($row = mysql_fetch_row($result)) {
         		echo "<tr>";
-				echo "<td>".$row[0]."</td>";
+				//echo "<td>".$row[0]."</td>";
         		echo "<td>" . $row[1]."</td>";
-        		echo "<td>".$row[2]."</td>";
-                echo "<td>".$row[3]."</td>";
+        	//	echo "<td>".$row[2]."</td>";
+            //    echo "<td>".$row[3]."</td>";
 				echo "<td><a href=".$_SERVER['PHP_SELF']."?id=".$row[0].">Delete</a></td>";
         		echo "</tr>";
     		}
