@@ -15,7 +15,7 @@
          
         	// Remember that this die statement is absolutely critical.  Without it, 
         	// people can view your members-only content without logging in. 
-        	die("Redirecting to TestingHomePage.php"); 
+        	die("Redirecting to login.php"); 
     	} 
 		
 		// To access $_SESSION['user'] values put in an array, show user his username
@@ -44,6 +44,7 @@
 				echo "<td>".$row[0]."</td>";
         		echo "<td>" . $row[1]."</td>";
         		echo "<td>".$row[2]."</td>";
+                echo "<td>".$row[3]."</td>";
 				echo "<td><a href=".$_SERVER['PHP_SELF']."?id=".$row[0].">Delete</a></td>";
         		echo "</tr>";
     		}
@@ -59,13 +60,13 @@
 		mysql_free_result($result);
 
 		// set variable values to HTML form inputs
-		$country = mysql_escape_string($_POST['country']);
-    	$animal = mysql_escape_string($_POST['animal']);
+		$Tweet = mysql_escape_string($_POST['Tweet']);
+    	//$animal = mysql_escape_string($_POST['animal']);
 		
 		// check to see if user has entered anything
-		if ($animal != "") {
+		if ($Tweet != "") {
 	 		// build SQL query
-			$query = "INSERT INTO symbols (country, animal) VALUES ('$country', '$animal')";
+			$query = "INSERT INTO Tweets (Content) VALUES ('$Tweet')";
 			// run the query
      		$result = mysql_query($query) or die ("Error in query: $query. ".mysql_error());
 			// refresh the page to show new update
@@ -96,8 +97,8 @@
     
     <!-- This is the HTML form that appears in the browser -->
    	<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
-    	Country: <input type="text" name="country">
-    	National animal: <input type="text" name="animal">
+    	Tweet: <input type="text" name="tweet">
+<!--    	National animal: <input type="text" name="">-->
     	<input type="submit" name="submit">
     </form>
     <form action="TestingLogout.php" method="post"><button>Log out</button></form>

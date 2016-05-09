@@ -19,7 +19,7 @@
     	} 
 		
 		// To access $_SESSION['user'] values put in an array, show user his username
-		$arr = array_values($_SESSION['user']);
+		$arr = array_values($_SESSION['Tweets']);
 		echo "Welcome " . $arr[2];
 
 		// open connection
