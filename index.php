@@ -1,4 +1,18 @@
 
+<!--  _        _______  _______  _______  _        _______  _______ _________
+( (    /|(  ___  )(  ____ )(  ____ \( \      (  ____ \(  ____ \\__   __/
+|  \  ( || (   ) || (    )|| (    \/| (      | (    \/| (    \/   ) (   
+|   \ | || |   | || (____)|| (__    | |      | (__    | (__       | |   
+| (\ \) || |   | ||     __)|  __)   | |      |  __)   |  __)      | |   
+| | \   || |   | || (\ (   | (      | |      | (      | (         | |   
+| )  \  || (___) || ) \ \__| )      | (____/\| (____/\| (____/\   | |   
+|/    )_)(_______)|/   \__/|/       (_______/(_______/(_______/   )_(   
+                                                                        
+
+                            NICE WORK LADS                                    
+ -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +30,9 @@
 </head>
 <body>
 
+    <!-- Seriously what the hell man -->
+    <!-- <img src="images/banners/FullBanner(JUS).png" -->
+
     <div id="wrapper">
 
         <!-- Navigation -->
@@ -28,7 +45,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php"> <strong> Norfleet </strong></a>
+
+                <a class="navbar-brand" href="index.php">  <font size="10" color="white">  Norfleet </font>  </a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -61,7 +79,6 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <br>
-
                     <li class="active">
                         <a href="index.php"><!-- <i class="fa fa-fw fa-dashboard"></i> --> Dashboard</a>
                     </li>
@@ -90,7 +107,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Dashboard <small>All things related to you</small>
+                            <font size="12">Dashboard </font><small>All things related to you</small>
                         </h1>
 
                         <!-- Mabey put an alert or something here. I really don't know -->
@@ -130,8 +147,8 @@
                             </div>
                             <a href="#">
                                 <div class="panel-footer">
-                                    <span class="pull-left">View </span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <span class="pull-left">View Comments </span>
+                                    <span class="pull-right"><!-- <i class="fa fa-arrow-circle-right"> --></i></span>
                                     <div class="clearfix"></div>
                                 </div>
                             </a>
@@ -153,7 +170,7 @@
                             </div>
                             <a href="#">
                                 <div class="panel-footer">
-                                    <span class="pull-left">View </span>
+                                    <span class="pull-left">View Hashtags</span>
                                     <span class="pull-right"><!-- <i class="fa fa-arrow-circle-right"> --></i></span>
                                     <div class="clearfix"></div>
                                 </div>
@@ -169,14 +186,14 @@
                                     </div>
                                     <div class="col-xs-9 text-right">
                                     <!-- Pull this from something -->
-                                        <div class="huge">124</div>
+                                        <div class="huge">24</div>
                                         <div>Meantions</div>
                                     </div>
                                 </div>
                             </div>
                             <a href="#">
                                 <div class="panel-footer">
-                                    <span class="pull-left">View </span>
+                                    <span class="pull-left">View Meantions</span>
                                     <span class="pull-right"><!-- <i class="fa fa-arrow-circle-right"> --></i></span>
                                     <div class="clearfix"></div>
                                 </div>
@@ -199,7 +216,7 @@
                             </div>
                             <a href="#">
                                 <div class="panel-footer">
-                                    <span class="pull-left">View </span>
+                                    <span class="pull-left">View Trending Events</span>
                                     <span class="pull-right"><!-- <i class="fa fa-arrow-circle-right"></i> --></span>
                                     <div class="clearfix"></div>
                                 </div>
@@ -208,10 +225,10 @@
                     </div>
                 </div>
 
-                    <div class="col-lg-12">
+                    <div class="col-lg-13">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><!-- <i class="fa fa-clock-o fa-fw"></i> --> Twitter-like thing!</h3>
+                                <h3 class="panel-title"><!-- <i class="fa fa-clock-o fa-fw"></i> --> Activity Monitor</h3>
                             </div>
                             <div class="panel-body">
                                 <div class="list-group">

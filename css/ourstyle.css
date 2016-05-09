@@ -1,3 +1,14 @@
+
+@font-face {
+    font-family: "justicesemital";
+    src: url("fonts/usedfordesign/justice/justicesemital.ttf");
+    }
+    navbar-brand {
+    font-family: justicesemital;  
+    font-size: 300%;
+}
+
+
 .panel > .panel-heading {
     background-image: none;
     background-color: #404040;
