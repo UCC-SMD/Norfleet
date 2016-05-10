@@ -54,41 +54,44 @@
                      <a class="navbar-brand" href="index.php">  <font size="10" color="white"> Norfleet </font>  </a>
                  </li>
                  <li>
-                     <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-user"></i> * PUT USERNAME HERE* <i class="fa fa-fw fa-caret-down"></i></a>
+                     <a href="javascript:;" data-toggle="collapse" data-target="#demo">
+                         <i class="fa fa-fw fa-user"></i>  Username <i class="fa fa-fw fa-caret-down"></i>
+                       <br>
+                     </a>
                      <ul id="demo" class="collapse">
                          <li>
-                             <a href="#"><i class="fa fa-fw fa-user"></i> Profile </a>
+                             <a href="#"> <span class="fa fa-fw fa-user"></span> Profile </a>
                          </li>
                          <li>
-                             <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox </a>
+                             <a href="#"> <i class="fa fa-fw fa-envelope"></i>Inbox </a>
                          </li>
                          <li>
-                             <a href="#"><i class="fa fa-fw fa-gear"></i> Settings  </a>
+                             <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a>
                          </li>
                          <li>
-                             <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out </a>
+                             <a href="#"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
                          </li>
                      </ul>
                  </li>
                  <br>
                  <li class="active">
-                     <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                     <a href="index.php"> <i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                  </li>
                  <br>
                  <li>
-                     <a href="charts.html"><i class="fa fa-fw fa-comments"></i> Comments </a>
+                     <a href="charts.html"> <i class="fa fa-fw fa-comments"></i> Comments </a>
                  </li>
                  <br>
                  <li>
-                     <a href="charts.html"><i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
+                     <a href="charts.html"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
                  </li>
                  <br>
                  <li>
-                     <a href="tables.html"><i class="fa fa-fw fa-users"></i> Meantions </a>
+                     <a href="tables.html"> <i class="fa fa-fw fa-users"></i> Meantions </a>
                  </li>
                  <br>
                  <li>
-                     <a href="forms.html"><i class="fa fa-fw fa-map-o"></i> Trending Events</a>
+                     <a href="forms.html"> <i class="fa fa-fw fa-map-o"></i> Trending Events</a>
                  </li>
              </ul>
          </div>
@@ -100,7 +103,10 @@
                  <div class="row">
                      <div class="col-lg-12">
                          <h1>Simple Sidebar</h1>
-                         <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+                         <p>This template has a responsive menu toggling system.
+                         The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens.
+                         When toggled using the button below, the menu will appear/disappear.
+                         On small screens, the page content will be pushed off canvas.</p>
                          <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
                          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
                      </div>
@@ -111,7 +117,14 @@
                          <div class="col-lg-12">
                              <h1 class="page-header">
                                  <font size="12">Dashboard </font><small>All things related to you</small>
-																 <right> <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a> </right>
+                                 <!-- <right>
+                                  <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                                 </right> -->
+                                 <div class="pageshift">
+                                   <right>
+                                     <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Sidebar</a>
+                                   </right>
+                                 </div>
                              </h1>
 
                              <!-- Mabey put an alert or something here. I really don't know -->
@@ -129,7 +142,8 @@
                          <div class="col-lg-12">
                              <div class="alert alert-info alert-dismissable">
                                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                 <i class="fa fa-info-circle"></i>  <strong>I am a banner alert</strong> Click here <a href="index.php" class="alert-link"> to reload the page!</a>
+                                 <i class="fa fa-info-circle"></i>  <strong>I am a banner alert</strong>
+                                 Click here <a href="index.php" class="alert-link"> to reload the page!</a>
                              </div>
                          </div>
                      </div> -->
@@ -198,7 +212,7 @@
                                  </div>
                                  <a href="#">
                                      <div class="panel-footer">
-                                         <span class="pull-left">View Meantions</span>
+                                         <span class="pull-left">View Mentions</span>
                                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                          <div class="clearfix"></div>
                                      </div>
@@ -229,6 +243,9 @@
                              </div>
                          </div>
                      </div>
+
+                     <!-- <div class="element">
+                      </div> -->
 
                          <div class="col-lg-13">
                              <div class="panel panel-default">
@@ -296,6 +313,9 @@
 
      <!-- Menu Toggle Script -->
      <script>
+
+    //  32 is JavaScript SpaceBar keycode
+
      $("#menu-toggle").click(function(e) {
          e.preventDefault();
          $("#wrapper").toggleClass("toggled");

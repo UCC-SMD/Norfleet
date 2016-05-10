@@ -11,7 +11,7 @@
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 #wrapper.toggled {
@@ -22,7 +22,7 @@
     z-index: 1000;
     position: fixed;
     left: 250px;
-    width: 0;
+    width: ;
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
@@ -36,6 +36,8 @@
 #wrapper.toggled #sidebar-wrapper {
     width: 250px;
 }
+
+
 
 #page-content-wrapper {
     width: 100%;
@@ -55,12 +57,16 @@
     top: 0;
     width: 250px;
     margin: 0;
+    /*Padding that controls how far the content of the sidebar is form the left of the navbar*/
     padding: 0;
+    /*Don't touch this*/
     list-style: none;
 }
 
 .sidebar-nav li {
-    text-indent: 20px;
+    /*Also controls how far the sidebar items are from the right side of the sidebar*/
+    text-indent: 5px;
+    /*Change this sometime soon! Very important in filling un-used sidebar space*/
     line-height: 40px;
 }
 
@@ -82,7 +88,8 @@
 }
 
 .sidebar-nav > .sidebar-brand {
-    height: 65px;
+    /*Distance between the top of the sidebar and the title of the sidebar*/
+    height: 85px;
     font-size: 18px;
     line-height: 60px;
 }
@@ -96,25 +103,35 @@
     background: none;
 }
 
+
+
 @media(min-width:768px) {
     #wrapper {
+        /*Controls the ammount of space between the top of the wrapper and the top of the browser window*/
+        padding-top: 0px;
+        /*Controls the ammount of space between the right of the wrapper and the right side of the browser window*/
+        padding-right: 10px;
+        /*Controls the ammount of whitespace to the right when the navbar is extended. (Default 250)*/
         padding-left: 250px;
     }
 
     #wrapper.toggled {
+      /*Controls the ammount of white-space when the sidebar is contracted. Default (0) */
         padding-left: 0;
     }
 
     #sidebar-wrapper {
+      /*Try and set to 200 at some point*/
         width: 250px;
     }
 
     #wrapper.toggled #sidebar-wrapper {
+      /*Don't touch this. It should stay at 0*/
         width: 0;
     }
 
     #page-content-wrapper {
-        padding: 20px;
+        padding: 10px;
         position: relative;
     }
 
