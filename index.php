@@ -62,9 +62,6 @@
                              <a href="#"> <span class="fa fa-fw fa-user"></span> Profile </a>
                          </li>
                          <li>
-                             <a href="#"> <i class="fa fa-fw fa-envelope"></i>Inbox </a>
-                         </li>
-                         <li>
                              <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a>
                          </li>
                          <li>
@@ -78,7 +75,7 @@
                  </li>
                  <br>
                  <li>
-                     <a href="charts.html"> <i class="fa fa-fw fa-comments"></i> Comments </a>
+                     <a href="charts.html"> <i class="fa fa-fw fa-comments"></i> Tweets </a>
                  </li>
                  <br>
                  <li>
@@ -86,7 +83,7 @@
                  </li>
                  <br>
                  <li>
-                     <a href="tables.html"> <i class="fa fa-fw fa-users"></i> Meantions </a>
+                     <a href="tables.html"> <i class="fa fa-fw fa-users"></i> Mentions </a>
                  </li>
                  <br>
                  <li>
