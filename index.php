@@ -253,35 +253,7 @@
                                      <div class="list-group">
                                          <a href="#" class="list-group-item">
                                              <span class="badge">just now</span>
-                                             <i class="fa fa-fw fa-calendar"></i> Calendar updated
-                                         </a>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">4 minutes ago</span>
-                                             <i class="fa fa-fw fa-comment"></i> Commented on a post
-                                         </a>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">23 minutes ago</span>
-                                             <i class="fa fa-fw fa-truck"></i> Order 392 shipped
-                                         </a>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">46 minutes ago</span>
-                                             <i class="fa fa-fw fa-money"></i> Invoice 653 has been paid
-                                         </a>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">1 hour ago</span>
-                                             <i class="fa fa-fw fa-user"></i> A new user has been added
-                                         </a>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">2 hours ago</span>
-                                             <i class="fa fa-fw fa-check"></i> Completed task: "pick up dry cleaning"
-                                         </a>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">yesterday</span>
-                                             <i class="fa fa-fw fa-globe"></i> Saved the world
-                                         </a>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">two days ago</span>
-                                             <i class="fa fa-fw fa-check"></i> Completed task: "fix error on sales page"
+                                             <i class="fa fa-fw fa-calendar"></i> Task
                                          </a>
                                      </div>
                                      <div class="text-right">
