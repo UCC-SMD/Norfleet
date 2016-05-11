@@ -23,7 +23,6 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/sb-admin.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
-		<link href="css/simple-sidebar.css" rel="stylesheet">
 		<link href="css/ourstyle.css" rel="stylesheet" />
 
      <meta charset="utf-8">
@@ -116,13 +115,14 @@
                      <div class="row">
                          <div class="col-lg-12">
                              <h1 class="page-header">
-                                 <font size="12">Dashboard </font><small>All things related to you</small>
+                                 <font size="12" color="black">Dashboard </font><small><font color="black">All things related to you
+                                 </small></font>
                                  <!-- <right>
                                   <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
                                  </right> -->
                                  <div class="pageshift">
                                    <right>
-                                     <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Sidebar</a>
+                                     <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
                                    </right>
                                  </div>
                              </h1>
@@ -243,10 +243,8 @@
                              </div>
                          </div>
                      </div>
-
                      <!-- <div class="element">
                       </div> -->
-
                          <div class="col-lg-13">
                              <div class="panel panel-default">
                                  <div class="panel-heading">

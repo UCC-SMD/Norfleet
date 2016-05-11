@@ -1,12 +1,21 @@
-/*!
- * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+
+ /*Code licensed under the Apache License v2.0.*/
+
+ /*
+
+ Colour Scheme
+
+ #CCCCCC
+ #73BCC4
+ #549296
+ #5BA6AD
+ #A8CAC1
+
  */
 
-/* Toggle Styles */
-
 #wrapper {
+    /*Dosen't actually do anything.*/
+    /*padding-top: 50px;*/
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -131,7 +140,8 @@
     }
 
     #page-content-wrapper {
-        padding: 10px;
+        padding-top: 0px;
+        padding-left: 10px;
         position: relative;
     }
 
