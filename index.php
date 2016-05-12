@@ -124,8 +124,8 @@
                                  </div>
                              </h1>
 
-                             <!-- Mabey put an alert or something here. I really don't know -->
-														 <!-- Over-Descriptive and Unneccecary -->
+                             <!-- Maybe put an alert or something here. I really don't know -->
+														 <!-- Over-Descriptive and unnecessary -->
                         <!-- <ol class="breadcrumb">
                                  <li class="active">
                                      <i class="fa fa-dashboard"></i> Dashboard
