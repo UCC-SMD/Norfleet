@@ -1,8 +1,8 @@
 <!-- this will allow the user to recover their password. general outline: two fields in a form, one for username other for email, 
 submit button. use php mail function to email new password to user, and reset it using sql
  -->
-<h1>reset yo password</h1>
-<h2>enter your the email and username of the account you would like to reset password of</h2>
+<center><h1>Password Reset</h1>
+<h2>Please enter the email and username of your account; once entered, a new generated-password will be sent to your email.</h2>
 <form action="recoverpass.php" method="post"> 
 Username:<br /> 
 <input type="text" name="username" value="" /> 
@@ -14,6 +14,7 @@ E-Mail:<br />
 <input type="submit" value="recover password" /> 
 
 </form>
+</center>
 <?php
 // il add more later
 include 'passwordencrypt.php';
