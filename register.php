@@ -1,7 +1,7 @@
 <!-- Import the bootstrap -->
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<center><h1>Register</h1></center>
+<h1>Register</h1>
 <form action="register.php" method="post"> 
     Username:<br /> 
     <input type="text" name="username" value="" /> 
