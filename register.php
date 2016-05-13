@@ -28,7 +28,7 @@
         //     console.log((errormessages[i]));
         // };
 
-        document.getElementById('errormessagebox_thing').innerHTML = "error, must input: " + errormessages;
+        document.getElementById('errormessagebox_thing').innerHTML = "There is an error, please change and resubmit your " + errormessages;
         document.getElementById('alertbox').style.visibility = 'visible';
 
     }
