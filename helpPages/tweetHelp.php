@@ -24,15 +24,6 @@
                                         <p><a href="helpPages/tweetHelp.php" class="btn btn-primary" role="button">Tweet Help</a></p>
                                      </div>
                                 </div>
-                                 
-                               
-                                 <div class="pageshift">
-                                   <right>
-                                     <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
-                                   </right>
-                                 </div>
-                                 
-                                 
                             </div>
                             <div class="col-sm-6 col-md-4">
                                 <div class="thumbnailTwo">
@@ -43,17 +34,8 @@
                                         <p><a href="helpPages/hashtagHelp.php" class="btn btn-primary" role="button">Hashtag Help</a></p>
                                     </div>
                                 </div>
-                                
-                                
-                                <div class="pageshift">
-                                   <right>
-                                     <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
-                                   </right>
-                                 </div>
-                                
-                                
                             </div>
-                             <div class="col-sm-6 col-md-4">
+                            <div class="col-sm-6 col-md-4">
                                 <div class="thumbnailThree">
                                     <img src="..." alt="...">
                                     <div class="CaptionThree">
@@ -62,17 +44,12 @@
                                         <p><a href="helpPages/profileHelp.php" class="btn btn-primary" role="button">Profile Help</a></p>
                                     </div>
                                 </div>
-                                 
-                                 
-                                 
-                                 <div class="pageshift">
+                             </div>
+                            <div class="pageshift">
                                    <right>
                                      <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
                                    </right>
-                                 </div>
-                                 
-                                 
-                             </div>
+                            </div>
                          </div>
                      </ul>
                  </div>
