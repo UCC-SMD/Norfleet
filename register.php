@@ -26,8 +26,10 @@
         // for (var i = 0; i<errormessages.length; i++) {
         //     console.log((errormessages[i]));
         // };
+        <div class="alert alert-danger" role="alert">
         document.getElementById('errormessagebox_thing').innerHTML = "error, must input: " + errormessages;
         document.getElementById('alertbox').style.visibility = 'visible';
+        </div>
     }
 </script>
 <!-- Dongers -->
