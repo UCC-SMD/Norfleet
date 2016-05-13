@@ -79,7 +79,7 @@
                  </li>
                  <br>
                  <li>
-                     <a href="search.html"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
+                     <a href="search.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
                  </li>
                  <br>
                  <li>
