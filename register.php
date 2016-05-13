@@ -15,10 +15,11 @@
     <input type="submit" value="Register" /> 
     
 </form>
-</center>
+
 <div id="alertbox" class="alert alert-danger" style="visibility: hidden"role="alert">
     <p id="errormessagebox_thing"></p>
 </div>
+</center>
 <script type="text/javascript">
     window.errormessages = [];
     function displayerrormessages() {
