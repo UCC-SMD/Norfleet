@@ -40,11 +40,7 @@
             
         };
 
-<<<<<<< HEAD
         document.getElementById('errormessagebox_thing').innerHTML = wat;
-=======
-        document.getElementById('errormessagebox_thing').innerHTML = "There is an error, please change and resubmit your: " + errormessages;
->>>>>>> origin/master
         document.getElementById('alertbox').style.visibility = 'visible';
 
     }
