@@ -24,11 +24,27 @@
     window.errormessages = [];
     function displayerrormessages() {
         console.log(errormessages);
-        // for (var i = 0; i<errormessages.length; i++) {
-        //     console.log((errormessages[i]));
-        // };
+        var wat = "You forgot to add: ";
+        for (var i = 0; i<errormessages.length; i++) {
+            // /console.log((errormessages[i]));
+            if (errormessages.length!=1) {
+                if (i+1 == errormessages.length) {
+                    wat += " and " + errormessages[i] + ".";
+                } else{
+                    wat += " " + errormessages[i] + ",";
+                };
+            }else{
+                wat += errormessages[i];
+            };
+            
+            
+        };
 
-        document.getElementById('errormessagebox_thing').innerHTML = "error, must input: " + errormessages;
+<<<<<<< HEAD
+        document.getElementById('errormessagebox_thing').innerHTML = wat;
+=======
+        document.getElementById('errormessagebox_thing').innerHTML = "There is an error, please change and resubmit your: " + errormessages;
+>>>>>>> origin/master
         document.getElementById('alertbox').style.visibility = 'visible';
 
     }
@@ -70,7 +86,7 @@
         if(empty($_POST['password'])) 
         { 
             echo "<script>
-            errormessages+=' password';
+            errormessages.push('password');;
             // alert('test 1');
             displayerrormessages();
             
@@ -85,9 +101,9 @@
         { 
             // echo "<script>alert(\"fuck you\");</script>";
             echo "<script>
-            errormessages+=' email';  
+            errormessages.push('email');  
             displayerrormessages();
-            // alert('test 3');
+            // alert('test 2');
             
             
             </script>";
