@@ -1,22 +1,8 @@
-<!--
-
-    _   __           ______          __
-   / | / /___  _____/ __/ /__  ___  / /_
-  /  |/ / __ \/ ___/ /_/ / _ \/ _ \/ __/
- / /|  / /_/ / /  / __/ /  __/  __/ /_
-/_/ |_/\____/_/  /_/ /_/\___/\___/\__/
-
-					NICE WORK LADS
- -->
-
 
  <!DOCTYPE html>
  <html lang="en">
 
  <head>
-
-	 <!-- This is so many levels of bad all at one time.
-	 Why does this even work? -->
 
 	 	<link href="images/web_assets/favicon.ico" rel="icon" />
 
@@ -75,7 +61,7 @@
                  </li>
                  <br>
                  <li>
-                     <a href="posts.php"> <i class="fa fa-fw fa-comments"></i> Posts </a>
+                     <a href="charts.html"> <i class="fa fa-fw fa-comments"></i> Tweets </a>
                  </li>
                  <br>
                  <li>
@@ -112,7 +98,7 @@
                      <div class="row">
                          <div class="col-lg-12">
                              <h1 class="page-header">
-                                 <font size="12" color="black">Dashboard </font><small><font color="black">All things related to you
+                                 <font size="12" color="black">Posts </font><small><font color="black">
                                  </small></font>
                                  <!-- <right>
                                   <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
@@ -146,112 +132,50 @@
                      </div> -->
                      <!-- /.row -->
 
-                     <div class="row">
-                         <div class="col-lg-3 col-md-6">
-                             <div class="panel panel-grey">
-                                 <div class="panel-heading">
-                                     <div class="row">
-                                         <div class="col-xs-3">
-                                             <i class="fa fa-comments fa-5x"></i>
-                                         </div>
-                                         <div class="col-xs-9 text-right">
-                                             <div class="huge">26</div>
-                                             <!-- Pull this from something -->
-                                             <div>New Comments</div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <a href="#">
-                                     <div class="panel-footer">
-                                         <span class="pull-left">View Comments </span>
-                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                 </a>
-                             </div>
-                         </div>
-                         <div class="col-lg-3 col-md-6">
-                             <div class="panel panel-grey">
-                                 <div class="panel-heading">
-                                     <div class="row">
-                                         <div class="col-xs-3">
-                                             <i class="fa fa-bullhorn fa-5x"></i>
-                                         </div>
-                                         <div class="col-xs-9 text-right">
-                                         <!-- Pull this from something -->
-                                             <div class="huge">12</div>
-                                             <div>Hashtags</div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <a href="#">
-                                     <div class="panel-footer">
-                                         <span class="pull-left">View Hashtags</span>
-                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                 </a>
-                             </div>
-                         </div>
-                         <div class="col-lg-3 col-md-6">
-                             <div class="panel panel-grey">
-                                 <div class="panel-heading">
-                                     <div class="row">
-                                         <div class="col-xs-3">
-                                             <i class="fa fa-users fa-5x"></i>
-                                         </div>
-                                         <div class="col-xs-9 text-right">
-                                         <!-- Pull this from something -->
-                                             <div class="huge">24</div>
-                                             <div>Meantions</div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <a href="#">
-                                     <div class="panel-footer">
-                                         <span class="pull-left">View Mentions</span>
-                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                 </a>
-                             </div>
-                         </div>
-                         <div class="col-lg-3 col-md-6">
-                             <div class="panel panel-grey">
-                                 <div class="panel-heading">
-                                     <div class="row">
-                                         <div class="col-xs-3">
-                                              <i class="fa fa-map-o fa-5x"></i>
-                                         </div>
-                                         <div class="col-xs-9 text-right">
-                                             <!-- Pull this from something -->
-                                             <div class="huge">13</div>
-                                             <div>Trending Events</div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <a href="#">
-                                     <div class="panel-footer">
-                                         <span class="pull-left">View Trending Events</span>
-                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                 </a>
-                             </div>
-                         </div>
-                     </div>
+
                      <!-- <div class="element">
                       </div> -->
-                         <div class="col-lg-13">
+                         <div class="col-lg-14">
                              <div class="panel panel-default">
-                                 <div class="panel-heading">
-                                     <h3 class="panel-title"><!-- <i class="fa fa-clock-o fa-fw"></i> --> Posts</h3>
-                                 </div>
-                                 <div class="panel-body">
                                      <div class="list-group">
                                          <a href="#" class="list-group-item">
                                              <span class="badge">just now</span>
-                                             <i class="fa fa-fw fa-calendar"></i> Task
+                                             <i class="fa fa-fw fa-calendar"></i> Calendar updated
+                                         </a>
+                                         <br>
+                                         <a href="#" class="list-group-item">
+                                             <span class="badge">4 minutes ago</span>
+                                             <i class="fa fa-fw fa-comment"></i> Commented on a post
+                                         </a>
+                                         <br>
+                                         <a href="#" class="list-group-item">
+                                             <span class="badge">23 minutes ago</span>
+                                             <i class="fa fa-fw fa-truck"></i> Order 392 shipped
+                                         </a>
+                                         <br>
+                                         <a href="#" class="list-group-item">
+                                             <span class="badge">46 minutes ago</span>
+                                             <i class="fa fa-fw fa-money"></i> Invoice 653 has been paid
+                                         </a>
+                                         <br>
+                                         <a href="#" class="list-group-item">
+                                             <span class="badge">1 hour ago</span>
+                                             <i class="fa fa-fw fa-user"></i> A new user has been added
+                                         </a>
+                                         <br>
+                                         <a href="#" class="list-group-item">
+                                             <span class="badge">2 hours ago</span>
+                                             <i class="fa fa-fw fa-check"></i> Completed task: "pick up dry cleaning"
+                                         </a>
+                                         <br>
+                                         <a href="#" class="list-group-item">
+                                             <span class="badge">yesterday</span>
+                                             <i class="fa fa-fw fa-globe"></i> Saved the world
+                                         </a>
+                                         <br>
+                                         <a href="#" class="list-group-item">
+                                             <span class="badge">two days ago</span>
+                                             <i class="fa fa-fw fa-check"></i> Completed task: "fix error on sales page"
                                          </a>
                                      </div>
                                      <div class="text-right">
