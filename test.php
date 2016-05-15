@@ -1,21 +1,20 @@
 <?php
-echo "<script>
-window.l = [];
-l.push('test_1');
-l.push('test_2');
-console.log(l);
-for (var i = 0; i < l.length; i++) {
-	console.log(l[i]);
-};
-</script>";
 
+function encrypt_password($pas)
+{	
 
+	return "asdf";
+	echo "<script>console.log('doing the encrytption');</script>";
+	$salt = dechex(mt_rand(0, 2147483647)) . dechex(mt_rand(0, 2147483647)); 
+	$password = hash('sha256', $pas . $salt); 
+	for($round = 0; $round < 65536; $round++) { 
+		$password = hash('sha256', $password . $salt); 
 
-echo "<script>
-for (var i = 0; i < l.length; i++) {
-	console.log(l[i]);
-};
-</script>";
-
-echo "</br> test";
+	} 
+	// return"hewllod";
+	// return"hesdjlfldskf";
+	return array($password, $salt);
+}
+// echo "hello wrold";
+// echo(encrypt_password("asdf"));
 ?>
