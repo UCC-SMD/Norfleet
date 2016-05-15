@@ -188,40 +188,47 @@
         document.getElementById('alertbox').style.visibility = 'visible';
     }
     function display_other_things() {
-        if (errormessages.length == 0){
-            console.log("first branch");
-            total_error_log = "Please change your ";
-            for (var i = 0; i < errorhause.length; i++) {
+        if(errorhause.length!=0){
+
+            console.log(errorhause + "we are doing it");
+            console.log(errormessages.indexOf('username'));
+            if (errormessages.length == 0){
+                console.log("first branch");
+                total_error_log = "Please change your ";
+                for (var i = 0; i < errorhause.length; i++) {
+                    if (errorhause.length == 1){
+                        total_error_log += errorhause[i] + ", because it is taken."
+                    }
+                    else{
+                        if (i == 0) {
+                            total_error_log += errorhause[i];
+                        } else{
+                            total_error_log += "and" + errorhause[i] + ", because they are taken." 
+                        };
+                    }
+                };
+            }else{
+                console.log("second branch");
+
+                total_error_log += " Please change your ";
+                console.log("error hause length " + errorhause.length)
                 if (errorhause.length == 1){
-                    total_error_log += errorhause[i] + ", because it is taken."
-                }
-                else{
-                    if (i == 0) {
-                        total_error_log += errorhause[i];
-                    } else{
-                        total_error_log += "and" + errorhause[i] + ", because they are taken." 
-                    };
-                }
-            };
-        }else{
-            console.log("second branch");
+                        
+                        total_error_log += errorhause[0] + ", because it is taken."
+                    }else{
+                        console.log(errorhause.length + "  =  " + 1)
+                        if (i == 0) {
+                            total_error_log += errorhause[i];
+                        } else{
+                            total_error_log += "and" + errorhause[i] + ", because they are taken." 
 
-            total_error_log += " Please change your ";
-            if (errorhause.length == 1){
-                    total_error_log += errorhause[i] + ", because it is taken."
-                }
-                else{
-                    if (i == 0) {
-                        total_error_log += errorhause[i];
-                    } else{
-                        total_error_log += "and" + errorhause[i] + ", because they are taken." 
-
-                    };
-            }   
+                        };
+                }   
+            }
+            display_the_errors();
         }
-        display_the_errors();
     }
-    }
+    
 </script>
 <!-- Dongers -->
 <?php 
@@ -317,10 +324,12 @@
         { 
             // die("This username is already in use");
             echo "<script>
-            if(errormessages.indexOf('username')!= -1){
+            alert(errormessages.indexOf('username'));
+            if(errormessages.indexOf('username')== -1){
+                alert('username');
                 errorhause.push('username');
-                console.log('the user neesd to change their email');
-            }
+                console.log('the user neesd to change their fuck');
+            };
             </script>";
             $cont = FALSE;
             // echo "<script>alert(\"fuck you\");</script>";
@@ -355,11 +364,14 @@
         if($row) 
         { 
             // die("This email address is already registered"); 
-            // echo "<script>alert(\"fuck you\");</script>";
+
             echo "<script>
-            if(errormessages.indexOf('email')!= -1){
+            alert(errormessages.indexOf('email'));
+            if(errormessages.indexOf('email') == -1){
                 errorhause.push('email');
                 console.log('the user neesd to change their email');
+            }else{
+                
             }
             
             
@@ -410,8 +422,7 @@
                 // echo "<script>alert(\"fuck you\");</script>";
             } 
         }else{
-            
-            asdfsadfdsaf
+            echo "<script>display_other_things();</script>";
         }
          
         // This redirects the user back to the login page after they register 
