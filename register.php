@@ -1,18 +1,168 @@
-<!-- Import the bootstrap -->
+<!--
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<center><h1>Register</h1>
+    _   __           ______          __
+   / | / /___  _____/ __/ /__  ___  / /_
+  /  |/ / __ \/ ___/ /_/ / _ \/ _ \/ __/
+ / /|  / /_/ / /  / __/ /  __/  __/ /_
+/_/ |_/\____/_/  /_/ /_/\___/\___/\__/
+
+					NICE WORK LADS
+ -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+
+	 <!-- This is so many levels of bad all at one time.
+	 Why does this even work? -->
+
+	 	<link href="images/web_assets/favicon.ico" rel="icon" />
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/sb-admin.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+		<link href="css/ourstyle.css" rel="stylesheet" />
+
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <title>Norfleet</title>
+
+     <!-- Bootstrap Core CSS -->
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+     <!-- Custom CSS -->
+     <link href="css/simple-sidebar.css" rel="stylesheet">
+
+ </head>
+
+
+
+
+ <body>
+
+     <div id="wrapper">
+
+         <!-- Sidebar -->
+         <div id="sidebar-wrapper">
+             <ul class="sidebar-nav">
+                 <li class="sidebar-brand">
+                     <a class="navbar-brand" href="index.php">  <font size="10" color="white"> Norfleet </font>  </a>
+                 </li>
+                 <li>
+                     <a href="javascript:;" data-toggle="collapse" data-target="#demo">
+                         <i class="fa fa-fw fa-user"></i>  Username <i class="fa fa-fw fa-caret-down"></i>
+                       <br>
+                     </a>
+                     <ul id="demo" class="collapse">
+                         <li>
+                             <a href="#"> <span class="fa fa-fw fa-user"></span> Profile </a>
+                         </li>
+                         <li>
+                             <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a>
+                         </li>
+                         <li>
+                             <a href="#"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
+                         </li>
+                     </ul>
+                 </li>
+                 <br>
+                 <li class="active">
+                     <a href="#"> <i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                 </li>
+                 <br>
+                 <li>
+                     <a href="#"> <i class="fa fa-fw fa-comments"></i> Tweets </a>
+                 </li>
+                 <br>
+                 <li>
+                     <a href="#"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
+                 </li>
+                 <br>
+                 <li>
+                     <a href="#"> <i class="fa fa-fw fa-users"></i> Mentions </a>
+                 </li>
+                 <br>
+                 <li>
+                     <a href="#"> <i class="fa fa-fw fa-map-o"></i> Trending Events</a>
+                 </li>
+             </ul>
+         </div>
+         <!-- /#sidebar-wrapper -->
+
+         <!-- Page Content -->
+         <div id="page-content-wrapper">
+             <!-- <div class="container-fluid">
+                 <div class="row">
+                     <div class="col-lg-12">
+                         <h1>Simple Sidebar</h1>
+                         <p>This template has a responsive menu toggling system.
+                         The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens.
+                         When toggled using the button below, the menu will appear/disappear.
+                         On small screens, the page content will be pushed off canvas.</p>
+                         <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                     </div>
+                 </div>
+             </div> -->
+                     <!-- Page Heading -->
+                     <div class="row">
+                         <div class="col-lg-12">
+                             <h1 class="page-header">
+                                 <font size="12" color="black">Register </font><small><font color="black"> Join the club
+                                 </small></font>
+                                 <!-- <right>
+                                  <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                                 </right> -->
+                             </h1>
+
+                             <!-- Maybe put an alert or something here. I really don't know -->
+														 <!-- Over-Descriptive and unnecessary -->
+                        <!-- <ol class="breadcrumb">
+                                 <li class="active">
+                                     <i class="fa fa-dashboard"></i> Dashboard
+                                 </li>
+                             </ol> -->
+                         </div>
+                     </div>
+
+										 <!-- Banner Alert -->
+                     <!-- <div class="row">
+                         <div class="col-lg-12">
+                             <div class="alert alert-info alert-dismissable">
+                                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                 <i class="fa fa-info-circle"></i>  <strong>I am a banner alert</strong>
+                                 Click here <a href="index.php" class="alert-link"> to reload the page!</a>
+                             </div>
+                         </div>
+                     </div> -->
+                     <!-- /.row -->
+
+<center>
 <form action="register.php" method="post"> 
-    Username:<br /> 
+   <h2> Username <br /> </h2>
     <input type="text" name="username" value="" /> 
     <br /><br /> 
-    E-Mail:<br /> 
+   <h2> E-Mail <br /> </h2>
     <input type="text" name="email" value="" /> 
     <br /><br /> 
-    Password:<br /> 
+    <h2> Password <br /> </h2>
     <input type="password" name="password" value="" /> 
     <br /><br /> 
-    <input type="submit" value="Register" /> 
+    <div class="registerlink">
+        <center> 
+            <a href="register.php" input type="submit" value="Register" class="btn btn-default"> Register</a>
+        </center>
+    </div> 
+    <br>
+    <div class="pageshift">
+        <right>
+            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
+        </right>
+    </div>
     
 </form>
 
@@ -229,3 +379,33 @@
     }//if !empty post
      
 ?> 
+
+                 <!-- /.container-fluid -->
+
+             </div>
+         </div>
+         <!-- /#page-content-wrapper -->
+
+     </div>
+     <!-- /#wrapper -->
+
+     <!-- jQuery -->
+     <script src="javascript/jquery.js"></script>
+
+     <!-- Bootstrap Core JavaScript -->
+     <script src="javascript/bootstrap.min.js"></script>
+
+     <!-- Menu Toggle Script -->
+     <script>
+
+    //  32 is JavaScript SpaceBar keycode
+
+     $("#menu-toggle").click(function(e) {
+         e.preventDefault();
+         $("#wrapper").toggleClass("toggled");
+     });
+     </script>
+
+ </body>
+
+ </html>

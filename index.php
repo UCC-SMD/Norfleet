@@ -255,7 +255,7 @@
 <center>
 <br>
 <br>
-<br>
+
 
 <!-- <h1>Login</h1>  -->
 
@@ -277,7 +277,7 @@
 <br>
 <div class="registerlink">
     <center>
-        <a href="register.php" class="btn btn-default" id="menu-toggle">Register</a>
+        <a href="register.php" class="btn btn-default"> Register</a>
     </center>
 </div>
 <br>
