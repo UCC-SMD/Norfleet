@@ -75,7 +75,7 @@
                  </li>
                  <br>
                  <li>
-                     <a href="posts.php"> <i class="fa fa-fw fa-comments"></i> Posts </a>
+                     <a href="posts.php"> <i class="fa fa-fw fa-comments"></i> Tweets </a>
                  </li>
                  <br>
                  <li>
