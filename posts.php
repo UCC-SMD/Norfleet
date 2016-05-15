@@ -36,7 +36,7 @@
          <div id="sidebar-wrapper">
              <ul class="sidebar-nav">
                  <li class="sidebar-brand">
-                     <a class="navbar-brand" href="index.php">  <font size="10" color="white"> Norfleet </font>  </a>
+                     <a class="navbar-brand" href="dashboard.php">  <font size="10" color="white"> Norfleet </font>  </a>
                  </li>
                  <li>
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
@@ -57,23 +57,23 @@
                  </li>
                  <br>
                  <li class="active">
-                     <a href="index.php"> <i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                     <a href="dashboard.php"> <i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                  </li>
                  <br>
                  <li>
-                     <a href="charts.html"> <i class="fa fa-fw fa-comments"></i> Tweets </a>
+                     <a href="posts.html"> <i class="fa fa-fw fa-comments"></i> Tweets </a>
                  </li>
                  <br>
                  <li>
-                     <a href="search.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
+                     <a href="#"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
                  </li>
                  <br>
                  <li>
-                     <a href="tables.html"> <i class="fa fa-fw fa-users"></i> Mentions </a>
+                     <a href="#"> <i class="fa fa-fw fa-users"></i> Mentions </a>
                  </li>
                  <br>
                  <li>
-                     <a href="forms.html"> <i class="fa fa-fw fa-map-o"></i> Trending Events</a>
+                     <a href="#"> <i class="fa fa-fw fa-map-o"></i> Trending Events</a>
                  </li>
              </ul>
          </div>
