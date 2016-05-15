@@ -76,7 +76,7 @@
     /*Also controls how far the sidebar items are from the right side of the sidebar*/
     text-indent: 5px;
     /*Change this sometime soon! Very important in filling un-used sidebar space*/
-    line-height: 40px;
+    line-height: 50px;
 }
 
 .sidebar-nav li a {

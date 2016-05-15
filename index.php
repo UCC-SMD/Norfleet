@@ -20,7 +20,7 @@
 
 	 	<link href="images/web_assets/favicon.ico" rel="icon" />
 
-		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/sb-admin.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 		<link href="css/ourstyle.css" rel="stylesheet" />
@@ -95,29 +95,14 @@
 
          <!-- Page Content -->
          <div id="page-content-wrapper">
-             <!-- <div class="container-fluid">
-                 <div class="row">
-                     <div class="col-lg-12">
-                         <h1>Simple Sidebar</h1>
-                         <p>This template has a responsive menu toggling system.
-                         The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens.
-                         When toggled using the button below, the menu will appear/disappear.
-                         On small screens, the page content will be pushed off canvas.</p>
-                         <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-                     </div>
-                 </div>
-             </div> -->
-                     <!-- Page Heading -->
                     <div class="row">
                          <div class="col-lg-12" align="right">
                             <div class="pageshift">
                                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
                             </div>
-                            <h1 class="page-header" align="left" height="200">
-                                 <font size="12" color="black"> Login </font><small><font color="grey"> Welcome back </small></font>
+                            <h1 class="page-header" font size="18" align="left">
+                                 <font size="18" color="black"> Login </font><small><font color="grey"> Welcome back </small></font>
                             </h1>
-                            
 <?php 
 
     // First we execute our common code to connection to the database and start the session 
