@@ -110,6 +110,9 @@
                      <!-- Page Heading -->
                      <div class="row">
                          <div class="col-lg-12">
+                            <div class="pageshift" align="right">
+                                <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
+                                </div>
                              <h1 class="page-header">
                                  <font size="12" color="black">Register </font><small><font color="grey"> Join the club
                                  </small></font>
@@ -162,11 +165,6 @@
 
     
 </form>
-<div class="pageshift">
-        <right>
-            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
-        </right>
-    </div>
 <div id="alertbox" class="alert alert-danger" style="visibility: hidden"role="alert">
     <p id="errormessagebox_thing"></p>
 </div>

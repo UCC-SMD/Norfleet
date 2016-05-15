@@ -111,39 +111,15 @@
                      <!-- Page Heading -->
                     <div class="row">
                          <div class="col-lg-12">
+                            <div class="pageshift" align="right">
+                                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
+                                </div>
                              <h1 class="page-header">
-                                 <font size="12" color="black">Login </font><small><font color="grey"> Welcome back
-                                 </small></font>
-                                 <!-- <div class="pageshift">
-                                   <right>
-                                     <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
-                                   </right>
-                                 </div> -->
+                                 <font size="12" color="black"> Login </font><small><font color="grey"> Welcome back </small></font> 
                              </h1>
 
-                             <!-- Maybe put an alert or something here. I really don't know
-														 Over-Descriptive and unnecessary -->
-                        <!-- <ol class="breadcrumb">
-                                 <li class="active">
-                                     <i class="fa fa-dashboard"></i> Dashboard
-                                 </li>
-                             </ol>
-                         </div>
-                     </div>  -->
-
-										 <!-- Banner Alert -->
-                     <!-- <div class="row">
-                         <div class="col-lg-12">
-                             <div class="alert alert-info alert-dismissable">
-                                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                 <i class="fa fa-info-circle"></i>  <strong>I am a banner alert</strong>
-                                 Click here <a href="index.php" class="alert-link"> to reload the page!</a>
-                             </div>
-                         </div>
-                     </div> -->
-                     <!-- /.row -->
-
-                     <?php 
+                            
+<?php 
 
     // First we execute our common code to connection to the database and start the session 
     require("common.php"); 
@@ -281,11 +257,6 @@
     </center>
 </div>
 <br>
-<div class="pageshift">
-    <center>
-        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
-    </center>
-</div>
 
 
 
