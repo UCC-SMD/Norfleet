@@ -160,9 +160,12 @@
 <!-- the javascript for displaying the errormessages -->
 <script type="text/javascript">
     window.errormessages = [];
+    window.errorhause = [];// ja ja ja ze errorhause ja
+    window.total_error_log = "";
     function displayerrormessages() {
         console.log(errormessages);
-        var total_error_log = "You forgot to add: ";
+        console.log(errorhause);
+        total_error_log = "You forgot to add:";
         for (var i = 0; i<errormessages.length; i++) {
             // /console.log((errormessages[i]));
             if (errormessages.length!=1) {
@@ -174,13 +177,48 @@
             }else{
                 total_error_log += errormessages[i];
             };
-            
-            
         };
+        
+        display_the_errors();
+        
 
+    }
+    function display_the_errors () {
         document.getElementById('errormessagebox_thing').innerHTML = total_error_log;
         document.getElementById('alertbox').style.visibility = 'visible';
+    }
+    function display_other_things() {
+        if (errormessages.length == 0){
+            console.log("first branch");
+            total_error_log = "Please change your ";
+            for (var i = 0; i < errorhause.length; i++) {
+                if (errorhause.length == 1){
+                    total_error_log += errorhause[i] + ", because it is taken."
+                }
+                else{
+                    if (i == 0) {
+                        total_error_log += errorhause[i];
+                    } else{
+                        total_error_log += "and" + errorhause[i] + ", because they are taken." 
+                    };
+                }
+            };
+        }else{
+            console.log("second branch");
+            total_error_log += "\nPlease change your ";
+            if (errorhause.length == 1){
+                    total_error_log += errorhause[i] + ", because it is taken."
+                }
+                else{
+                    if (i == 0) {
+                        total_error_log += errorhause[i];
+                    } else{
+                        total_error_log += "and" + errorhause[i] + ", because they are taken." 
 
+                    };
+            }   
+        }
+        display_the_errors();
     }
 </script>
 <!-- Dongers -->
@@ -276,6 +314,12 @@
         if($row) 
         { 
             // die("This username is already in use");
+            echo "<script>
+            if(errormessages.indexOf('username')!= -1){
+                errorhause.push('username');
+                console.log('the user neesd to change their email');
+            }
+            </script>";
             $cont = FALSE;
             // echo "<script>alert(\"fuck you\");</script>";
         } 
@@ -310,6 +354,15 @@
         { 
             // die("This email address is already registered"); 
             // echo "<script>alert(\"fuck you\");</script>";
+            echo "<script>
+            if(errormessages.indexOf('email')!= -1){
+                errorhause.push('email');
+                console.log('the user neesd to change their email');
+            }
+            
+            
+            </script>";
+
             $cont = FALSE;
         } 
          
@@ -344,7 +397,7 @@
                 // Execute the query to create the user 
                 $stmt = $db->prepare($query); 
                 $result = $stmt->execute($query_params); 
-                echo "<script>alert('fuck yeah murica');</script>";
+                echo "<script>alert('fuck yeah murica');</script>";//imma get rid of this later
             } 
             catch(PDOException $ex) 
             { 
@@ -354,7 +407,8 @@
                 // echo "<script>alert(\"fuck you\");</script>";
             } 
         }else{
-            echo "<script>alert('fuck');</script>";
+            
+            echo "<script>display_other_things();</script>";//get rid of this later.... 
         }
          
         // This redirects the user back to the login page after they register 
