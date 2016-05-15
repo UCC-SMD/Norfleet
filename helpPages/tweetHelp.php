@@ -3,7 +3,7 @@
 <link href="css/font-awesome.min.css" rel="stylesheet" />
 
 
-    <div id="sidebar-wrapper">
+<!--    <div id="sidebar-wrapper">
              <ul class="sidebar-nav">
                  <li class="sidebar-brand">
                      <a class="navbar-brand" href="index.php">  <font size="10" color="white"> Norfleet </font>  </a>
@@ -52,7 +52,7 @@
                             </div>
                          </div>
                      </ul>
-                 </div>
+                 </div>  -->
 
         <script>
             //  32 is JavaScript SpaceBar keycode
