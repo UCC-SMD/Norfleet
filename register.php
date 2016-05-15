@@ -112,7 +112,7 @@
                      <div class="row">
                          <div class="col-lg-12">
                              <h1 class="page-header">
-                                 <font size="12" color="black">Register </font><small><font color="black"> Join the club
+                                 <font size="12" color="black">Register </font><small><font color="grey"> Join the club
                                  </small></font>
                                  <!-- <right>
                                   <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>

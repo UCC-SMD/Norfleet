@@ -112,7 +112,7 @@
                     <div class="row">
                          <div class="col-lg-12">
                              <h1 class="page-header">
-                                 <font size="12" color="black">Login </font><small><font color="black">Welcome back
+                                 <font size="12" color="black">Login </font><small><font color="grey"> Welcome back
                                  </small></font>
                                  <!-- <div class="pageshift">
                                    <right>
