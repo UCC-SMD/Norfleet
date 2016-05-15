@@ -345,11 +345,11 @@
         ";
         //import hte passwordencrypt function 
         include 'passwordencrypt.php';
-        $password = encrypt_password($_POST['password']);
+        $passwordsystem = encrypt_password($_POST['password']);
         $query_params = array( 
             ':username' => $_POST['username'], 
-            ':password' => $password, 
-            ':salt' => $salt, 
+            ':password' => $passwordsystem[0], 
+            ':salt' => $passwordsystem[1], 
             ':email' => $_POST['email'] 
         ); 
          

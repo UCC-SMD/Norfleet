@@ -1,5 +1,5 @@
 <?php
 include 'passwordencrypt.php';
-$werefucked = encrypt_password("fuck_la");
-echo $werefucked[0]. "   " . $werefucked[1];
+$passwordsystem = encrypt_password("fuck_la");
+echo $passwordsystem[0]. "   " . $passwordsystem[1];
 ?>
