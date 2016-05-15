@@ -151,20 +151,16 @@
     <h2> Password <br /> </h2>
     <input type="password" name="password" value="" /> 
     <br /><br /> 
-    <div class="registerlink">
-        <center> 
-            <a href="register.php" input type="submit" value="Register" class="btn btn-default"> Register</a>
-        </center>
-    </div> 
+    <input type="submit" value="Register" /> 
     <br>
-    <div class="pageshift">
+
+    
+</form>
+<div class="pageshift">
         <right>
             <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
         </right>
     </div>
-    
-</form>
-
 <div id="alertbox" class="alert alert-danger" style="visibility: hidden"role="alert">
     <p id="errormessagebox_thing"></p>
 </div>
