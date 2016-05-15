@@ -275,10 +275,8 @@
         } 
         catch(PDOException $ex) 
         { 
-            // Note: On a production website, you should not output $ex->getMessage(). 
-            // It may provide an attacker with helpful information about your code.  
-            //die("Failed to run query: " . $ex->getMessage()); 
-            // echo "<script>alert(\"fuck you\");</script>";
+            //something went wrong page like error.html maybe would go here (send user here)
+
             $cont = FALSE;
         } 
          
