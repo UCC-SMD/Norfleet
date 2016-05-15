@@ -51,7 +51,7 @@
 #page-content-wrapper {
     width: 100%;
     position: absolute;
-    padding: 15px;
+    padding: 5px;
 }
 
 #wrapper.toggled #page-content-wrapper {
