@@ -116,6 +116,9 @@
 
 
 <form action="login.php" method="post"> 
+<h1>    WHAT ARE YOU DOING HERE?!?!? </h1>
+<h2>    IF YOU CAN SEE THIS ITS NOT WORKING </h2>
+
     Username:<br /> 
     <input type="text" name="username" value="<?php echo $submitted_username; ?>" /> 
     <br /><br /> 
