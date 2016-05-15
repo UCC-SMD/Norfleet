@@ -54,19 +54,13 @@
                  </li>
                  <li>
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
-                         <i class="fa fa-fw fa-user"></i>  Username <i class="fa fa-fw fa-caret-down"></i>
+                         <i class="fa fa-fw fa-user"></i> Username<i class="fa fa-fw fa-caret-down"></i>
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
-                         <li>
                              <a href="#"> <span class="fa fa-fw fa-user"></span> Profile </a>
-                         </li>
-                         <li>
-                             <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a>
-                         </li>
-                         <li>
+                             <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
                              <a href="#"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
-                         </li>
                      </ul>
                  </li>
                  <br>
