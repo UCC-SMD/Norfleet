@@ -96,23 +96,14 @@
              </div> -->
                      <!-- Page Heading -->
                      <div class="row">
-                         <div class="col-lg-12">
-                            <div class="pageshift" align="right">
-                                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
-                                </div>
-                             <h1 class="page-header">
-                                 <font size="12" color="black">Posts </font><small><font color="grey">
-                                    What people are talking about
-                                 </small></font>
-                                 <!-- <right>
-                                  <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-                                 </right> -->
-                                 <div class="pageshift">
-                                   <right>
-                                     <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
-                                   </right>
-                                 </div>
-                             </h1>
+                         <div class="col-lg-12" align="right">
+                            <div class="pageshift">
+                            <h1 class="page-header" font size="18" align="left">
+                                 <font size="18" color="black"> Login </font><small><font color="grey"> Welcome back </small></font>
+                            </h1>
+                                <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
+                            </div>
+                            <br>
 
                              <!-- Maybe put an alert or something here. I really don't know -->
 														 <!-- Over-Descriptive and unnecessary -->
