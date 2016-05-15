@@ -165,7 +165,7 @@
     function displayerrormessages() {
         console.log(errormessages);
         console.log(errorhause);
-        total_error_log = "You forgot to add:";
+        total_error_log = "You forgot to add: ";
         for (var i = 0; i<errormessages.length; i++) {
             // /console.log((errormessages[i]));
             if (errormessages.length!=1) {
@@ -205,7 +205,8 @@
             };
         }else{
             console.log("second branch");
-            total_error_log += "\nPlease change your ";
+
+            total_error_log += " Please change your ";
             if (errorhause.length == 1){
                     total_error_log += errorhause[i] + ", because it is taken."
                 }
@@ -219,6 +220,7 @@
             }   
         }
         display_the_errors();
+    }
     }
 </script>
 <!-- Dongers -->
@@ -398,6 +400,7 @@
                 $stmt = $db->prepare($query); 
                 $result = $stmt->execute($query_params); 
                 echo "<script>alert('fuck yeah murica');</script>";//imma get rid of this later
+                // header("Location: login.php"); 
             } 
             catch(PDOException $ex) 
             { 
@@ -408,11 +411,11 @@
             } 
         }else{
             
-            echo "<script>display_other_things();</script>";//get rid of this later.... 
+            asdfsadfdsaf
         }
          
         // This redirects the user back to the login page after they register 
-        // header("Location: login.php"); 
+        // 
          
         // Calling die or exit after performing a redirect using the header function 
         // is critical.  The rest of your PHP script will continue to execute and 
