@@ -169,6 +169,8 @@
     <p id="errormessagebox_thing"></p>
 </div>
 </center>
+
+<!-- the javascript for displaying the errormessages -->
 <script type="text/javascript">
     window.errormessages = [];
     function displayerrormessages() {
@@ -357,6 +359,7 @@
                 // Execute the query to create the user 
                 $stmt = $db->prepare($query); 
                 $result = $stmt->execute($query_params); 
+                echo "<script>alert('fuck yeah murica');</script>";
             } 
             catch(PDOException $ex) 
             { 
@@ -365,6 +368,8 @@
                 die("Failed to run query: " . $ex->getMessage()); 
                 // echo "<script>alert(\"fuck you\");</script>";
             } 
+        }else{
+            echo "<script>alert('fuck');</script>";
         }
          
         // This redirects the user back to the login page after they register 
