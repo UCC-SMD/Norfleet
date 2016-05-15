@@ -315,6 +315,8 @@
      <script>
 
     //  32 is JavaScript SpaceBar keycode
+    //  39 is Right arrow
+    //  37 is Left arrow
 
      $("#menu-toggle").click(function(e) {
          e.preventDefault();

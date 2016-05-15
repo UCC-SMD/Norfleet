@@ -151,8 +151,14 @@
     <h2> Password <br /> </h2>
     <input type="password" name="password" value="" /> 
     <br /><br /> 
-    <input type="submit" value="Register" /> 
+    <input type="submit" value="Register" class="btn btn-default"/> 
     <br>
+<!--     <div class="registerlink">
+        <center> 
+            <a input type="submit" value="Register" class="btn btn-default"> Register</a>
+        </center>
+    </div>  -->
+<br>
 
     
 </form>
