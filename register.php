@@ -163,25 +163,25 @@ Nice job guys
 </div>
 </center>
 
-<!-- the javascript for displaying the errormessages -->
+<!-- the javascript for displaying the errors_lack -->
 <script type="text/javascript">
-    window.errormessages = [];
-    window.errorhause = [];// ja ja ja ze errorhause ja
+    window.errors_lack = [];
+    window.repeat_errors = [];// ja ja ja ze repeat_errors ja
     window.total_error_log = "";
-    function displayerrormessages() {
-        console.log(errormessages);
-        console.log(errorhause);
+    function displayerrors_lack() {
+        console.log(errors_lack);
+        console.log(repeat_errors);
         total_error_log = "You forgot to add: ";
-        for (var i = 0; i<errormessages.length; i++) {
-            // /console.log((errormessages[i]));
-            if (errormessages.length!=1) {
-                if (i+1 == errormessages.length) {
-                    total_error_log += " and " + errormessages[i] + ".";
+        for (var i = 0; i<errors_lack.length; i++) {
+            // /console.log((errors_lack[i]));
+            if (errors_lack.length!=1) {
+                if (i+1 == errors_lack.length) {
+                    total_error_log += " and " + errors_lack[i] + ".";
                 } else{
-                    total_error_log += " " + errormessages[i] + ",";
+                    total_error_log += " " + errors_lack[i] + ",";
                 };
             }else{
-                total_error_log += errormessages[i] + ".";
+                total_error_log += errors_lack[i] + ".";
             };
         };
         
@@ -194,22 +194,22 @@ Nice job guys
         document.getElementById('alertbox').style.visibility = 'visible';
     }
     function display_other_things() {
-        if(errorhause.length!=0){
+        if(repeat_errors.length!=0){
 
-            console.log(errorhause + "we are doing it");
-            console.log(errormessages.indexOf('username'));
-            if (errormessages.length == 0){
+            console.log(repeat_errors + "we are doing it");
+            console.log(errors_lack.indexOf('username'));
+            if (errors_lack.length == 0){
                 console.log("first branch");
                 total_error_log = "Please change your ";
-                for (var i = 0; i < errorhause.length; i++) {
-                    if (errorhause.length == 1){
-                        total_error_log += errorhause[i] + ", because it is taken."
+                for (var i = 0; i < repeat_errors.length; i++) {
+                    if (repeat_errors.length == 1){
+                        total_error_log += repeat_errors[i] + ", because it is taken."
                     }
                     else{
                         if (i == 0) {
-                            total_error_log += errorhause[i];
+                            total_error_log += repeat_errors[i];
                         } else{
-                            total_error_log += "and" + errorhause[i] + ", because they are taken." 
+                            total_error_log += "and" + repeat_errors[i] + ", because they are taken." 
                         };
                     }
                 };
@@ -217,16 +217,16 @@ Nice job guys
                 console.log("second branch");
 
                 total_error_log += " Please change your ";
-                console.log("error hause length " + errorhause.length)
-                if (errorhause.length == 1){
+                console.log("error hause length " + repeat_errors.length)
+                if (repeat_errors.length == 1){
                         
-                        total_error_log += errorhause[0] + ", because it is taken."
+                        total_error_log += repeat_errors[0] + ", because it is taken."
                     }else{
-                        console.log(errorhause.length + "  =  " + 1)
+                        console.log(repeat_errors.length + "  =  " + 1)
                         if (i == 0) {
-                            total_error_log += errorhause[i];
+                            total_error_log += repeat_errors[i];
                         } else{
-                            total_error_log += "and" + errorhause[i] + ", because they are taken." 
+                            total_error_log += "and" + repeat_errors[i] + ", because they are taken." 
 
                         };
                 }   
@@ -255,8 +255,8 @@ Nice job guys
         { 
             //javascript code goes here! 
             echo "<script>
-            errormessages.push('username');
-            displayerrormessages();
+            errors_lack.push('username');
+            displayerrors_lack();
             // alert('test 0');
             </script>";
             // echo "errormessagebox_thing";
@@ -272,9 +272,9 @@ Nice job guys
         if(empty($_POST['password'])) 
         { 
             echo "<script>
-            errormessages.push('password');;
+            errors_lack.push('password');;
             // alert('test 1');
-            displayerrormessages();
+            displayerrors_lack();
             
             </script>";
             $cont = FALSE;
@@ -285,8 +285,8 @@ Nice job guys
         { 
             // echo "<script>alert(\"fuck you\");</script>";
             echo "<script>
-            errormessages.push('email');  
-            displayerrormessages();
+            errors_lack.push('email');  
+            displayerrors_lack();
             // alert('test 2');
             
             
@@ -330,10 +330,10 @@ Nice job guys
         { 
             // die("This username is already in use");
             echo "<script>
-            alert(errormessages.indexOf('username'));
-            if(errormessages.indexOf('username')== -1){
+            alert(errors_lack.indexOf('username'));
+            if(errors_lack.indexOf('username')== -1){
                 alert('username');
-                errorhause.push('username');
+                repeat_errors.push('username');
                 console.log('the user neesd to change their fuck');
             };
             </script>";
@@ -372,9 +372,9 @@ Nice job guys
             // die("This email address is already registered"); 
 
             echo "<script>
-            alert(errormessages.indexOf('email'));
-            if(errormessages.indexOf('email') == -1){
-                errorhause.push('email');
+            alert(errors_lack.indexOf('email'));
+            if(errors_lack.indexOf('email') == -1){
+                repeat_errors.push('email');
                 console.log('the user neesd to change their email');
             }else{
                 

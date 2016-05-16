@@ -179,16 +179,14 @@
     <p id="error"></p>
 </div>
 
-<script type="text/javascript">
+<!-- script for displaying what is wrong with the user when they try to enter stuff -->
+     <script type="text/javascript">
+
+     </script>
 
 
 
-	    function display_the_errors () {
-        document.getElementById('errormessagebox_thing').innerHTML = total_error_log;
-        document.getElementById('alertbox').style.visibility = 'visible';
-    	}
 
-</script> -->
 
 <?php 
 
@@ -351,10 +349,12 @@
 </div>
 <br>
 
-
-
-
+<div id="alertbox" class="alert alert-danger" style="visibility: shown"role="alert">
+    <!-- change to hidden -->
+    <p id="error_box">the errors go here</p>
+</div>
 </center>
+
 
 
                      <!-- /.row -->
@@ -388,6 +388,8 @@
      });
      </script>
 
+
  </body>
 
  </html>
+

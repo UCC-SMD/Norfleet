@@ -26,8 +26,7 @@
                 username = :username 
         "; 
          
-        // The parameter values 
-        $query_params = array( 
+        // The parameter values       $query_params = array( 
             ':username' => $_POST['username'] 
         ); 
          
