@@ -47,41 +47,76 @@
 
      <div id="wrapper">
 
-<!--         <style>
 
+<!--         <style> 
         div {
-        animation-duration: 1s;
-        animation-name: slidein;
-        animation-iteration-count: 1;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            -webkit-animation-name: example; /* Chrome, Safari, Opera */
+            -webkit-animation-duration: 0.2s; /* Chrome, Safari, Opera */
+            animation-name: example;
+            animation-duration: 0.2s;
+            animation-iteration-count: infinite;
         }
 
-        @keyframes slide {
-        from {
-        margin-right: 100%;
-        width: 300%;
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes example {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+        }
+
+        /* Standard syntax */
+        @keyframes example {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+        }
+        </style> -->
+
+
+<!--    <style>
+
+            div {
+            animation-duration: 1s;
+            animation-name: slidein;
+            animation-iteration-count: 1;
+            }
+
+            @keyframes slide {
+            from {
+            margin-right: 100%;
+            width: 300%;
 
             to {
             margin-left: 0%;
             width: 100%;
             }
-        }
-        </style> -->
+
+            }
+            </style> -->
 
          <!-- Sidebar -->
          <div id="sidebar-wrapper">
 
-<!--          <style>
+<!--    <style>
 
-        div {
-        animation-duration: 1s;
-        animation-name: slidein;
-        animation-iteration-count: 1;
-        }
+            div {
+            animation-duration: 1s;
+            animation-name: slidein;
+            animation-iteration-count: 1;
+            }
 
-        @keyframes slidein {
-        from {
-        margin-right: 100%;
-        width: 300%;
+            @keyframes slidein {
+            from {
+            margin-right: 100%;
+            width: 300%;
 
             to {
             margin-left: 0%;
