@@ -22,6 +22,7 @@
 
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/sb-admin.css" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 		<link href="css/ourstyle.css" rel="stylesheet" />
 
@@ -46,11 +47,52 @@
 
      <div id="wrapper">
 
+<!--         <style>
+
+        div {
+        animation-duration: 1s;
+        animation-name: slidein;
+        animation-iteration-count: 1;
+        }
+
+        @keyframes slide {
+        from {
+        margin-right: 100%;
+        width: 300%;
+
+            to {
+            margin-left: 0%;
+            width: 100%;
+            }
+        }
+        </style> -->
+
          <!-- Sidebar -->
          <div id="sidebar-wrapper">
+
+<!--          <style>
+
+        div {
+        animation-duration: 1s;
+        animation-name: slidein;
+        animation-iteration-count: 1;
+        }
+
+        @keyframes slidein {
+        from {
+        margin-right: 100%;
+        width: 300%;
+
+            to {
+            margin-left: 0%;
+            width: 100%;
+            }
+        }
+        </style> -->
+
              <ul class="sidebar-nav">
                  <li class="sidebar-brand">
-                     <a class="navbar-brand" href="index.php">  <font size="10" color="white"> Norfleet </font>  </a>
+                     <a class="navbar-brand" href="index.php">  <font size="10" color="white"> Norfleet </font> </a>
                  </li>
                  <li>
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
@@ -97,6 +139,22 @@
                             </h1>
                                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
                             </div>
+
+<!-- <div id="alertbox" class="alert alert-danger" style="visibility: hidden"role="alert">
+    <p id="error"></p>
+</div>
+
+<script type="text/javascript">
+
+
+
+	    function display_the_errors () {
+        document.getElementById('errormessagebox_thing').innerHTML = total_error_log;
+        document.getElementById('alertbox').style.visibility = 'visible';
+    	}
+
+</script> -->
+
 <?php 
 
     // First we execute our common code to connection to the database and start the session 
@@ -194,7 +252,9 @@
         else 
         { 
             // Tell the user they failed 
-            print("Login Failed."); 
+            //Display alert!
+            //display_the_errors();
+            print("<center><h1>Login Failed</h1></center>"); 
              
             // Show them their username again so all they have to do is enter a new 
             // password.  The use of htmlentities prevents XSS attacks.  You should 
@@ -207,8 +267,7 @@
      
 ?> 
 <center>
-<br>
-<br>
+
 
 
 <!-- <h1>Login</h1>  -->
@@ -219,7 +278,28 @@
 
 
 
-<form action="login.php" method="post"> 
+<form action="index.php" method="post"> 
+
+<!--     <style>
+
+    form {
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+    }
+
+     @keyframes slidein {
+    from {
+    margin-top: 100%;
+    width: 300%;
+
+        to {
+        margin-bottom: 0%;
+        width: 100%;
+        }
+    }
+    </style> -->
+
     <h2>Username<br /> </h2>
     <input type="text" name="username" value="<?php echo $submitted_username; ?>" /> 
     <br /><br /> 
