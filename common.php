@@ -4,8 +4,7 @@
     $username = "root"; 
     $password = "root"; 
     $host = "localhost"; 
-    $dbname = "norfleet"; 
-     
+    $dbname = "testdb"; 
     // A try/catch statement is a common method of error handling in object oriented code. 
     // First, PHP executes the code within the try block.  If at any time it encounters an 
     // error while executing that code, it stops immediately and jumps down to the 

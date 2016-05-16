@@ -181,7 +181,7 @@ Nice job guys
                     total_error_log += " " + errormessages[i] + ",";
                 };
             }else{
-                total_error_log += errormessages[i];
+                total_error_log += errormessages[i] + ".";
             };
         };
         
