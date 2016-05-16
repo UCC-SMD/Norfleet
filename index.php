@@ -281,8 +281,8 @@
             $_SESSION['user'] = $row; 
              
             // Redirect the user to the private members-only page. 
-            header("Location: edit.php"); 
-            die("Redirecting to: edit.php"); 
+            header("Location: dashboard.php"); 
+            die("Redirecting to: dashboard.php"); 
         } 
         else 
         { 

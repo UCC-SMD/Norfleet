@@ -57,15 +57,13 @@
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
-                         <li>
+                         
                              <a href="#"> <span class="fa fa-fw fa-user"></span> Profile </a>
-                         </li>
-                         <li>
+
                              <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a>
-                         </li>
-                         <li>
+
                              <a href="#"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
-                         </li>
+
                      </ul>
                  </li>
                  <br>
@@ -130,6 +128,8 @@
                      </div> -->
                      <!-- /.row -->
 
+
+
 <center>
 <form action="register.php" method="post"> 
    <h2> Username <br /> </h2>
@@ -149,9 +149,10 @@
         </center>
     </div>  -->
 <br>
-
-    
 </form>
+
+<a class="btn btn-default" href="index.php">Login</a>
+
 <div id="alertbox" class="alert alert-danger" style="visibility: hidden"role="alert">
     <p id="errormessagebox_thing"></p>
 </div>
@@ -411,7 +412,8 @@
                 // Execute the query to create the user 
                 $stmt = $db->prepare($query); 
                 $result = $stmt->execute($query_params); 
-                echo "<script>alert('fuck yeah murica');</script>";//imma get rid of this later
+                echo "<script>alert('Registration Successful');</script>";//imma get rid of this later
+                                                                          //Dont' worry Camran, I got your back :3
                 // header("Location: login.php"); 
             } 
             catch(PDOException $ex) 
