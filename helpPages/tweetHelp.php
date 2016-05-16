@@ -2,7 +2,11 @@
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <link href="css/font-awesome.min.css" rel="stylesheet" />
 
-
+<h1> Help Page: Tweets</h1>
+<b> What are they?</b>
+<p>Tweets are the name for messages sent across our social media platform.  They are sent to share your thoughts and expierences with teh world, eliciting reactions.</p>
+<b> How they work </b>
+<p>Once a tweet is sent, it is available for the whole world to see.  Of course, should you want to revoke a tweet, you can always delete it.</p>
 <!--    <div id="sidebar-wrapper">
              <ul class="sidebar-nav">
                  <li class="sidebar-brand">
