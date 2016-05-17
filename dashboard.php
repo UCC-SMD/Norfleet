@@ -6,10 +6,10 @@
  / /|  / /_/ / /  / __/ /  __/  __/ /_
 /_/ |_/\____/_/  /_/ /_/\___/\___/\__/
 
-					NICE WORK LADS
+			NICE WORK LADS
  -->
 
-
+<?php session_start(); ?>
  <!DOCTYPE html>
  <html lang="en">
 
@@ -42,24 +42,26 @@
 
 
 
- <body>
+ <body> 
+    <!-- Last Ditch Effort -->
+    <!-- <script> console.log("Wag <?php if(!(empty($_SESSION['user']))){echo "derp";}echo $_SESSION['user']['username']; ?>");</script> -->
 
      <div id="wrapper">
 
          <!-- Sidebar -->
          <div id="sidebar-wrapper">
              <ul class="sidebar-nav">
+                <br> <!-- Consider doing through CSS -->
                 <li class="sidebar-brand">
                      <a class="navbar-brand" href="dashboard.php">  <font size="10" color="white"> Norfleet </font> </a>
                  </li>
                  <li>
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
-                         <i class="fa fa-fw fa-user"></i> Profile <i class="fa fa-fw fa-caret-down"></i>
+                         <i class="fa fa-fw fa-user"></i> User Actions <?php echo $_SESSION['user']['username']; ?> <i class="fa fa-fw fa-caret-down"></i>
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
                              <a href="profile.php"> <span class="fa fa-fw fa-user"></span> Profile </a>
-                             <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
                              <a href="logout.php"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
                      </ul>
                  </li>
@@ -81,7 +83,7 @@
                  </li>
                  <br>
                  <li>
-                     <a href="trendingEvents.php"> <i class="fa fa-fw fa-map-o"></i> Trending Events</a>
+                     <a href="events.php"> <i class="fa fa-fw fa-map-o"></i> Events</a>
                  </li>
              </ul>
          </div>
@@ -243,7 +245,7 @@
                                          </a>
                                      </div>
                                      <div class="text-right">
-                                         <a href="posts.php">View All Activity <i class="fa fa-arrow-circle-right"></i></a>
+                                         <!-- <a href="posts.php">View All Activity <i class="fa fa-arrow-circle-right"></i></a> -->
                                      </div>
                                  </div>
                              </div>
@@ -281,18 +283,29 @@
 
  </html>
 
- <?php 
+<?php
 
-    // Obligatory
-    require("common.php");
+require("common.php"); 
+        
+        // if(empty($_SESSION['user'])) { 
+  
+        //     // If they are not, we redirect them to the login page. 
+        //     $location = "http://" . $_SERVER['HTTP_HOST'] . "/norfleet/dashboard.php";
+        //     echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL='.$location.'">';
+        //     //exit;
+         
+        //     // Remember that this die statement is absolutely critical.  Without it, 
+        //     // people can view your members-only content without logging in. 
+        //     die("Redirecting to login.php"); 
+        // } 
+        
+        // // To access $_SESSION['user'] values put in an array, show user his username
+        $arr = array_values($_SESSION['user']);
+        // echo "Welcome " . $arr[1];
+        // Matt's version
+        // echo "$_SESSION['user']['username'];"
 
-    $query = " 
-    SELECT 
-        id, 
-        username
-    FROM users 
-    WHERE 
-        username = $submitted_username "; 
 
+?> 
 
-?>
+<?php echo $_SESSION['user']['username']; ?>

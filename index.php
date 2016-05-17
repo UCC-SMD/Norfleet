@@ -44,6 +44,14 @@
 
 
  <body>
+<script type="text/javascript">
+
+function error() {
+    document.getElementById('errorbox').innerHTML = "Please change your login credentials, or register.";
+    document.getElementById('alertbox').style.visibility = 'visible';
+};
+
+</script>
 
      <div id="wrapper">
 
@@ -57,7 +65,7 @@
             -webkit-animation-name: example; /* Chrome, Safari, Opera */
             -webkit-animation-duration: 0.2s; /* Chrome, Safari, Opera */
             animation-name: example;
-            animation-duration: 60s;
+            animation-duration: 0.1s;
             animation-iteration-count: infinite;
         }
 
@@ -164,22 +172,101 @@
                                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
                             </div>
 
-<<<<<<< HEAD
-=======
-<!-- <div id="alertbox" class="alert alert-danger" style="visibility: hidden"role="alert">
-    <p id="error"></p>
+
+<center>
+
+
+
+<!-- <h1>Login</h1>  -->
+
+<link href="images/web_assets/favicon.ico" rel="icon" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/font-awesome.min.css" rel="stylesheet" />
+
+
+
+<form action="index.php" method="post"> 
+
+<!--     <style>
+
+    form {
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+    }
+
+     @keyframes slidein {
+    from {
+    margin-top: 100%;
+    width: 300%;
+
+        to {
+        margin-bottom: 0%;
+        width: 100%;
+        }
+    }
+    </style> -->
+
+    <h2>Username<br /> </h2>
+    <input type="text" name="username" value="<?php echo $submitted_username; ?>" /> 
+    <br /><br /> 
+    <h2>Password<br /> </h2>
+    <input type="password" name="password" value="" /> 
+    <br /><br /> 
+    <input type="submit" class="btn btn-default" value="Login" /> 
+</form> 
+<br>
+<div class="registerlink">
+    <center>
+        <a href="register.php" class="btn btn-default"> Register</a>
+    </center>
+</div>
+<br>
+<!-- this is to do the alerts -->
+<div id="alertbox" class="alert alert-danger" style="visibility: hidden"role="alert">
+    <p id="errorbox"></p>
+    <p>put this here in a world where we have password retrieval.</p>
 </div>
 
-<<<<<<< HEAD
-script for displaying what is wrong with the user when they try to enter stuff -->
-     <script type="text/javascript">
-<!-- script for displaying what is wrong with the user when they try to enter stuff -->
-<script type="text/javascript">
+</center>
 
-</script>
 
->>>>>>> origin/master
 
+                     <!-- /.row -->
+
+                 </div>
+                 <!-- /.container-fluid -->
+
+             </div>
+         </div>
+         <!-- /#page-content-wrapper -->
+
+     </div>
+     <!-- /#wrapper -->
+
+     <!-- jQuery -->
+     <script src="javascript/jquery.js"></script>
+
+     <!-- Bootstrap Core JavaScript -->
+     <script src="javascript/bootstrap.min.js"></script>
+
+     <!-- Menu Toggle Script -->
+     <script>
+
+    //  32 is JavaScript SpaceBar keycode
+    //  39 is Right arrow
+    //  37 is Left arrow
+
+     $("#menu-toggle").click(function(e) {
+         e.preventDefault();
+         $("#wrapper").toggleClass("toggled");
+     });
+     </script>
+
+
+ </body>
+
+ </html>
 
 
 
@@ -187,23 +274,7 @@ script for displaying what is wrong with the user when they try to enter stuff -
 
     // First we execute our common code to connection to the database and start the session 
     require("common.php"); 
-    require("common.php"); 
-        
-        if(empty($_SESSION['user'])) { 
-  
-            // If they are not, we redirect them to the login page. 
-            $location = "http://" . $_SERVER['HTTP_HOST'] . "/login.php";
-            echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL='.$location.'">';
-            //exit;
-         
-            // Remember that this die statement is absolutely critical.  Without it, 
-            // people can view your members-only content without logging in. 
-            die("Redirecting to login.php"); 
-        } 
-        
-        // To access $_SESSION['user'] values put in an array, show user his username
-        $arr = array_values($_SESSION['user']);
-        echo "Welcome " . $arr[2];
+    
     // This variable will be used to re-display the user's username to them in the 
     // login form if they fail to enter the correct password.  It is initialized here 
     // to an empty value, which will be shown if the user has not submitted the form. 
@@ -268,7 +339,7 @@ script for displaying what is wrong with the user when they try to enter stuff -
             { 
                 // If they do, then we flip this to true 
                 $login_ok = true; 
-            } 
+            }
         } 
          
         // If the user logged in successfully, then we send them to the private members-only page 
@@ -298,8 +369,8 @@ script for displaying what is wrong with the user when they try to enter stuff -
             // Tell the user they failed 
             //Display alert!
             //display_the_errors();
-            print("<center><h1>Login Failed</h1></center>"); 
-             
+            // print("<center><h1>Login Failed</h1></center>"); 
+            echo "<script>error();</script>";
             // Show them their username again so all they have to do is enter a new 
             // password.  The use of htmlentities prevents XSS attacks.  You should 
             // always use htmlentities on user submitted values before displaying them 
@@ -310,98 +381,3 @@ script for displaying what is wrong with the user when they try to enter stuff -
     } 
      
 ?> 
-<center>
-
-
-
-<!-- <h1>Login</h1>  -->
-
-<link href="images/web_assets/favicon.ico" rel="icon" />
-<link href="css/bootstrap.min.css" rel="stylesheet" />
-<link href="css/font-awesome.min.css" rel="stylesheet" />
-
-
-
-<form action="index.php" method="post"> 
-
-<!--     <style>
-
-    form {
-    animation-duration: 1s;
-    animation-name: slidein;
-    animation-iteration-count: 1;
-    }
-
-     @keyframes slidein {
-    from {
-    margin-top: 100%;
-    width: 300%;
-
-        to {
-        margin-bottom: 0%;
-        width: 100%;
-        }
-    }
-    </style> -->
-
-    <h2>Username<br /> </h2>
-    <input type="text" name="username" value="<?php echo $submitted_username; ?>" /> 
-    <br /><br /> 
-    <h2>Password<br /> </h2>
-    <input type="password" name="password" value="" /> 
-    <br /><br /> 
-    <input type="submit" class="btn btn-default" value="Login" /> 
-</form> 
-<br>
-<div class="registerlink">
-    <center>
-        <a href="register.php" class="btn btn-default"> Register</a>
-    </center>
-</div>
-<br>
-<!-- I really dont care that  -->
-<div id="alertbox" class="alert alert-danger" style="visibility: "role="alert">
-    <p id="errorbox">LUL</p>
-</div>
-
-
-</center>
-
-
-
-                     <!-- /.row -->
-
-                 </div>
-                 <!-- /.container-fluid -->
-
-             </div>
-         </div>
-         <!-- /#page-content-wrapper -->
-
-     </div>
-     <!-- /#wrapper -->
-
-     <!-- jQuery -->
-     <script src="javascript/jquery.js"></script>
-
-     <!-- Bootstrap Core JavaScript -->
-     <script src="javascript/bootstrap.min.js"></script>
-
-     <!-- Menu Toggle Script -->
-     <script>
-
-    //  32 is JavaScript SpaceBar keycode
-    //  39 is Right arrow
-    //  37 is Left arrow
-
-     $("#menu-toggle").click(function(e) {
-         e.preventDefault();
-         $("#wrapper").toggleClass("toggled");
-     });
-     </script>
-
-
- </body>
-
- </html>
-
