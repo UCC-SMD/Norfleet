@@ -6,10 +6,10 @@
  / /|  / /_/ / /  / __/ /  __/  __/ /_
 /_/ |_/\____/_/  /_/ /_/\___/\___/\__/
 
-					NICE WORK LADS
+			NICE WORK LADS
  -->
 
-
+<?php session_start(); ?>
  <!DOCTYPE html>
  <html lang="en">
 
@@ -42,19 +42,22 @@
 
 
 
- <body>
+ <body> 
+    <!-- Last Ditch Effort -->
+    <!-- <script> console.log("Wag <?php if(!(empty($_SESSION['user']))){echo "derp";}echo $_SESSION['user']['username']; ?>");</script> -->
 
      <div id="wrapper">
 
          <!-- Sidebar -->
          <div id="sidebar-wrapper">
              <ul class="sidebar-nav">
+                <br> <!-- Consider doing through CSS -->
                 <li class="sidebar-brand">
                      <a class="navbar-brand" href="dashboard.php">  <font size="10" color="white"> Norfleet </font> </a>
                  </li>
                  <li>
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
-                         <i class="fa fa-fw fa-user"></i> Username <i class="fa fa-fw fa-caret-down"></i>
+                         <i class="fa fa-fw fa-user"></i> User Actions <?php echo $_SESSION['user']['username']; ?> <i class="fa fa-fw fa-caret-down"></i>
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
@@ -280,9 +283,9 @@
 
  </html>
 
-<!-- <?php
+<?php
 
-// require("common.php"); 
+require("common.php"); 
         
         // if(empty($_SESSION['user'])) { 
   
@@ -297,9 +300,12 @@
         // } 
         
         // // To access $_SESSION['user'] values put in an array, show user his username
-        // $arr = array_values($_SESSION['user']);
+        $arr = array_values($_SESSION['user']);
         // echo "Welcome " . $arr[1];
+        // Matt's version
+        // echo "$_SESSION['user']['username'];"
 
 
-?> -->
+?> 
 
+<?php echo $_SESSION['user']['username']; ?>
