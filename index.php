@@ -180,9 +180,9 @@
 </div>
 
 <!-- script for displaying what is wrong with the user when they try to enter stuff -->
-     <script type="text/javascript">
+<script type="text/javascript">
 
-     </script>
+</script>
 
 
 
