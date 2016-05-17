@@ -1,3 +1,8 @@
+<!--
+Search.php, coded by Camran Hansen and John Mace for the Norfleet website
+-->
+
+
 <link href="images/web_assets/favicon.ico" rel="icon" />
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <link href="css/font-awesome.min.css" rel="stylesheet" />
