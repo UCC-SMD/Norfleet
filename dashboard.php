@@ -325,5 +325,3 @@ require("common.php");
 
 
 ?> 
-
-<?php echo $_SESSION['user']['username']; ?>
