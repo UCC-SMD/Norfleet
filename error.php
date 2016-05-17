@@ -17,13 +17,13 @@ table {
 
 </style>
 
-<link rel="icon" href="tablewebsite/favicon.ico">
+<link rel="icon" href="sound/favicon.ico">
 
 <center>
 
 <title>V I B E S</title>
 
-	<body background="tablewebsite/shartcode_background.jpg">
+	<body background="sound/shartcode_background.jpg">
     
 	<i> <h1>Uh oh! Something went wrong :( Listen to this song by Macintosh Plus to relax and decompress ( ͡° ͜ʖ ͡°)</h1> </i>
 
@@ -31,7 +31,7 @@ table {
     
 	</body>
 
-<link rel="icon" href="tablewebsite/favicon.ico">
+<link rel="icon" href="sound/favicon.ico">
 
 <script type="text/javascript">
 	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
@@ -45,7 +45,7 @@ table {
     });
     </script>
 </script>
-<audio src="tablewebsite/Macintosh Plus.mp3" controls>
+<audio src="sound/Macintosh Plus.mp3" controls>
 </audio>	
 
 </center>
