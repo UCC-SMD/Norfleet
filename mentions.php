@@ -17,7 +17,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-     <title>Norfleet</title>
+     <title>Norfleet Mentions</title>
 
      <!-- Bootstrap Core CSS -->
      <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -70,6 +70,7 @@
                  </li>
              </ul>
          </div>
+         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
     </div>
 
      </body>

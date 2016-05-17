@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+ <html lang="en">
 
-<head>
+ <head>
 
 	 <!-- This is so many levels of bad all at one time.
 	 Why does this even work? -->
@@ -17,7 +17,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-     <title>Norfleet</title>
+     <title>Norfleet Profile</title>
 
      <!-- Bootstrap Core CSS -->
      <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -25,9 +25,9 @@
      <!-- Custom CSS -->
      <link href="css/simple-sidebar.css" rel="stylesheet">
 
-</head>
+ </head>
+     
 <body>
-     <h1> Profile </h1>
 
      <div id="wrapper">
 
@@ -70,5 +70,20 @@
                  </li>
              </ul>
          </div>
+         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
     </div>
-</body>    
+
+     </body>
+     
+     <script src="javascript/bootstrap.min.js"></script>
+
+     <!-- Menu Toggle Script -->
+     <script>
+
+    //  32 is JavaScript SpaceBar keycode
+
+     $("#menu-toggle").click(function(e) {
+         e.preventDefault();
+         $("#wrapper").toggleClass("toggled");
+     });
+     </script>
