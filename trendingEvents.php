@@ -3,8 +3,6 @@
 
  <head>
 
-	 <!-- This is so many levels of bad all at one time.
-	 Why does this even work? -->
 
 	 	<link href="images/web_assets/favicon.ico" rel="icon" />
 

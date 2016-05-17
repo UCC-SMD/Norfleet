@@ -85,6 +85,10 @@
                  <li>
                      <a href="events.php"> <i class="fa fa-fw fa-map-o"></i> Events</a>
                  </li>
+                 <br>
+                 <li>
+                     <a href="help.php"> <i class="fa fa-fw fa-comments"></i> Help! </a>
+                 </li>
              </ul>
          </div>
          <!-- /#sidebar-wrapper -->

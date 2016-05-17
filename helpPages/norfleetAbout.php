@@ -176,11 +176,10 @@
                          </div>
                      </div>
     
-    <div><center><h1> Help Page: Hashtags</h1>
-<b> What are they?</b>
-<p> Hashtags are words or phrases preceded by a pound sign (#) that are used to identify messages on a specific topic.</p>
-<b> How they work </b>
-<p> If a tweet is sent with a hashtag, it will automatically show up in the hashtag section, where a user can search for specific hashtags.</p></center></div>
+    <div><center><h1> About Norfleet</h1>
+<b> What are we?</b>
+<p> Norfleet is a social media platform for people to share their thoughts, actions, and experiences with people all over the world!</p>
+</center></div>
     
     <script src="javascript/jquery.js"></script>
      

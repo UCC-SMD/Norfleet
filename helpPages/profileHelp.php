@@ -176,11 +176,11 @@
                          </div>
                      </div>
     
-    <div><center><h1> Help Page: Hashtags</h1>
+    <div><center><h1> Help Page: Profiles</h1>
 <b> What are they?</b>
-<p> Hashtags are words or phrases preceded by a pound sign (#) that are used to identify messages on a specific topic.</p>
-<b> How they work </b>
-<p> If a tweet is sent with a hashtag, it will automatically show up in the hashtag section, where a user can search for specific hashtags.</p></center></div>
+<p> Your profile is the account in which you can log-in, in order to send tweets, view hashtags, and communicate accross this social-media platform with others.</p>
+<b> How to use your profile </b>
+<p> Your profile is your public persona, any information you submit to it (i.e. your profile-image, your username, et cetera) will be public.</p></center></div>
     
     <script src="javascript/jquery.js"></script>
      
@@ -214,4 +214,3 @@
 
 
 ?>
-

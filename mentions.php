@@ -68,6 +68,10 @@
                  <li>
                      <a href="trendingEvents.php"> <i class="fa fa-fw fa-map-o"></i> Trending Events</a>
                  </li>
+                 <br>
+                 <li>
+                     <a href="help.php"> <i class="fa fa-fw fa-comments"></i> Help! </a>
+                 </li>
              </ul>
          </div>
          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>

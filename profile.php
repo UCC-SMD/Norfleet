@@ -3,9 +3,6 @@
 
  <head>
 
-	 <!-- This is so many levels of bad all at one time.
-	 Why does this even work? -->
-
 	 	<link href="images/web_assets/favicon.ico" rel="icon" />
 
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -67,6 +64,10 @@
                  <br>
                  <li>
                      <a href="trendingEvents.php"> <i class="fa fa-fw fa-map-o"></i> Trending Events</a>
+                 </li>
+                 <br>
+                 <li>
+                     <a href="help.php"> <i class="fa fa-fw fa-comments"></i> Help! </a>
                  </li>
              </ul>
          </div>
