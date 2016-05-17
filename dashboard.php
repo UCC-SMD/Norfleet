@@ -54,7 +54,7 @@
                  </li>
                  <li>
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
-                         <i class="fa fa-fw fa-user"></i> Username <?php ?> <i class="fa fa-fw fa-caret-down"></i>
+                         <i class="fa fa-fw fa-user"></i> <?php echo $query; ?> <i class="fa fa-fw fa-caret-down"></i>
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
@@ -280,3 +280,19 @@
  </body>
 
  </html>
+
+ <?php 
+
+    // Obligatory
+    require("common.php");
+
+    $query = " 
+    SELECT 
+        id, 
+        username
+    FROM users 
+    WHERE 
+        username = $submitted_username "; 
+
+
+?>
