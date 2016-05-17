@@ -164,20 +164,6 @@
                                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
                             </div>
 
-<!-- <div id="alertbox" class="alert alert-danger" style="visibility: hidden"role="alert">
-    <p id="error"></p>
-</div>
-
-<<<<<<< HEAD
-script for displaying what is wrong with the user when they try to enter stuff -->
-     <script type="text/javascript">
-=======
-<!-- script for displaying what is wrong with the user when they try to enter stuff -->
-<script type="text/javascript">
->>>>>>> origin/master
-
-</script>
-
 
 
 
@@ -186,7 +172,23 @@ script for displaying what is wrong with the user when they try to enter stuff -
 
     // First we execute our common code to connection to the database and start the session 
     require("common.php"); 
-     
+    require("common.php"); 
+        
+        if(empty($_SESSION['user'])) { 
+  
+            // If they are not, we redirect them to the login page. 
+            $location = "http://" . $_SERVER['HTTP_HOST'] . "/login.php";
+            echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL='.$location.'">';
+            //exit;
+         
+            // Remember that this die statement is absolutely critical.  Without it, 
+            // people can view your members-only content without logging in. 
+            die("Redirecting to login.php"); 
+        } 
+        
+        // To access $_SESSION['user'] values put in an array, show user his username
+        $arr = array_values($_SESSION['user']);
+        echo "Welcome " . $arr[2];
     // This variable will be used to re-display the user's username to them in the 
     // login form if they fail to enter the correct password.  It is initialized here 
     // to an empty value, which will be shown if the user has not submitted the form. 
@@ -342,11 +344,11 @@ script for displaying what is wrong with the user when they try to enter stuff -
     </center>
 </div>
 <br>
+<!-- I really dont care that  -->
+<div id="alertbox" class="alert alert-danger" style="visibility: "role="alert">
+    <p id="errorbox">LUL</p>
+</div>
 
-<!-- <div id="alertbox" class="alert alert-danger" style="visibility: shown"role="alert">
-    CHANGE THIS TO HIDDEN. IT SHOULDN'T BE SEEN RUGHT NOW SO IT'S COMMENTED OUT.
-    <p id="error_box">the errors go here</p>
-</div> -->
 
 </center>
 

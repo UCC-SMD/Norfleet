@@ -5,18 +5,14 @@
   /  |/ / __ \/ ___/ /_/ / _ \/ _ \/ __/
  / /|  / /_/ / /  / __/ /  __/  __/ /_
 /_/ |_/\____/_/  /_/ /_/\___/\___/\__/
-<<<<<<< Updated upstream
 	    
-        NICE WORK LADS
-=======
-	    NICE WORK LADS
+NICE WORK LADS
 ( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° ) 
 Nice job guys
 ( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° ) 
-for motivation: http://i0.kym-cdn.com/photos/images/original/000/928/594/f78.gif 
+for motivation: http://i0.kym-cdn.com/photos/images/original/000/928/594/f78.gif
 
 
->>>>>>> Stashed changes
  -->
 
 
@@ -163,10 +159,12 @@ for motivation: http://i0.kym-cdn.com/photos/images/original/000/928/594/f78.gif
 </form>
 
 <a class="btn btn-default" href="index.php">Login</a>
-
+<br>
+<br>
 <div id="alertbox" class="alert alert-danger" style="visibility: hidden"role="alert">
     <p id="errormessagebox_thing"></p>
 </div>
+<br>
 </center>
 
 <!-- the javascript for displaying the errors_lack -->
@@ -445,7 +443,6 @@ for motivation: http://i0.kym-cdn.com/photos/images/original/000/928/594/f78.gif
         // is critical.  The rest of your PHP script will continue to execute and 
         // will be sent to the user if you do not die or exit. 
         // die("Redirecting to login.php"); 
-        // echo "<script>alert(\"fuck you\");</script>";
     }//if !empty post
      
 ?> 
