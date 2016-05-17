@@ -191,7 +191,7 @@
                                          <div class="col-xs-9 text-right">
                                          <!-- Pull this from something -->
                                              <div class="huge"></div>
-                                             <div><h3>Meantions</h3></div>
+                                             <div><h3>Mentions</h3></div>
                                          </div>
                                      </div>
                                  </div>
