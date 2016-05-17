@@ -86,9 +86,10 @@
             // or not the user is logged in.  We can also use it to retrieve 
             // the user's details. 
             $_SESSION['user'] = $row; 
-             
+            
+            echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL=index.php">'; 
             // Redirect the user to the private members-only page. 
-            header("Location: edit.php"); 
+            // header("Location: edit.php"); 
             die("Redirecting to: edit.php"); 
         } 
         else 

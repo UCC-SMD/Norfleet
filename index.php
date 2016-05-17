@@ -277,10 +277,10 @@
             // or not the user is logged in.  We can also use it to retrieve 
             // the user's details. 
             $_SESSION['user'] = $row; 
-             
-            // Redirect the user to the private members-only page. 
-            header("Location: dashboard.php"); 
-            die("Redirecting to: dashboard.php"); 
+            
+
+
+            echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL=dashboard.php">';  
         } 
         else 
         { 
@@ -349,10 +349,11 @@
 </div>
 <br>
 
-<div id="alertbox" class="alert alert-danger" style="visibility: shown"role="alert">
-    <!-- change to hidden -->
+<!-- <div id="alertbox" class="alert alert-danger" style="visibility: shown"role="alert">
+    CHANGE THIS TO HIDDEN. IT SHOULDN'T BE SEEN RUGHT NOW SO IT'S COMMENTED OUT.
     <p id="error_box">the errors go here</p>
-</div>
+</div> -->
+
 </center>
 
 
