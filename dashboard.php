@@ -54,7 +54,7 @@
                  </li>
                  <li>
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
-                         <i class="fa fa-fw fa-user"></i> <?php echo $arr[1]; ?> <i class="fa fa-fw fa-caret-down"></i>
+                         <i class="fa fa-fw fa-user"></i> Username <i class="fa fa-fw fa-caret-down"></i>
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
@@ -80,7 +80,7 @@
                  </li>
                  <br>
                  <li>
-                     <a href="trendingEvents.php"> <i class="fa fa-fw fa-map-o"></i> Trending Events</a>
+                     <a href="events.php"> <i class="fa fa-fw fa-map-o"></i> Events</a>
                  </li>
              </ul>
          </div>
@@ -242,7 +242,7 @@
                                          </a>
                                      </div>
                                      <div class="text-right">
-                                         <a href="posts.php">View All Activity <i class="fa fa-arrow-circle-right"></i></a>
+                                         <!-- <a href="posts.php">View All Activity <i class="fa fa-arrow-circle-right"></i></a> -->
                                      </div>
                                  </div>
                              </div>
@@ -280,7 +280,7 @@
 
  </html>
 
-<?php
+<!-- <?php
 
 // require("common.php"); 
         
@@ -297,9 +297,9 @@
         // } 
         
         // // To access $_SESSION['user'] values put in an array, show user his username
-        $arr = array_values($_SESSION['user']);
+        // $arr = array_values($_SESSION['user']);
         // echo "Welcome " . $arr[1];
 
 
-?>
+?> -->
 

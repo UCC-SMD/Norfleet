@@ -3,6 +3,9 @@
 
  <head>
 
+	 <!-- This is so many levels of bad all at one time.
+	 Why does this even work? -->
+
 	 	<link href="images/web_assets/favicon.ico" rel="icon" />
 
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -14,7 +17,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-     <title>Norfleet</title>
+     <title>Norfleet Trending Events</title>
 
      <!-- Bootstrap Core CSS -->
      <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -22,11 +25,8 @@
      <!-- Custom CSS -->
      <link href="css/simple-sidebar.css" rel="stylesheet">
 
- </head>
-
-
-
-
+</head>
+     
  <body>
 
      <div id="wrapper">
@@ -34,27 +34,26 @@
          <!-- Sidebar -->
          <div id="sidebar-wrapper">
              <ul class="sidebar-nav">
-                 <li class="sidebar-brand">
+                <li class="sidebar-brand">
                      <a class="navbar-brand" href="dashboard.php">  <font size="10" color="white"> Norfleet </font> </a>
                  </li>
                  <li>
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
-                         <i class="fa fa-fw fa-user"></i> Username<i class="fa fa-fw fa-caret-down"></i>
+                         <i class="fa fa-fw fa-user"></i> Username <i class="fa fa-fw fa-caret-down"></i>
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
-                             <a href="#"> <span class="fa fa-fw fa-user"></span> Profile </a>
-                             <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
+                             <a href="profile.php"> <span class="fa fa-fw fa-user"></span> Profile </a>
                              <a href="logout.php"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
                      </ul>
                  </li>
                  <br>
                  <li class="active">
-                     <a href="dashboard.php"> <i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                     <a href="#"> <i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                  </li>
                  <br>
                  <li>
-                     <a href="#"> <i class="fa fa-fw fa-comments"></i> Posts </a>
+                     <a href="posts.php"> <i class="fa fa-fw fa-comments"></i> Posts </a>
                  </li>
                  <br>
                  <li>
@@ -62,11 +61,11 @@
                  </li>
                  <br>
                  <li>
-                     <a href="#"> <i class="fa fa-fw fa-users"></i> Mentions </a>
+                     <a href="mentions.php"> <i class="fa fa-fw fa-users"></i> Mentions </a>
                  </li>
                  <br>
                  <li>
-                     <a href="#"> <i class="fa fa-fw fa-map-o"></i> Trending Events</a>
+                     <a href="events.php"> <i class="fa fa-fw fa-map-o"></i> Events</a>
                  </li>
              </ul>
          </div>
@@ -88,18 +87,17 @@
                  </div>
              </div> -->
                      <!-- Page Heading -->
-                     <div class="row">
+                    <div class="row">
                          <div class="col-lg-12" align="right">
                             <div class="pageshift">
                             <h1 class="page-header" font size="18" align="left">
-                                 <font size="18" color="black"> Posts </font><small><font color="grey"> What everyone's talking about </small></font>
+                                 <font size="18" color="black"> Events </font><small><font color="grey"> What's cooking? </small></font>
                             </h1>
                                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
                             </div>
-                            <br>
 
                              <!-- Maybe put an alert or something here. I really don't know -->
-														 <!-- Over-Descriptive and unnecessary -->
+                                                         <!-- Over-Descriptive and unnecessary -->
                         <!-- <ol class="breadcrumb">
                                  <li class="active">
                                      <i class="fa fa-dashboard"></i> Dashboard
@@ -108,7 +106,7 @@
                          </div>
                      </div>
 
-										 <!-- Banner Alert -->
+                                         <!-- Banner Alert -->
                      <!-- <div class="row">
                          <div class="col-lg-12">
                              <div class="alert alert-info alert-dismissable">
@@ -119,55 +117,24 @@
                          </div>
                      </div> -->
                      <!-- /.row -->
-
-
+                    <br>
+                     
                      <!-- <div class="element">
                       </div> -->
-                         <div class="col-lg-14">
+                         <div class="col-lg-13">
                              <div class="panel panel-default">
+                                 <div class="panel-heading">
+                                     <h3 class="panel-title"><!-- <i class="fa fa-clock-o fa-fw"></i> --> Events</h3>
+                                 </div>
+                                 <div class="panel-body">
                                      <div class="list-group">
-                                         <!-- <a href="#" class="list-group-item">
+                                         <a href="#" class="list-group-item">
                                              <span class="badge">just now</span>
-                                             <i class="fa fa-fw fa-calendar"></i> Calendar updated
-                                         </a>
-                                         <br>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">4 minutes ago</span>
-                                             <i class="fa fa-fw fa-comment"></i> Commented on a post
-                                         </a>
-                                         <br>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">23 minutes ago</span>
-                                             <i class="fa fa-fw fa-truck"></i> Order 392 shipped
-                                         </a>
-                                         <br>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">46 minutes ago</span>
-                                             <i class="fa fa-fw fa-money"></i> Invoice 653 has been paid
-                                         </a>
-                                         <br>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">1 hour ago</span>
-                                             <i class="fa fa-fw fa-user"></i> A new user has been added
-                                         </a>
-                                         <br>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">2 hours ago</span>
-                                             <i class="fa fa-fw fa-check"></i> Completed task: "pick up dry cleaning"
-                                         </a>
-                                         <br>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">yesterday</span>
-                                             <i class="fa fa-fw fa-globe"></i> Saved the world
-                                         </a>
-                                         <br>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">two days ago</span>
-                                             <i class="fa fa-fw fa-check"></i> Completed task: "fix error on sales page"
+                                             <i class="fa fa-fw fa-calendar"></i> Task
                                          </a>
                                      </div>
                                      <div class="text-right">
-                                         <a href="#">View All Activity <i class="fa fa-arrow-circle-right"></i></a> -->
+                                         <!-- <a href="posts.php">View All Activity <i class="fa fa-arrow-circle-right"></i></a> -->
                                      </div>
                                  </div>
                              </div>
@@ -203,4 +170,5 @@
 
  </body>
 
- </html>
+ </html>     
+
