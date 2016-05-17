@@ -57,7 +57,7 @@
             -webkit-animation-name: example; /* Chrome, Safari, Opera */
             -webkit-animation-duration: 0.2s; /* Chrome, Safari, Opera */
             animation-name: example;
-            animation-duration: 0.1s;
+            animation-duration: 60s;
             animation-iteration-count: infinite;
         }
 
@@ -171,10 +171,8 @@
 <<<<<<< HEAD
 script for displaying what is wrong with the user when they try to enter stuff -->
      <script type="text/javascript">
-=======
 <!-- script for displaying what is wrong with the user when they try to enter stuff -->
 <script type="text/javascript">
->>>>>>> origin/master
 
 </script>
 
