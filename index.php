@@ -57,7 +57,7 @@
             -webkit-animation-name: example; /* Chrome, Safari, Opera */
             -webkit-animation-duration: 0.2s; /* Chrome, Safari, Opera */
             animation-name: example;
-            animation-duration: 0.2s;
+            animation-duration: 0.1s;
             animation-iteration-count: infinite;
         }
 
@@ -123,8 +123,8 @@
             width: 100%;
             }
         }
-        </style>
- -->
+        </style> -->
+
              <ul class="sidebar-nav">
                  <li class="sidebar-brand">
                      <a class="navbar-brand" href="index.php">  <font size="10" color="white"> Norfleet </font> </a>
