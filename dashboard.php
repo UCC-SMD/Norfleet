@@ -58,7 +58,7 @@
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
-                             <a href="#"> <span class="fa fa-fw fa-user"></span> Profile </a>
+                             <a href="profile.php"> <span class="fa fa-fw fa-user"></span> Profile </a>
                              <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
                              <a href="logout.php"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
                      </ul>
