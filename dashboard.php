@@ -53,8 +53,9 @@
                      <a class="navbar-brand" href="dashboard.php">  <font size="10" color="white"> Norfleet </font> </a>
                  </li>
                  <li>
-                     <a href="javascript:;" data-toggle="collapse" data-target="#demo">
-                         <i class="fa fa-fw fa-user"></i> <?php echo " " . $arr[1];?> 's profile <i class="fa fa-fw fa-caret-down"></i>
+<!--                  <?php echo " " . $arr[1];?> 's profile ?>
+ -->                     <a href="javascript:;" data-toggle="collapse" data-target="#demo">
+                         <i class="fa fa-fw fa-user"></i>  <i class="fa fa-fw fa-caret-down"></i>
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
@@ -283,23 +284,24 @@
 
 <?php
 
-require("common.php"); 
+// require("common.php"); 
         
-        if(empty($_SESSION['user'])) { 
+//         if(empty($_SESSION['user'])) { 
   
-            // If they are not, we redirect them to the login page. 
-            $location = "http://" . $_SERVER['HTTP_HOST'] . "login.php";
-            echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL='.$location.'">';
-            //exit;
+//             // If they are not, we redirect them to the login page. 
+//             $location = "http://" . $_SERVER['HTTP_HOST'] . "/norfleet/dashboard.php";
+//             echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL='.$location.'">';
+//             //exit;
          
-            // Remember that this die statement is absolutely critical.  Without it, 
-            // people can view your members-only content without logging in. 
-            die("Redirecting to login.php"); 
-        } 
+//             // Remember that this die statement is absolutely critical.  Without it, 
+//             // people can view your members-only content without logging in. 
+//             die("Redirecting to login.php"); 
+//         } 
         
-        // To access $_SESSION['user'] values put in an array, show user his username
-        $arr = array_values($_SESSION['user']);
-        echo "Welcome " . $arr[1];
+//         // To access $_SESSION['user'] values put in an array, show user his username
+//         $arr = array_values($_SESSION['user']);
+//         echo "Welcome " . $arr[1];
 
 
 ?>
+
