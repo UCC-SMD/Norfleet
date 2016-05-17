@@ -218,7 +218,7 @@
                                          </div>
                                      </div>
                                  </div>
-                                 <a href="events.php">
+                                 <a href="trendingEvents.php">
                                      <div class="panel-footer">
                                          <span class="pull-left">View Events</span>
                                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>

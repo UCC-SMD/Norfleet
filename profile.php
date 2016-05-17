@@ -72,18 +72,20 @@
          </div>
          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
     </div>
-
-     </body>
+    <script src="javascript/jquery.js"></script>
      
      <script src="javascript/bootstrap.min.js"></script>
 
+     
      <!-- Menu Toggle Script -->
      <script>
-
-    //  32 is JavaScript SpaceBar keycode
+     //  32 is JavaScript SpaceBar keycode
 
      $("#menu-toggle").click(function(e) {
          e.preventDefault();
          $("#wrapper").toggleClass("toggled");
      });
      </script>
+     </body>
+     
+     

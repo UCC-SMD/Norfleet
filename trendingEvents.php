@@ -73,7 +73,8 @@
          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
     </div>
 
-     </body>
+     
+     <script src="javascript/jquery.js"></script>
      
      <script src="javascript/bootstrap.min.js"></script>
 
@@ -87,3 +88,5 @@
          $("#wrapper").toggleClass("toggled");
      });
      </script>
+    
+         </body>
