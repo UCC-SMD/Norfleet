@@ -54,7 +54,7 @@
                  </li>
                  <li>
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
-                         <i class="fa fa-fw fa-user"></i> Username <?php ?> <i class="fa fa-fw fa-caret-down"></i>
+                         <i class="fa fa-fw fa-user"></i> Username<i class="fa fa-fw fa-caret-down"></i>
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
@@ -65,7 +65,7 @@
                  </li>
                  <br>
                  <li class="active">
-                     <a href="#"> <i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                     <a href="dashboard.php"> <i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                  </li>
                  <br>
                  <li>
@@ -73,7 +73,7 @@
                  </li>
                  <br>
                  <li>
-                     <a href="hashtags.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
+                     <a href="#"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
                  </li>
                  <br>
                  <li>
@@ -107,7 +107,7 @@
                          <div class="col-lg-12" align="right">
                             <div class="pageshift">
                             <h1 class="page-header" font size="18" align="left">
-                                 <font size="18" color="black"> Dashboard </font><small><font color="grey"> All things concerning you </small></font>
+                                 <font size="18" color="black"> Hashtags </font><small><font color="grey"> Waypoints on the map to the future </small></font>
                             </h1>
                                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
                             </div>

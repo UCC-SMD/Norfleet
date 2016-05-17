@@ -129,24 +129,13 @@
                  <li class="sidebar-brand">
                      <a class="navbar-brand" href="index.php">  <font size="10" color="white"> Norfleet </font> </a>
                  </li>
-                 <li>
-                     <a href="javascript:;" data-toggle="collapse" data-target="#demo">
-                         <i class="fa fa-fw fa-user"></i> Username<i class="fa fa-fw fa-caret-down"></i>
-                       <br>
-                     </a>
-                     <ul id="demo" class="collapse">
-                             <a href="#"> <span class="fa fa-fw fa-user"></span> Profile </a>
-                             <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
-                             <a href="#"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
-                     </ul>
-                 </li>
                  <br>
                  <li class="active">
                      <a href="#"> <i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                  </li>
                  <br>
                  <li>
-                     <a href="#"> <i class="fa fa-fw fa-comments"></i> Tweets </a>
+                     <a href="#"> <i class="fa fa-fw fa-comments"></i> Posts </a>
                  </li>
                  <br>
                  <li>
@@ -179,7 +168,7 @@
     <p id="error"></p>
 </div>
 
-<!-- script for displaying what is wrong with the user when they try to enter stuff -->
+script for displaying what is wrong with the user when they try to enter stuff -->
      <script type="text/javascript">
 
      </script>

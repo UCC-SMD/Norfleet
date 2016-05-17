@@ -36,23 +36,17 @@
          <div id="sidebar-wrapper">
              <ul class="sidebar-nav">
                  <li class="sidebar-brand">
-                     <a class="navbar-brand" href="dashboard.php">  <font size="10" color="white"> Norfleet </font>  </a>
+                     <a class="navbar-brand" href="index.php">  <font size="10" color="white"> Norfleet </font> </a>
                  </li>
                  <li>
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
-                         <i class="fa fa-fw fa-user"></i>  Username <i class="fa fa-fw fa-caret-down"></i>
+                         <i class="fa fa-fw fa-user"></i> Username<i class="fa fa-fw fa-caret-down"></i>
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
-                         <li>
                              <a href="#"> <span class="fa fa-fw fa-user"></span> Profile </a>
-                         </li>
-                         <li>
-                             <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a>
-                         </li>
-                         <li>
-                             <a href="#"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
-                         </li>
+                             <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
+                             <a href="logout.php"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
                      </ul>
                  </li>
                  <br>
@@ -61,11 +55,11 @@
                  </li>
                  <br>
                  <li>
-                     <a href="posts.html"> <i class="fa fa-fw fa-comments"></i> Tweets </a>
+                     <a href="#"> <i class="fa fa-fw fa-comments"></i> Posts </a>
                  </li>
                  <br>
                  <li>
-                     <a href="#"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
+                     <a href="hashtags.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
                  </li>
                  <br>
                  <li>
@@ -99,7 +93,7 @@
                          <div class="col-lg-12" align="right">
                             <div class="pageshift">
                             <h1 class="page-header" font size="18" align="left">
-                                 <font size="18" color="black"> Login </font><small><font color="grey"> Welcome back </small></font>
+                                 <font size="18" color="black"> Posts </font><small><font color="grey"> What everyone's talking about </small></font>
                             </h1>
                                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
                             </div>
@@ -133,7 +127,7 @@
                          <div class="col-lg-14">
                              <div class="panel panel-default">
                                      <div class="list-group">
-                                         <a href="#" class="list-group-item">
+                                         <!-- <a href="#" class="list-group-item">
                                              <span class="badge">just now</span>
                                              <i class="fa fa-fw fa-calendar"></i> Calendar updated
                                          </a>
@@ -174,7 +168,7 @@
                                          </a>
                                      </div>
                                      <div class="text-right">
-                                         <a href="#">View All Activity <i class="fa fa-arrow-circle-right"></i></a>
+                                         <a href="#">View All Activity <i class="fa fa-arrow-circle-right"></i></a> -->
                                      </div>
                                  </div>
                              </div>

@@ -1,13 +1,11 @@
-<?php 
 
-    // First we execute our common code to connection to the database and start the session 
-    require("common.php"); 
-     
-    // We remove the user's data from the session 
-    unset($_SESSION['user']); 
-     
-    // We redirect them to the login page 
-    header("Location: login.php"); 
-    die("Redirecting to: login.php");
-	
+
+<?php
+    	//Execute common
+    require("common.php");
+    	//Remove user data
+    unset($_SESSION['user']);
+    	//Redirect to login page
+    echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL=index.php">';
+    exit;
 ?>
