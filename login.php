@@ -94,6 +94,8 @@
         else 
         { 
             // Tell the user they failed 
+            header("Location: index.php?failed");
+            die("Redirecting to: index.php?failed");
             print("Login Failed."); 
              
             // Show them their username again so all they have to do is enter a new 
