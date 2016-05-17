@@ -57,7 +57,7 @@
             -webkit-animation-name: example; /* Chrome, Safari, Opera */
             -webkit-animation-duration: 0.2s; /* Chrome, Safari, Opera */
             animation-name: example;
-            animation-duration: 0.1s;
+            animation-duration: 60s;
             animation-iteration-count: infinite;
         }
 
@@ -164,6 +164,21 @@
                                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
                             </div>
 
+<<<<<<< HEAD
+=======
+<!-- <div id="alertbox" class="alert alert-danger" style="visibility: hidden"role="alert">
+    <p id="error"></p>
+</div>
+
+<<<<<<< HEAD
+script for displaying what is wrong with the user when they try to enter stuff -->
+     <script type="text/javascript">
+<!-- script for displaying what is wrong with the user when they try to enter stuff -->
+<script type="text/javascript">
+
+</script>
+
+>>>>>>> origin/master
 
 
 

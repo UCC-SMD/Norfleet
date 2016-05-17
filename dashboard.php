@@ -54,7 +54,7 @@
                  </li>
                  <li>
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
-                         <i class="fa fa-fw fa-user"></i> <?php echo $query; ?> <i class="fa fa-fw fa-caret-down"></i>
+                         <i class="fa fa-fw fa-user"></i> Profile <i class="fa fa-fw fa-caret-down"></i>
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
@@ -77,11 +77,11 @@
                  </li>
                  <br>
                  <li>
-                     <a href="#"> <i class="fa fa-fw fa-users"></i> Mentions </a>
+                     <a href="mentions.php"> <i class="fa fa-fw fa-users"></i> Mentions </a>
                  </li>
                  <br>
                  <li>
-                     <a href="#"> <i class="fa fa-fw fa-map-o"></i> Trending Events</a>
+                     <a href="trendingEvents.php"> <i class="fa fa-fw fa-map-o"></i> Trending Events</a>
                  </li>
              </ul>
          </div>
@@ -191,11 +191,11 @@
                                          <div class="col-xs-9 text-right">
                                          <!-- Pull this from something -->
                                              <div class="huge"></div>
-                                             <div><h3>Meantions</h3></div>
+                                             <div><h3>Mentions</h3></div>
                                          </div>
                                      </div>
                                  </div>
-                                 <a href="meantions.php">
+                                 <a href="mentions.php">
                                      <div class="panel-footer">
                                          <span class="pull-left">View Mentions</span>
                                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -218,7 +218,7 @@
                                          </div>
                                      </div>
                                  </div>
-                                 <a href="events.php">
+                                 <a href="trendingEvents.php">
                                      <div class="panel-footer">
                                          <span class="pull-left">View Events</span>
                                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>

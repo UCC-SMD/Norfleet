@@ -17,7 +17,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-     <title>Norfleet Profile</title>
+     <title>Norfleet Mentions</title>
 
      <!-- Bootstrap Core CSS -->
      <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -72,14 +72,14 @@
          </div>
          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
     </div>
-    <script src="javascript/jquery.js"></script>
+<script src="javascript/jquery.js"></script>
      
      <script src="javascript/bootstrap.min.js"></script>
 
-     
      <!-- Menu Toggle Script -->
      <script>
-     //  32 is JavaScript SpaceBar keycode
+
+    //  32 is JavaScript SpaceBar keycode
 
      $("#menu-toggle").click(function(e) {
          e.preventDefault();
