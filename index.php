@@ -168,10 +168,15 @@
     <p id="error"></p>
 </div>
 
+<<<<<<< HEAD
 script for displaying what is wrong with the user when they try to enter stuff -->
      <script type="text/javascript">
+=======
+<!-- script for displaying what is wrong with the user when they try to enter stuff -->
+<script type="text/javascript">
+>>>>>>> origin/master
 
-     </script>
+</script>
 
 
 
