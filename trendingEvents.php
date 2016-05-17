@@ -90,3 +90,20 @@
      </script>
     
          </body>
+     
+     
+     <?php 
+
+    // Obligatory
+    require("common.php");
+
+    $query = " 
+    SELECT 
+        id, 
+        username
+    FROM users 
+    WHERE 
+        username = $submitted_username "; 
+
+
+?>

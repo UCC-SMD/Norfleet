@@ -50,7 +50,7 @@
          <div id="sidebar-wrapper">
              <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                     <a class="navbar-brand" href="index.php">  <font size="10" color="white"> Norfleet </font> </a>
+                     <a class="navbar-brand" href="dashboard.php">  <font size="10" color="white"> Norfleet </font> </a>
                  </li>
                  <li>
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
@@ -243,7 +243,7 @@
                                          </a>
                                      </div>
                                      <div class="text-right">
-                                         <a href="#">View All Activity <i class="fa fa-arrow-circle-right"></i></a>
+                                         <a href="posts.php">View All Activity <i class="fa fa-arrow-circle-right"></i></a>
                                      </div>
                                  </div>
                              </div>
