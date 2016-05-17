@@ -54,7 +54,7 @@
                  </li>
                  <li>
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
-                         <i class="fa fa-fw fa-user"></i> Profile <i class="fa fa-fw fa-caret-down"></i>
+                         <i class="fa fa-fw fa-user"></i> <?php echo " " . $arr[1];?> 's profile <i class="fa fa-fw fa-caret-down"></i>
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
@@ -281,18 +281,25 @@
 
  </html>
 
- <?php 
+<?php
 
-    // Obligatory
-    require("common.php");
-
-    $query = " 
-    SELECT 
-        id, 
-        username
-    FROM users 
-    WHERE 
-        username = $submitted_username "; 
+require("common.php"); 
+        
+        if(empty($_SESSION['user'])) { 
+  
+            // If they are not, we redirect them to the login page. 
+            $location = "http://" . $_SERVER['HTTP_HOST'] . "/login.php";
+            echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL='.$location.'">';
+            //exit;
+         
+            // Remember that this die statement is absolutely critical.  Without it, 
+            // people can view your members-only content without logging in. 
+            die("Redirecting to login.php"); 
+        } 
+        
+        // To access $_SESSION['user'] values put in an array, show user his username
+        $arr = array_values($_SESSION['user']);
+        echo "Welcome " . $arr[1];
 
 
 ?>
