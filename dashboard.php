@@ -9,7 +9,7 @@
 			NICE WORK LADS
  -->
 
-<?php session_start(); ?>
+
  <!DOCTYPE html>
  <html lang="en">
 
@@ -43,9 +43,6 @@
 
 
  <body> 
-    <!-- Last Ditch Effort -->
-    <!-- <script> console.log("Wag <?php if(!(empty($_SESSION['user']))){echo "derp";}echo $_SESSION['user']['username']; ?>");</script> -->
-
      <div id="wrapper">
 
          <!-- Sidebar -->
@@ -57,7 +54,7 @@
                  </li>
                  <li>
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
-                         <i class="fa fa-fw fa-user"></i> User Actions <?php echo $_SESSION['user']['username']; ?> <i class="fa fa-fw fa-caret-down"></i>
+                         <i class="fa fa-fw fa-user"></i> put the username here <i class="fa fa-fw fa-caret-down"></i>
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
@@ -113,7 +110,24 @@
                          <div class="col-lg-12" align="right">
                             <div class="pageshift">
                             <h1 class="page-header" font size="18" align="left">
-                                 <font size="18" color="black"> Dashboard </font><small><font color="grey"> All things concerning you </small></font>
+                                 <font size="18" color="black"> <?php 
+require("common.php"); 
+
+if(empty($_SESSION['user'])) { 
+
+    // If they are not, we redirect them to the login page. 
+    $location = "http://" . $_SERVER['HTTP_HOST'] . "/login.php";
+    echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL='.$location.'">';
+    //exit;
+ 
+    // Remember that this die statement is absolutely critical.  Without it, 
+    // people can view your members-only content without logging in. 
+    die("Redirecting to login.php"); 
+}
+
+
+// To access $_SESSION['user'] values put in an array, show user his username
+$arr = array_values($_SESSION['user']); echo "Welcome " . $arr[1]; ?> </font><small><font color="grey"> All things concerning you </small></font>
                             </h1>
                                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
                             </div>
