@@ -77,11 +77,11 @@
                  </li>
                  <br>
                  <li>
-                     <a href="#"> <i class="fa fa-fw fa-users"></i> Mentions </a>
+                     <a href="mentions.php"> <i class="fa fa-fw fa-users"></i> Mentions </a>
                  </li>
                  <br>
                  <li>
-                     <a href="#"> <i class="fa fa-fw fa-map-o"></i> Trending Events</a>
+                     <a href="trendingEvents.php"> <i class="fa fa-fw fa-map-o"></i> Trending Events</a>
                  </li>
              </ul>
          </div>
@@ -195,7 +195,7 @@
                                          </div>
                                      </div>
                                  </div>
-                                 <a href="meantions.php">
+                                 <a href="mentions.php">
                                      <div class="panel-footer">
                                          <span class="pull-left">View Mentions</span>
                                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>

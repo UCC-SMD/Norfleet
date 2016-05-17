@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+ <html lang="en">
 
-<head>
+ <head>
 
 	 <!-- This is so many levels of bad all at one time.
 	 Why does this even work? -->
@@ -25,9 +25,9 @@
      <!-- Custom CSS -->
      <link href="css/simple-sidebar.css" rel="stylesheet">
 
-</head>
+ </head>
+     
 <body>
-     <h1> Profile </h1>
 
      <div id="wrapper">
 
@@ -71,4 +71,18 @@
              </ul>
          </div>
     </div>
-</body>    
+
+     </body>
+     
+     <script src="javascript/bootstrap.min.js"></script>
+
+     <!-- Menu Toggle Script -->
+     <script>
+
+    //  32 is JavaScript SpaceBar keycode
+
+     $("#menu-toggle").click(function(e) {
+         e.preventDefault();
+         $("#wrapper").toggleClass("toggled");
+     });
+     </script>
