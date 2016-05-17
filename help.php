@@ -82,9 +82,7 @@
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
                                      <div class="row">
-                                         <div class="col-xs-3">
-                                             <i class="fa fa-comments fa-5x"></i>
-                                         </div>
+                                         
                                          <div class="col-xs-9 text-right">
                                              <div class="huge"></div>
                                              <!-- Pull this from something -->
@@ -106,9 +104,7 @@
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
                                      <div class="row">
-                                         <div class="col-xs-3">
-                                             <i class="fa fa-bullhorn fa-5x"></i>
-                                         </div>
+                                         
                                          <div class="col-xs-9 text-right">
                                          <!-- Pull this from something -->
                                              <div class="huge"></div>
@@ -130,9 +126,7 @@
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
                                      <div class="row">
-                                         <div class="col-xs-3">
-                                             <i class="fa fa-users fa-5x"></i>
-                                         </div>
+                                         
                                          <div class="col-xs-9 text-right">
                                          <!-- Pull this from something -->
                                              <div class="huge"></div>
@@ -154,9 +148,7 @@
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
                                      <div class="row">
-                                         <div class="col-xs-3">
-                                              <i class="fa fa-map-o fa-5x"></i>
-                                         </div>
+                                         
                                          <div class="col-xs-9 text-right">
                                              <!-- Pull this from something -->
                                              <div class="huge"></div>
