@@ -288,7 +288,7 @@ require("common.php");
         if(empty($_SESSION['user'])) { 
   
             // If they are not, we redirect them to the login page. 
-            $location = "http://" . $_SERVER['HTTP_HOST'] . "/login.php";
+            $location = "http://" . $_SERVER['HTTP_HOST'] . "login.php";
             echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL='.$location.'">';
             //exit;
          
