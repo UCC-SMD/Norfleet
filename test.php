@@ -15,8 +15,7 @@ require("common.php");
         } 
         
         // To access $_SESSION['user'] values put in an array, show user his username
-        $arr = array_values($_SESSION['user']);
-        echo "Welcome " . $arr[1];
+        $arr = array_values($_SESSION['user']); echo "Welcome " . $arr[1];
         echo $_SESSION['user'] . $arr[1] . $arr[2];
 
 ?>
