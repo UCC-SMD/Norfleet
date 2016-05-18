@@ -9,7 +9,7 @@
 			NICE WORK LADS
  -->
 
-
+<?php session_start(); ?>
  <!DOCTYPE html>
  <html lang="en">
 
@@ -43,6 +43,9 @@
 
 
  <body> 
+    <!-- Last Ditch Effort -->
+    <!-- <script> console.log("Wag <?php if(!(empty($_SESSION['user']))){echo "derp";}echo $_SESSION['user']['username']; ?>");</script> -->
+
      <div id="wrapper">
 
          <!-- Sidebar -->
@@ -54,6 +57,7 @@
                  </li>
                  <li>
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
+<<<<<<< HEAD
                          <i class="fa fa-fw fa-user">
                         </i> <?php 
                         require ("common.php");//this code is so the username is displayed.
@@ -73,6 +77,9 @@
                         // To access $_SESSION['user'] values put in an array, show user his username
                         $arr = array_values($_SESSION['user']); echo $arr[1]; ?> 
                     <i class="fa fa-fw fa-caret-down"></i>
+=======
+                         <i class="fa fa-fw fa-user"></i> User Actions <?php echo $_SESSION['user']['username']; ?> <i class="fa fa-fw fa-caret-down"></i>
+>>>>>>> parent of 57040bf... now this works! username detection initialized ja  ja ja cyka blyat
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
@@ -128,7 +135,11 @@
                          <div class="col-lg-12" align="right">
                             <div class="pageshift">
                             <h1 class="page-header" font size="18" align="left">
+<<<<<<< HEAD
                                  <font size="18" color="black">Dashboard</font><small><font color="grey"> All things concerning you </small></font>
+=======
+                                 <font size="18" color="black"> Dashboard </font><small><font color="grey"> All things concerning you </small></font>
+>>>>>>> parent of 57040bf... now this works! username detection initialized ja  ja ja cyka blyat
                             </h1>
                                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
                             </div>
