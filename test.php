@@ -14,14 +14,6 @@ require("common.php");
             die("Redirecting to login.php"); 
         } 
         
-        // To access $_SESSION['user'] values put in an array, show user his username
-<<<<<<< HEAD
-        $arr = array_values($_SESSION['user']); echo "Welcome " . $arr[1];
-        echo $_SESSION['user'] . $arr[1] . $arr[2];
-=======
-        $arr = array_values($_SESSION['user']);
-        echo "Welcome " . $arr[1];
+$arr = array_values($_SESSION['user']); echo $arr[1]; 
+?> 
 
->>>>>>> parent of 57040bf... now this works! username detection initialized ja  ja ja cyka blyat
-
-?>
