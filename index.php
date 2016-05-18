@@ -134,6 +134,7 @@ function error() {
         </style> -->
 
              <ul class="sidebar-nav">
+                <br> <!-- Consider doing through CSS -->
                  <li class="sidebar-brand">
                      <a class="navbar-brand" href="index.php">  <font size="10" color="white"> Norfleet </font> </a>
                  </li>

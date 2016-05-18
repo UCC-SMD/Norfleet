@@ -55,6 +55,7 @@ for motivation: http://i0.kym-cdn.com/photos/images/original/000/928/594/f78.gif
          <!-- Sidebar -->
          <div id="sidebar-wrapper">
              <ul class="sidebar-nav">
+                <br> <!-- Consider doing through CSS -->
                  <li class="sidebar-brand">
                      <a class="navbar-brand" href="index.php">  <font size="10" color="white"> Norfleet </font>  </a>
                  </li>
