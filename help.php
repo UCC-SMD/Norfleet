@@ -94,7 +94,7 @@
                                  <a href="helpPages/profileHelp.php">
                                      <div class="panel-footer">
                                          <span class="pull-left"> Profile Help </span>
-                                         <!-- span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span -->
+                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                          <div class="clearfix"></div>
                                      </div>
                                  </a>
@@ -116,7 +116,7 @@
                                  <a href="helpPages/hashtagHelp.php">
                                      <div class="panel-footer">
                                          <span class="pull-left">View Hashtags</span>
-                                         <!--span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span-->
+                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                          <div class="clearfix"></div>
                                      </div>
                                  </a>
@@ -138,7 +138,7 @@
                                  <a href="helpPages/tweetHelp.php">
                                      <div class="panel-footer">
                                          <span class="pull-left">Tweet Help</span>
-                                         <!--span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span-->
+                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                          <div class="clearfix"></div>
                                      </div>
                                  </a>
@@ -160,7 +160,7 @@
                                  <a href="helpPages/norfleetAbout.php">
                                      <div class="panel-footer">
                                          <span class="pull-left">Learn more about Norfleet</span>
-                                         <!--span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span-->
+                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                          <div class="clearfix"></div>
                                      </div>
                                  </a>
@@ -185,19 +185,4 @@
      </body>
      
      
-     <?php 
-
-    // Obligatory
-    require("common.php");
-
-    $query = " 
-    SELECT 
-        id, 
-        username
-    FROM users 
-    WHERE 
-        username = $submitted_username "; 
-
-
-?>
 
