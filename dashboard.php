@@ -59,7 +59,7 @@
                         if(empty($_SESSION['user'])) { 
 
                             // If they are not, we redirect them to the login page. 
-                            $location = "http://" . $_SERVER['HTTP_HOST'] . "/index.php";
+                            $location = "http://" . $_SERVER['HTTP_HOST'] . "norfleet/index.php";
                             echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL='.$location.'">';
                             //exit;
                          
