@@ -210,7 +210,7 @@ Happy Monday (not really though). John did some awesome work over the weekend ge
 <h3> Objectives:</h3>
 - Clean up the GitHub
 
-<h6> Accomplishments </h6>
+<h3> Accomplishments </h3>
 Because this class was a 45 minute period, we spent the majority of our time today cleaning up the GitHub, along with making sure that all of our variables are properly named and descriptive. Camran also worked on password retrieval today. In other news, there has been an interesting development in our GitHub. We had a random GitHub user come and contribute on our code. He helped solve a problem with out icons and text.
         
         
@@ -219,7 +219,7 @@ Because this class was a 45 minute period, we spent the majority of our time tod
 - Work on the password encryption function
 - Made enhancements to navbar and css; generally front-end work
 
-<h6> Accomplishments </h6>
+<h3> Accomplishments </h3>
 This class Campbell was away, so I (Charlie) have taken over his Scrum duties temporarily.  This class was a miscellaneous class that was split into three different tasks for the three different people.  Firstly, Camran worked on the registration, password-retrieval and encryption.  John worked on mostly front-end tasks for today: he redid the navbar and reworked the CSS file.  Charlie worked on the help/about pages and some minor front-end aesthetics.
         
 <h1>Day Six: May 17th, 2016</h1>

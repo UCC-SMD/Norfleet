@@ -1,3 +1,8 @@
+<!-- 
+For NORFLEET, social media for professionals
+Full team: Charlie, Campbell, Camran, and John
+Object of code: This is where most of the PHP-SQL interaction is, and their variables are, stored.
+-->
 <?php 
 
     // These variables define the connection information for your MySQL database 
