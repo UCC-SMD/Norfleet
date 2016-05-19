@@ -6,7 +6,15 @@
  / /|  / /_/ / /  / __/ /  __/  __/ /_
 /_/ |_/\____/_/  /_/ /_/\___/\___/\__/
 
-            NICE WORK LADS
+    Social Media for Professionals
+
+
+Developed by John and Charlie over May 11th to May 18th.
+Full team: Charlie, Campbell, Camran and John
+Purpose: Provide a space for the user to access information on how to use and search for hashtags
+Version: 0.9.3
+
+
  -->
 
 
@@ -15,22 +23,30 @@
 
  <head>
 
-	 <!-- These are the importations of boostrap, css, our font (font awesome), our icon, in addition to some technically browser-specific stuff. -->
-        <!-- This is the icon for the website -->
-	 	<link href="images/web_assets/favicon.ico" rel="icon" />
+           <!-- Imports -->
+           <!-- Import Favicon (The little image that you see in the browser tab -->
+        <link href="images/web_assets/favicon.ico" rel="icon" />
 
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/sb-admin.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
-		<link href="css/ourstyle.css" rel="stylesheet" />
+            <!-- General Bootstrap CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+            <!-- Wrapper template -->
+        <link href="css/sb-admin.css" rel="stylesheet">
+            <!-- Sidebar suppliment -->
+        <link href="css/animate.css" rel="stylesheet">
+            <!-- Font Awesome: The source of the icons you see across the website, such as in the sidebar or the dashboard -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+            <!-- Custon CSS file for fine tuning other files by overriding the load process -->
+        <link href="css/ourstyle.css" rel="stylesheet" />
 
      <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Initial scale set to one -->
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <!-- The text that shows up in the browser tab (along with the favicon) -->
      <title>Norfleet</title>
 
-     <!-- Bootstrap Core CSS -->
+     <!-- Bootstrap Core CSS  -->
      <link href="css/bootstrap.min.css" rel="stylesheet">
 
      <!-- Custom CSS -->
@@ -68,9 +84,9 @@
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
-                             <a href="helpPages/tweetHelp.php"> <span class="fa fa-fw fa-comments"></span> Posts </a>
+                             <a href="tweetHelp.php"> <span class="fa fa-fw fa-comments"></span> Posts </a>
                              <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
-                             <a href="helpPages/hashtagHelp.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
+                             <a href="hashtagHelp.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
                      </ul>
                  </li>
                  <br>
@@ -79,95 +95,132 @@
                  </li>
                  <br>
                  <li>
-                     <a href="norfleetAbout.php"> <i class="fa fa-fw fa-male"></i> About Us</a>
+                     <a href="https://github.com/UCC-SMD/Norfleet/wiki/Team-Biographies"> <i class="fa fa-fw fa-male"></i> About Us </a>
                  </li>
              </ul>
          </div>
          <!-- /#sidebar-wrapper -->
-        <div class="pageshift">
-                    <h1 class="page-header" font size="18" align="left">
-                        <font size="18" color="black">Help: Hashtags</font>
-                        <small><font color="grey">  </small></font>
-                    </h1>
-                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
-        </div>
-    
-         <div class="row">
-             <div><center>
-        <h1> Hashtags</h1>
-        <b> What are they?</b>
-        <p> Hashtags are words or phrases preceded by a pound sign (#) that are used to identify messages on a specific topic.</p>
-        <b> How they work </b>
-        <p> If a tweet is sent with a hashtag, it will automatically show up in the hashtag section, where a user can search for specific hashtags.</p>
-        </center></div>
-     </div>
-                         <div class="col-lg-3 col-md-6">
-                             <div class="panel panel-grey">
-                                 <div class="panel-heading">
-                                     <div class="row">
-                                         
-                                         <div class="col-xs-9 text-right">
-                                         <!-- Pull this from something -->
-                                             <div class="huge"></div>
-                                             <div><h3>Profiles</h3></div>
-                                             
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <div><h4>
-                                     Your profile is who you are, learn how to maximize your personal customization here...
-                                 </h4></div>
-                                 <a href="profileHelp.php">
-                                     <div class="panel-footer">
-                                         <span class="pull-left">Profile Help</span>
-                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                 </a>
+
+         <!-- Page Content -->
+         <div id="page-content-wrapper">
+                    <div class="row">
+                         <div class="col-lg-12" align="right">
+                            <div class="pageshift">
+                            <h1 class="page-header" font size="18" align="left">
+                                 <font size="18" color="black">Dashboard</font><small><font color="grey"> All things concerning you </small></font>
+                            </h1>
+                                <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
+                            </div>
+
+                             <!-- Maybe put an alert or something here. I really don't know -->
+                                                         <!-- Over-Descriptive and unnecessary -->
+                        <!-- <ol class="breadcrumb">
+                                 <li class="active">
+                                     <i class="fa fa-dashboard"></i> Dashboard
+                                 </li>
+                             </ol> -->
+                         </div>
+                     </div>
+
+                                         <!-- Banner Alert -->
+                     <!-- <div class="row">
+                         <div class="col-lg-12">
+                             <div class="alert alert-info alert-dismissable">
+                                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                 <i class="fa fa-info-circle"></i>  <strong>I am a banner alert</strong>
+                                 Click here <a href="index.php" class="alert-link"> to reload the page!</a>
                              </div>
-                        </div>                      
-                         <div class="col-lg-3 col-md-6">
+                         </div>
+                     </div> -->
+                     <!-- /.row -->
+                    <br>
+                    <br>
+                     <div class="row">
+                         <div class="col-lg-4 col-md-7">
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
                                      <div class="row">
-                                         
+                                         <div class="col-xs-3">
+                                             <i class="fa fa-comments fa-5x"></i>
+                                         </div>
                                          <div class="col-xs-9 text-right">
-                                         <!-- Pull this from something -->
                                              <div class="huge"></div>
-                                             <div><h3>Hashtags</h3></div>
-                                             
+                                             <!-- Pull this from something -->
+                                             <div><h3>Posts</h3></div>
                                          </div>
                                      </div>
                                  </div>
-                                 <div><h4>
-                                     Hashtags are keywords used to identify specific points of note, learn how to use them here...
-                                 </h4></div>
-                                 <a href="hashtagHelp.php">
+                                 <a href="posts.php">
                                      <div class="panel-footer">
-                                         <span class="pull-left">Hashtag Help</span>
+                                         <span class="pull-left"> View Posts </span>
                                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                          <div class="clearfix"></div>
                                      </div>
                                  </a>
                              </div>
                          </div>
-                         <div class="col-lg-3 col-md-6">
+                         <div class="col-lg-4 col-md-7">
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
                                      <div class="row">
-                                         
+                                         <div class="col-xs-3">
+                                             <i class="fa fa-bullhorn fa-5x"></i>
+                                         </div>
                                          <div class="col-xs-9 text-right">
-                                            <div class="huge"></div>
-                                             <div><h3>Tweets</h3></div>
+                                         <!-- Pull this from something -->
+                                             <div class="huge"></div>
+                                             <div><h3>Hashtags</h3></div>
                                          </div>
                                      </div>
                                  </div>
-                                 <div><h4>
-                                    Tweeting is the primary method of communication on this website, learn how to 'tweet' here...
-                                 </h4></div>
-                                 <a href="tweetHelp.php">
+                                 <a href="hashtags.php">
                                      <div class="panel-footer">
-                                         <span class="pull-left">Tweet Help</span>
+                                         <span class="pull-left">View Hashtags</span>
+                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                         <div class="clearfix"></div>
+                                     </div>
+                                 </a>
+                             </div>
+                         </div>
+<!--                          <div class="col-lg-3 col-md-6">
+                             <div class="panel panel-grey">
+                                 <div class="panel-heading">
+                                     <div class="row">
+                                         <div class="col-xs-3">
+                                             <i class="fa fa-users fa-5x"></i>
+                                         </div>
+                                         <div class="col-xs-9 text-right">
+                                             <div class="huge"></div>
+                                             <div><h3>Mentions</h3></div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <a href="mentions.php">
+                                     <div class="panel-footer">
+                                         <span class="pull-left">View Mentions</span>
+                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                         <div class="clearfix"></div>
+                                     </div>
+                                 </a>
+                             </div>
+                         </div> -->
+                         <div class="col-lg-4 col-md-7">
+                             <div class="panel panel-grey">
+                                 <div class="panel-heading">
+                                     <div class="row">
+                                         <div class="col-xs-3">
+                                              <i class="fa fa-map-o fa-5x"></i>
+                                         </div>
+                                         <div class="col-xs-9 text-right">
+                                             <!-- Pull this from something -->
+                                             <div class="huge"></div>
+                                             <div><h3>Events</h3></div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <a href="trendingEvents.php">
+                                     <div class="panel-footer">
+                                         <span class="pull-left">View Events</span>
                                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                          <div class="clearfix"></div>
                                      </div>
@@ -175,27 +228,56 @@
                              </div>
                          </div>
                      </div>
-           
-    
-    
-    <script src="javascript/jquery.js"></script>
-     
+                     <!-- <div class="element">
+                      </div> -->
+<!--                          <div class="col-lg-13">
+                             <div class="panel panel-default">
+                                 <div class="panel-heading">
+                                     <h3 class="panel-title"> Posts</h3>
+                                 </div>
+                                 <div class="panel-body">
+                                     <div class="list-group">
+                                         <a href="#" class="list-group-item">
+                                             <span class="badge">just now</span>
+                                             <i class="fa fa-fw fa-calendar"></i> Task
+                                         </a>
+                                     </div>
+                                     <div class="text-right">
+                                     </div>
+                                 </div>
+                             </div> -->
+
+                     <!-- /.row -->
+
+                 </div>
+                 <!-- /.container-fluid -->
+
+             </div>
+         </div>
+         <!-- /#page-content-wrapper -->
+
+     </div>
+     <!-- /#wrapper -->
+
+     <!-- jQuery -->
+     <script src="javascript/jquery.js"></script>
+
+     <!-- Bootstrap Core JavaScript -->
      <script src="javascript/bootstrap.min.js"></script>
 
-     
      <!-- Menu Toggle Script -->
      <script>
-     //  32 is JavaScript SpaceBar keycode
+
+    //  32 is JavaScript SpaceBar keycode
 
      $("#menu-toggle").click(function(e) {
          e.preventDefault();
          $("#wrapper").toggleClass("toggled");
      });
      </script>
-     </body>
+
+ </body>
 
  </html>
 
 
-
-  

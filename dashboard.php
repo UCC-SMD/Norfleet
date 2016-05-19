@@ -15,22 +15,30 @@
 
  <head>
 
-	 <!-- These are the importations of boostrap, css, our font (font awesome), our icon, in addition to some technically browser-specific stuff. -->
-        <!-- This is the icon for the website -->
-	 	<link href="images/web_assets/favicon.ico" rel="icon" />
+           <!-- Imports -->
+           <!-- Import Favicon (The little image that you see in the browser tab -->
+        <link href="images/web_assets/favicon.ico" rel="icon" />
 
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/sb-admin.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
-		<link href="css/ourstyle.css" rel="stylesheet" />
+            <!-- General Bootstrap CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+            <!-- Wrapper template -->
+        <link href="css/sb-admin.css" rel="stylesheet">
+            <!-- Sidebar suppliment -->
+        <link href="css/animate.css" rel="stylesheet">
+            <!-- Font Awesome: The source of the icons you see across the website, such as in the sidebar or the dashboard -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+            <!-- Custon CSS file for fine tuning other files by overriding the load process -->
+        <link href="css/ourstyle.css" rel="stylesheet" />
 
      <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Initial scale set to one -->
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <!-- The text that shows up in the browser tab (along with the favicon) -->
      <title>Norfleet</title>
 
-     <!-- Bootstrap Core CSS -->
+     <!-- Bootstrap Core CSS  -->
      <link href="css/bootstrap.min.css" rel="stylesheet">
 
      <!-- Custom CSS -->
@@ -55,7 +63,7 @@
                  </li>
                  <br>
                  <li>
-                     <a href="posts.php"> <i class="fa fa-fw fa-comments"></i> Posts </a>
+                     <a href="posts.php>"> <i class="fa fa-fw fa-comments"></i> Posts </a>
                  </li>
                  <br>
                  <li>
@@ -79,7 +87,7 @@
                  </li>
                  <br>
                  <li>
-                     <a href="https://github.com/UCC-SMD/Norfleet/wiki/Team-Biographies"> <i class="fa fa-fw fa-male"></i> About Us </a>
+                     <a href="norfleetAbout.php"> <i class="fa fa-fw fa-male"></i> About Us </a>
                  </li>
              </ul>
          </div>

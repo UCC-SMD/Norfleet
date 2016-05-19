@@ -15,22 +15,30 @@
 
  <head>
 
-	 <!-- These are the importations of boostrap, css, our font (font awesome), our icon, in addition to some technically browser-specific stuff. -->
-        <!-- This is the icon for the website -->
-	 	<link href="images/web_assets/favicon.ico" rel="icon" />
+           <!-- Imports -->
+           <!-- Import Favicon (The little image that you see in the browser tab -->
+        <link href="images/web_assets/favicon.ico" rel="icon" />
 
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/sb-admin.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
-		<link href="css/ourstyle.css" rel="stylesheet" />
+            <!-- General Bootstrap CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+            <!-- Wrapper template -->
+        <link href="css/sb-admin.css" rel="stylesheet">
+            <!-- Sidebar suppliment -->
+        <link href="css/animate.css" rel="stylesheet">
+            <!-- Font Awesome: The source of the icons you see across the website, such as in the sidebar or the dashboard -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+            <!-- Custon CSS file for fine tuning other files by overriding the load process -->
+        <link href="css/ourstyle.css" rel="stylesheet" />
 
      <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Initial scale set to one -->
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <!-- The text that shows up in the browser tab (along with the favicon) -->
      <title>Norfleet</title>
 
-     <!-- Bootstrap Core CSS -->
+     <!-- Bootstrap Core CSS  -->
      <link href="css/bootstrap.min.css" rel="stylesheet">
 
      <!-- Custom CSS -->
@@ -69,7 +77,7 @@
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
-                             <a href="postHelp.php"> <span class="fa fa-fw fa-comments"></span> Posts </a>
+                             <a href="tweetHelp.php"> <span class="fa fa-fw fa-comments"></span> Posts </a>
                              <a href="hashtagHelp.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
                      </ul>
                  </li>
@@ -133,118 +141,17 @@
                      <!-- /.row -->
                     <br>
                      <div class="row">
-                         <div class="col-lg-3 col-md-6">
-                             <div class="panel panel-grey">
-                                 <div class="panel-heading">
-                                     <div class="row">
-                                         <div class="col-xs-3">
-                                             <i class="fa fa-comments fa-5x"></i>
-                                         </div>
-                                         <div class="col-xs-9 text-right">
-                                             <div class="huge"></div>
-                                             <!-- Pull this from something -->
-                                             <div><h3>Posts</h3></div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <a href="posts.php">
-                                     <div class="panel-footer">
-                                         <span class="pull-left"> View Posts </span>
-                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                 </a>
-                             </div>
-                         </div>
-                         <div class="col-lg-3 col-md-6">
-                             <div class="panel panel-grey">
-                                 <div class="panel-heading">
-                                     <div class="row">
-                                         <div class="col-xs-3">
-                                             <i class="fa fa-bullhorn fa-5x"></i>
-                                         </div>
-                                         <div class="col-xs-9 text-right">
-                                         <!-- Pull this from something -->
-                                             <div class="huge"></div>
-                                             <div><h3>Hashtags</h3></div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <a href="hashtags.php">
-                                     <div class="panel-footer">
-                                         <span class="pull-left">View Hashtags</span>
-                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                 </a>
-                             </div>
-                         </div>
-                         <div class="col-lg-3 col-md-6">
-                             <div class="panel panel-grey">
-                                 <div class="panel-heading">
-                                     <div class="row">
-                                         <div class="col-xs-3">
-                                             <i class="fa fa-users fa-5x"></i>
-                                         </div>
-                                         <div class="col-xs-9 text-right">
-                                         <!-- Pull this from something -->
-                                             <div class="huge"></div>
-                                             <div><h3>Meantions</h3></div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <a href="meantions.php">
-                                     <div class="panel-footer">
-                                         <span class="pull-left">View Mentions</span>
-                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                 </a>
-                             </div>
-                         </div>
-                         <div class="col-lg-3 col-md-6">
-                             <div class="panel panel-grey">
-                                 <div class="panel-heading">
-                                     <div class="row">
-                                         <div class="col-xs-3">
-                                              <i class="fa fa-map-o fa-5x"></i>
-                                         </div>
-                                         <div class="col-xs-9 text-right">
-                                             <!-- Pull this from something -->
-                                             <div class="huge"></div>
-                                             <div><h3>Events</h3></div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <a href="events.php">
-                                     <div class="panel-footer">
-                                         <span class="pull-left">View Events</span>
-                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                 </a>
-                             </div>
+
+                            <br>
+                                <div class="col-lg-14">
+                                    <div class="panel panel-default">
+                                        <div class="list-group">
+
+                                        </div>
+                                    </div>
+                                </div>
                          </div>
                      </div>
-                     <!-- <div class="element">
-                      </div> -->
-                         <div class="col-lg-13">
-                             <div class="panel panel-default">
-                                 <div class="panel-heading">
-                                     <h3 class="panel-title"><!-- <i class="fa fa-clock-o fa-fw"></i> --> Posts</h3>
-                                 </div>
-                                 <div class="panel-body">
-                                     <div class="list-group">
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">just now</span>
-                                             <i class="fa fa-fw fa-calendar"></i> Task
-                                         </a>
-                                     </div>
-                                     <div class="text-right">
-                                         <a href="#">View All Activity <i class="fa fa-arrow-circle-right"></i></a>
-                                     </div>
-                                 </div>
-                             </div>
 
                      <!-- /.row -->
 
