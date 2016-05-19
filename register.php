@@ -41,7 +41,7 @@ for motivation: http://i0.kym-cdn.com/photos/images/original/000/928/594/f78.gif
      <link href="css/bootstrap.min.css" rel="stylesheet">
 
      <!-- Custom CSS -->
-     <link href="css/simple-sidebar.css" rel="stylesheet">
+     <!-- <link href="css/simple-sidebar.css" rel="stylesheet"> -->
 
  </head>
 
@@ -50,92 +50,15 @@ for motivation: http://i0.kym-cdn.com/photos/images/original/000/928/594/f78.gif
 
  <body>
 
-     <div id="wrapper">
-
-         <!-- Sidebar -->
-         <div id="sidebar-wrapper">
-             <ul class="sidebar-nav">
-                <br> <!-- Consider doing through CSS -->
-                 <li class="sidebar-brand">
-                     <a class="navbar-brand" href="index.php">  <font size="10" color="white"> Norfleet </font>  </a>
-                 </li>
-                 <li>
-                     <a href="javascript:;" data-toggle="collapse" data-target="#demo">
-                         <i class="fa fa-fw fa-user"></i>  Username <i class="fa fa-fw fa-caret-down"></i>
-                       <br>
-                     </a>
-                     <ul id="demo" class="collapse">
-                         
-                             <a href="#"> <span class="fa fa-fw fa-user"></span> Profile </a>
-
-                             <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a>
-
-                             <a href="#"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
-
-                     </ul>
-                 </li>
-                 <br>
-                 <li class="active">
-                     <a href="#"> <i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
-                 </li>
-                 <br>
-                 <li>
-                     <a href="#"> <i class="fa fa-fw fa-comments"></i> Tweets </a>
-                 </li>
-                 <br>
-                 <li>
-                     <a href="#"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
-                 </li>
-                 <br>
-                 <li>
-                     <a href="#"> <i class="fa fa-fw fa-users"></i> Mentions </a>
-                 </li>
-                 <br>
-                 <li>
-                     <a href="#"> <i class="fa fa-fw fa-map-o"></i> Trending Events</a>
-                 </li>
-             </ul>
-         </div>
-         <!-- /#sidebar-wrapper -->
-
-         <!-- Page Content -->
-         <div id="page-content-wrapper">
-             <!-- <div class="container-fluid">
-                 <div class="row">
-                     <div class="col-lg-12">
-                         <h1>Simple Sidebar</h1>
-                         <p>This template has a responsive menu toggling system.
-                         The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens.
-                         When toggled using the button below, the menu will appear/disappear.
-                         On small screens, the page content will be pushed off canvas.</p>
-                         <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-                     </div>
-                 </div>
-             </div> -->
-                     <!-- Page Heading -->
                      <div class="row">
                          <div class="col-lg-12" align="right">
                             <div class="pageshift">
-                            <h1 class="page-header" font size="18" align="left">
-                                 <font size="18" color="black"> Register </font><small><font color="grey"> Join the club </small></font>
+                            <h1 class="page-header" font size="18" align="center">
+                                 <font size="18" color="black"> Register </font><!-- <small><font color="grey"> Join the club </small></font> -->
                             </h1>
-                                <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
+<!--                                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a> -->
                             </div>
                      </div>
-
-										 <!-- Banner Alert -->
-                     <!-- <div class="row">
-                         <div class="col-lg-12">
-                             <div class="alert alert-info alert-dismissable">
-                                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                 <i class="fa fa-info-circle"></i>  <strong>I am a banner alert</strong>
-                                 Click here <a href="index.php" class="alert-link"> to reload the page!</a>
-                             </div>
-                         </div>
-                     </div> -->
-                     <!-- /.row -->
-
 
 
 <center>
@@ -450,11 +373,6 @@ for motivation: http://i0.kym-cdn.com/photos/images/original/000/928/594/f78.gif
 
                  <!-- /.container-fluid -->
 
-             </div>
-         </div>
-         <!-- /#page-content-wrapper -->
-
-     </div>
      <!-- /#wrapper -->
 
      <!-- jQuery -->
