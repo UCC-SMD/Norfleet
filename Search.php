@@ -1,3 +1,9 @@
+/*
+Coded by Charlie and John
+Uses SQL code to search the database
+*/
+
+
 <link href="images/web_assets/favicon.ico" rel="icon" />
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <link href="css/font-awesome.min.css" rel="stylesheet" />
