@@ -35,20 +35,8 @@
          <div id="sidebar-wrapper">
              <ul class="sidebar-nav">
                  <li class="sidebar-brand">
-                     <a class="navbar-brand" href="dashboard.php">  <font size="10" color="white"> Norfleet </font> </a>
+                     <a class="navbar-brand" href="dashboard.php">  <font size="10" face="avenir" color="white"> Norfleet </font> </a>
                  </li>
-                 <li>
-                     <a href="javascript:;" data-toggle="collapse" data-target="#demo">
-                         <i class="fa fa-fw fa-user"></i> Username<i class="fa fa-fw fa-caret-down"></i>
-                       <br>
-                     </a>
-                     <ul id="demo" class="collapse">
-                             <a href="#"> <span class="fa fa-fw fa-user"></span> Profile </a>
-                             <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
-                             <a href="logout.php"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
-                     </ul>
-                 </li>
-                 <br>
                  <li class="active">
                      <a href="dashboard.php"> <i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                  </li>
@@ -62,11 +50,23 @@
                  </li>
                  <br>
                  <li>
-                     <a href="#"> <i class="fa fa-fw fa-users"></i> Mentions </a>
+                     <a href="javascript:;" data-toggle="collapse" data-target="#demo">
+                         <i class="fa fa-fw fa-user"></i> Help <i class="fa fa-fw fa-caret-down"></i>
+                       <br>
+                     </a>
+                     <ul id="demo" class="collapse">
+                             <a href="#"> <span class="fa fa-fw fa-comments"></span> Posts </a>
+                             <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
+                             <a href="logout.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
+                     </ul>
                  </li>
                  <br>
                  <li>
-                     <a href="#"> <i class="fa fa-fw fa-map-o"></i> Trending Events</a>
+                 <a href="logout.php"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
+                 </li>
+                 <br>
+                 <li>
+                     <a href="aboutus.php"> <i class="fa fa-fw fa-male"></i> About Us </a>
                  </li>
                  <br>
                  <li>

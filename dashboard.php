@@ -46,50 +46,20 @@
      <div id="wrapper">
 
          <!-- Sidebar -->
+     <div id="wrapper">
+
+         <!-- Sidebar -->
          <div id="sidebar-wrapper">
              <ul class="sidebar-nav">
-                <br> <!-- Consider doing through CSS -->
-                <li class="sidebar-brand">
+                 <li class="sidebar-brand">
                      <a class="navbar-brand" href="dashboard.php">  <font size="10" face="avenir" color="white"> Norfleet </font> </a>
                  </li>
-                 <li>
-                     <a href="javascript:;" data-toggle="collapse" data-target="#demo">
-
-                         <i class="fa fa-fw fa-user">
-                        </i> <?php require("common.php");//this code is so the username is displayed.
-                        if(empty($_SESSION['user'])) { 
-
-                            // If they are not, we redirect them to the login page. 
-                            $location = "http://" . $_SERVER['HTTP_HOST'] . "/index.php";
-                            echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL='.$location.'">';
-                            //exit;
-                         
-                            // Remember that this die statement is absolutely critical.  Without it, 
-                            // people can view your members-only content without logging in. 
-                            die("Redirecting so you can log in"); 
-                        }
-
-
-                        // To access $_SESSION['user'] values put in an array, show user his username
-                        $arr = array_values($_SESSION['user']); echo $arr[1]; ?> 
-                    <i class="fa fa-fw fa-caret-down"></i>
-
-                         <!-- <i class="fa fa-fw fa-user"></i> User Actions <?php ?> <i class="fa fa-fw fa-caret-down"></i> -->
-
-                       <br>
-                     </a>
-                     <ul id="demo" class="collapse">
-                             <!-- <a href="profile.php"> <span class="fa fa-fw fa-user"></span> Profile </a> -->
-                             <a href="logout.php"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
-                     </ul>
-                 </li>
-                 <br>
                  <li class="active">
-                     <a href="#"> <i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                     <a href="dashboard.php"> <i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                  </li>
                  <br>
                  <li>
-                     <a href="posts.php"> <i class="fa fa-fw fa-comments"></i> Posts </a>
+                     <a href="#"> <i class="fa fa-fw fa-comments"></i> Posts </a>
                  </li>
                  <br>
                  <li>
@@ -97,15 +67,23 @@
                  </li>
                  <br>
                  <li>
-                     <a href="mentions.php"> <i class="fa fa-fw fa-users"></i> Mentions </a>
+                     <a href="javascript:;" data-toggle="collapse" data-target="#demo">
+                         <i class="fa fa-fw fa-user"></i> Help <i class="fa fa-fw fa-caret-down"></i>
+                       <br>
+                     </a>
+                     <ul id="demo" class="collapse">
+                             <a href="#"> <span class="fa fa-fw fa-comments"></span> Posts </a>
+                             <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
+                             <a href="logout.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
+                     </ul>
                  </li>
                  <br>
                  <li>
-                     <a href="events.php"> <i class="fa fa-fw fa-map-o"></i> Events </a>
+                 <a href="logout.php"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
                  </li>
                  <br>
                  <li>
-                     <a href="help.php"> <i class="fa fa-fw fa-comments"></i> Help! </a>
+                     <a href="aboutus.php"> <i class="fa fa-fw fa-male"></i> About Us</a>
                  </li>
              </ul>
          </div>

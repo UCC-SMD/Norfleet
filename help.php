@@ -1,23 +1,35 @@
-<!DOCTYPE html>
+<!--
+
+    _   __           ______          __
+   / | / /___  _____/ __/ /__  ___  / /_
+  /  |/ / __ \/ ___/ /_/ / _ \/ _ \/ __/
+ / /|  / /_/ / /  / __/ /  __/  __/ /_
+/_/ |_/\____/_/  /_/ /_/\___/\___/\__/
+
+            NICE WORK LADS
+ -->
+
+
+ <!DOCTYPE html>
  <html lang="en">
 
  <head>
 
-	 <!-- This is so many levels of bad all at one time.
-	 Why does this even work? -->
+     <!-- This is so many levels of bad all at one time.
+     Why does this even work? -->
 
-	 	<link href="images/web_assets/favicon.ico" rel="icon" />
+        <link href="images/web_assets/favicon.ico" rel="icon" />
 
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/sb-admin.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
-		<link href="css/ourstyle.css" rel="stylesheet" />
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/sb-admin.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+        <link href="css/ourstyle.css" rel="stylesheet" />
 
      <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-     <title>Norfleet Help</title>
+     <title>Norfleet</title>
 
      <!-- Bootstrap Core CSS -->
      <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -26,35 +38,29 @@
      <link href="css/simple-sidebar.css" rel="stylesheet">
 
  </head>
-     
-<body>
 
+
+
+
+ <body>
+
+     <div id="wrapper">
+
+         <!-- Sidebar -->
      <div id="wrapper">
 
          <!-- Sidebar -->
          <div id="sidebar-wrapper">
              <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                     <a class="navbar-brand" href="dashboard.php">  <font size="10" color="white"> Norfleet </font> </a>
+                 <li class="sidebar-brand">
+                     <a class="navbar-brand" href="dashboard.php">  <font size="10" face="avenir" color="white"> Norfleet </font> </a>
                  </li>
-                 <li>
-                     <a href="javascript:;" data-toggle="collapse" data-target="#demo">
-                         <i class="fa fa-fw fa-user"></i> <?php echo $query; ?> <i class="fa fa-fw fa-caret-down"></i>
-                       <br>
-                     </a>
-                     <ul id="demo" class="collapse">
-                             <a href="profile.php"> <span class="fa fa-fw fa-user"></span> Profile </a>
-                             <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
-                             <a href="logout.php"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
-                     </ul>
-                 </li>
-                 <br>
                  <li class="active">
-                     <a href="#"> <i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                     <a href="dashboard.php"> <i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                  </li>
                  <br>
                  <li>
-                     <a href="posts.php"> <i class="fa fa-fw fa-comments"></i> Posts </a>
+                     <a href="#"> <i class="fa fa-fw fa-comments"></i> Posts </a>
                  </li>
                  <br>
                  <li>
@@ -62,27 +68,32 @@
                  </li>
                  <br>
                  <li>
-                     <a href="mentions.php"> <i class="fa fa-fw fa-users"></i> Mentions </a>
+                     <a href="javascript:;" data-toggle="collapse" data-target="#demo">
+                         <i class="fa fa-fw fa-user"></i> Help <i class="fa fa-fw fa-caret-down"></i>
+                       <br>
+                     </a>
+                     <ul id="demo" class="collapse">
+                             <a href="#"> <span class="fa fa-fw fa-comments"></span> Posts </a>
+                             <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
+                             <a href="logout.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
+                     </ul>
                  </li>
                  <br>
                  <li>
-                     <a href="trendingEvents.php"> <i class="fa fa-fw fa-map-o"></i> Trending Events</a>
+                 <a href="logout.php"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
                  </li>
                  <br>
                  <li>
-                     <a href="help.php"> <i class="fa fa-fw fa-comments"></i> Help! </a>
+                     <a href="aboutus.php"> <i class="fa fa-fw fa-male"></i> About Us </a>
                  </li>
              </ul>
          </div>
-         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
-    </div>
     
     <div class="row">
                          <div class="col-lg-3 col-md-6">
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
-                                     <div class="row">
-                                         
+                                     <div class="rowone">
                                          <div class="col-xs-9 text-right">
                                              <div class="huge"></div>
                                              <!-- Pull this from something -->
@@ -128,8 +139,7 @@
                                      <div class="row">
                                          
                                          <div class="col-xs-9 text-right">
-                                         <!-- Pull this from something -->
-                                             <div class="huge"></div>
+                                            <div class="huge"></div>
                                              <div><h3>Tweets</h3></div>
                                              <div><h4>Tweeting is the primary method of communication on this website, learn how to 'tweet' here...</h4></div>
                                          </div>
@@ -153,7 +163,7 @@
                                              <!-- Pull this from something -->
                                              <div class="huge"></div>
                                              <div><h3>What is Norfleet?</h3></div>
-                                             <div><h4>Norfleet is the exciting and dynamic social media platform that you are on!</h4></div>
+                                             <div><h4>Norfleet is the exciting and dynamic social media platform that you are on right now!</h4></div>
                                          </div>
                                      </div>
                                  </div>
@@ -183,6 +193,7 @@
      });
      </script>
      </body>
-     
-     
+
+ </html>
+
 

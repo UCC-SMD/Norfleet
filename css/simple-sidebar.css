@@ -72,8 +72,20 @@
     list-style: none;
 }
 
+.sidebar-brand {
+    /*Spaceing between the top of the sidebar title and the base of the window*/
+    padding-top: 20px;
+    padding-left: 13px;
+    /*padding-bottom: 20px;*/
+    /*Also controls how far the sidebar items are from the right side of the sidebar*/
+    text-indent: 5px;
+    /*Change this sometime soon! Very important in filling un-used sidebar space*/
+    line-height: 50px;
+}
+
 .sidebar-nav li {
     /*Also controls how far the sidebar items are from the right side of the sidebar*/
+    padding-bottom: 15px;
     text-indent: 5px;
     /*Change this sometime soon! Very important in filling un-used sidebar space*/
     line-height: 50px;
