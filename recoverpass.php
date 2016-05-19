@@ -15,19 +15,24 @@ E-Mail:<br />
 </center>
 
  <!-- this will allow the user to recover their password. general outline: two fields in a form, one for username other for email, 
-submit button. use php mail function to email new password to user, and reset it using sql
+submit button. use php mail function to email forgotten password to user. 
  -->
 <?php
 
-function sendpass()
+function sendpass($email, $username, $password)
 {
-	$to = "";
-	$subject = "Password Retrieval";
-	$txt = "";
+	
+	$subject = "Password Retrieval for your Norfleet Account";
+	
 	$headers = "From: passwordretrieval.noreply@norfleet.com";
-
-	mail($to,$subject,$txt,$headers);
+	$headers .= "MIME-Version: 1.0\r\n";
+	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+	$message = '<html><body>';
+	$message .= '<h1>Hello, World!</h1>';
+	$message .= '</body></html>';
+	mail("camran.hansen@ucc.on.ca",$subject,$message,$headers);
+	echo "did it";
 }
 
-sendpass();
+sendpass("camran.hansen@ucc.on.ca","camran","asdf");
 ?>
