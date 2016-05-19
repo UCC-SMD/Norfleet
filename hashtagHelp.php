@@ -79,7 +79,7 @@
                  </li>
                  <br>
                  <li>
-                     <a href="helpPages/norfleetAbout.php"> <i class="fa fa-fw fa-male"></i> About Us</a>
+                     <a href="norfleetAbout.php"> <i class="fa fa-fw fa-male"></i> About Us</a>
                  </li>
              </ul>
          </div>
