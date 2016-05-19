@@ -224,7 +224,7 @@ if (mysql_num_rows($result) > 0) {
 // print them one after another
 while($row = mysql_fetch_row($result)) {
 //the code above ensures that the user does not enter HTML code, meaning that 
-echo "<a href='#' class='list-group-item'><span class='badge'>" . filter_var($row[1], FILTER_SANITIZE_STRING) .  "</span><i class='fa fa-fw fa-comment'></i></i>" . filter_var($row[2], FILTER_SANITIZE_STRING) ."</a><br>";
+echo "<a href='#' class='list-group-item'><span class='badge'>" . filter_var($row[1], FILTER_SANITIZE_STRING) .  "</span><i class='fa fa-fw fa-comment'></i></i>" . filter_var($row[2], FILTER_SANITIZE_STRING) . "<b> <i>". $row[3] . "</b> </i>"  ."</a><br>";
 }
 
 } else {
