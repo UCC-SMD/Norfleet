@@ -180,10 +180,20 @@
 
 <!-- This is the HTML form that appears in the browser -->
 <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
-this will be changed soon: <input type="text" name="in_content">
+this will be changed soon: 
+<input type="text" name="in_content">
 <input type="text" name="hashtag">
 <input type="submit" name="submit">
 </form>                             
+
+<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+Search for Hashtag: <input type="text" name="hsearch">
+<input type="submit" name="submit">
+</form>
+<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+Search for Username: <input type="text" name="usearch">
+<input type="submit" name="submit">
+</form>
 
 <?php
 
@@ -200,6 +210,7 @@ echo '<META HTTP-EQUIV="refresh" in_content="0;URL='.$location.'">';
 // Remember that this die statement is absolutely critical.  Without it, 
 // people can view your members-only content without logging in. 
 die("Redirecting to login.php"); 
+
 } 
 
 // To access $_SESSION['user'] values put in an array, show user his username
@@ -212,8 +223,19 @@ $connection = mysql_connect($host, $username, $password) or die ("Unable to conn
 // select database
 mysql_select_db($dbname) or die ("Unable to select database!");
 
+
+
 // create query
-$query = "SELECT * FROM posts";
+if(empty($_POST['in_content'])!=True){
+    $query = "SELECT * FROM posts";
+}elseif (empty($_POST['hsearch'])!=True) {
+    $query = "SELECT * FROM posts WHERE hashtag LIKE '%" . $_POST['hsearch'] . "%'";
+}elseif (empty($_POST['usearch'])!=True) {
+    $query = "SELECT * FROM posts WHERE doneby LIKE '" . $_POST['usearch'] . "'";
+}else{
+    $query = "SELECT * FROM posts";
+}
+
 
 // execute query
 $result = mysql_query($query) or die ("Error in query: $query. ".mysql_error());
@@ -242,30 +264,13 @@ $hashtag = mysql_escape_string($_POST['hashtag']);
 // check to see if user has entered anything
 if ($in_content != "") {
 // build SQL query
-$query = "INSERT INTO posts (`by`, `in_content`, `hashtag`) VALUES ('$arr[1]', '$in_content', '$hashtag')";
+$query = "INSERT INTO posts (`doneby`, `in_content`, `hashtag`) VALUES ('$arr[1]', '$in_content', '$hashtag')";
 // run the query
 $result = mysql_query($query) or die ("Error in query: $query. ".mysql_error());
 // refresh the page to show new update
 echo "<meta http-equiv='refresh' content='0'>";
 }
 
-// if DELETE pressed, set an id, if id is set then delete it from DB
-if (isset($_GET['id'])) {
-
-// create query to delete record
-echo $_SERVER['PHP_SELF'];
-$query = "DELETE FROM posts WHERE id = ".$_GET['id'];
-
-// run the query
-$result = mysql_query($query) or die ("Error in query: $query. ".mysql_error());
-
-// reset the url to remove id $_GET variable
-$location = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
-echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL='.$location.'">';
-exit;
-
-
-}
 
 // close connection
 mysql_close($connection);
