@@ -57,7 +57,6 @@ Version: 0.9.3
 
 
 
- <body> 
      <div id="wrapper">
 
          <!-- Sidebar -->
@@ -71,7 +70,7 @@ Version: 0.9.3
                  </li>
                  <br>
                  <li>
-                     <a href="posts.php"> <i class="fa fa-fw fa-comments"></i> Posts </a>
+                     <a href="posts.php>"> <i class="fa fa-fw fa-comments"></i> Posts </a>
                  </li>
                  <br>
                  <li>
@@ -95,7 +94,7 @@ Version: 0.9.3
                  </li>
                  <br>
                  <li>
-                     <a href="https://github.com/UCC-SMD/Norfleet/wiki/Team-Biographies"> <i class="fa fa-fw fa-male"></i> About Us </a>
+                     <a href="norfleetAbout.php"> <i class="fa fa-fw fa-male"></i> About Us </a>
                  </li>
              </ul>
          </div>
@@ -107,148 +106,21 @@ Version: 0.9.3
                          <div class="col-lg-12" align="right">
                             <div class="pageshift">
                             <h1 class="page-header" font size="18" align="left">
-                                 <font size="18" color="black">Dashboard</font><small><font color="grey"> All things concerning you </small></font>
+                                 <font size="18" color="black">Hashtags</font><small><font color="grey"> A guide </small></font>
                             </h1>
                                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
                             </div>
-
-                             <!-- Maybe put an alert or something here. I really don't know -->
-                                                         <!-- Over-Descriptive and unnecessary -->
-                        <!-- <ol class="breadcrumb">
-                                 <li class="active">
-                                     <i class="fa fa-dashboard"></i> Dashboard
-                                 </li>
-                             </ol> -->
                          </div>
                      </div>
 
-                                         <!-- Banner Alert -->
-                     <!-- <div class="row">
-                         <div class="col-lg-12">
-                             <div class="alert alert-info alert-dismissable">
-                                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                 <i class="fa fa-info-circle"></i>  <strong>I am a banner alert</strong>
-                                 Click here <a href="index.php" class="alert-link"> to reload the page!</a>
-                             </div>
-                         </div>
-                     </div> -->
-                     <!-- /.row -->
-                    <br>
-                    <br>
-                     <div class="row">
-                         <div class="col-lg-4 col-md-7">
-                             <div class="panel panel-grey">
-                                 <div class="panel-heading">
-                                     <div class="row">
-                                         <div class="col-xs-3">
-                                             <i class="fa fa-comments fa-5x"></i>
-                                         </div>
-                                         <div class="col-xs-9 text-right">
-                                             <div class="huge"></div>
-                                             <!-- Pull this from something -->
-                                             <div><h3>Posts</h3></div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <a href="posts.php">
-                                     <div class="panel-footer">
-                                         <span class="pull-left"> View Posts </span>
-                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                 </a>
-                             </div>
-                         </div>
-                         <div class="col-lg-4 col-md-7">
-                             <div class="panel panel-grey">
-                                 <div class="panel-heading">
-                                     <div class="row">
-                                         <div class="col-xs-3">
-                                             <i class="fa fa-bullhorn fa-5x"></i>
-                                         </div>
-                                         <div class="col-xs-9 text-right">
-                                         <!-- Pull this from something -->
-                                             <div class="huge"></div>
-                                             <div><h3>Hashtags</h3></div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <a href="hashtags.php">
-                                     <div class="panel-footer">
-                                         <span class="pull-left">View Hashtags</span>
-                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                 </a>
-                             </div>
-                         </div>
-<!--                          <div class="col-lg-3 col-md-6">
-                             <div class="panel panel-grey">
-                                 <div class="panel-heading">
-                                     <div class="row">
-                                         <div class="col-xs-3">
-                                             <i class="fa fa-users fa-5x"></i>
-                                         </div>
-                                         <div class="col-xs-9 text-right">
-                                             <div class="huge"></div>
-                                             <div><h3>Mentions</h3></div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <a href="mentions.php">
-                                     <div class="panel-footer">
-                                         <span class="pull-left">View Mentions</span>
-                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                 </a>
-                             </div>
-                         </div> -->
-                         <div class="col-lg-4 col-md-7">
-                             <div class="panel panel-grey">
-                                 <div class="panel-heading">
-                                     <div class="row">
-                                         <div class="col-xs-3">
-                                              <i class="fa fa-map-o fa-5x"></i>
-                                         </div>
-                                         <div class="col-xs-9 text-right">
-                                             <!-- Pull this from something -->
-                                             <div class="huge"></div>
-                                             <div><h3>Events</h3></div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <a href="trendingEvents.php">
-                                     <div class="panel-footer">
-                                         <span class="pull-left">View Events</span>
-                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                 </a>
-                             </div>
-                         </div>
-                     </div>
-                     <!-- <div class="element">
-                      </div> -->
-<!--                          <div class="col-lg-13">
-                             <div class="panel panel-default">
-                                 <div class="panel-heading">
-                                     <h3 class="panel-title"> Posts</h3>
-                                 </div>
-                                 <div class="panel-body">
-                                     <div class="list-group">
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">just now</span>
-                                             <i class="fa fa-fw fa-calendar"></i> Task
-                                         </a>
-                                     </div>
-                                     <div class="text-right">
-                                     </div>
-                                 </div>
-                             </div> -->
-
-                     <!-- /.row -->
-
+                     <div class="row" align="right">
+                         <h3>
+                            Hashtags are words or phrases preceded by a pound sign (#) that are used to identify messages on a specific topic.
+                         </h3>
+                         <br>
+                         <h4>
+                            If a tweet is sent with a hashtag, it will automatically show up in the hashtag section, where a user can search for specific hashtags.
+                         </h4>
                  </div>
                  <!-- /.container-fluid -->
 
@@ -277,7 +149,6 @@ Version: 0.9.3
      </script>
 
  </body>
-
  </html>
 
 

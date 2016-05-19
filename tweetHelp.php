@@ -11,12 +11,11 @@
 
 Developed by John and Charlie over May 11th to May 18th.
 Full team: Charlie, Campbell, Camran and John
-Purpose: Provide a space for the user to access information on how to use and search for posts
-Version: 0.9
+Purpose: Provide a space for the user to access information on how to use and search for hashtags
+Version: 0.9.3
 
 
  -->
-
 
 
  <!DOCTYPE html>
@@ -52,12 +51,12 @@ Version: 0.9
 
      <!-- Custom CSS -->
      <link href="css/simple-sidebar.css" rel="stylesheet">
+
  </head>
 
 
 
 
- <body> 
      <div id="wrapper">
 
          <!-- Sidebar -->
@@ -71,7 +70,7 @@ Version: 0.9
                  </li>
                  <br>
                  <li>
-                     <a href="posts.php"> <i class="fa fa-fw fa-comments"></i> Posts </a>
+                     <a href="posts.php>"> <i class="fa fa-fw fa-comments"></i> Posts </a>
                  </li>
                  <br>
                  <li>
@@ -84,9 +83,9 @@ Version: 0.9
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
-                             <a href="helpPages/tweetHelp.php"> <span class="fa fa-fw fa-comments"></span> Posts </a>
+                             <a href="tweetHelp.php"> <span class="fa fa-fw fa-comments"></span> Posts </a>
                              <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
-                             <a href="helpPages/hashtagHelp.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
+                             <a href="hashtagHelp.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
                      </ul>
                  </li>
                  <br>
@@ -95,118 +94,59 @@ Version: 0.9
                  </li>
                  <br>
                  <li>
-                     <a href="norfleetAbout.php"> <i class="fa fa-fw fa-male"></i> About Us</a>
+                     <a href="norfleetAbout.php"> <i class="fa fa-fw fa-male"></i> About Us </a>
                  </li>
              </ul>
          </div>
          <!-- /#sidebar-wrapper -->
-        <div class="pageshift">
-                    <h1 class="page-header" font size="18" align="left">
-                        <font size="18" color="black">Help: Hashtags</font>
-                        <small><font color="grey">  </small></font>
-                    </h1>
-                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
-        </div>
-    
-         <div class="row">
-             <div><center>
-                <h1> Help Page: Tweets</h1>
-                <b> What are they?</b>
-                <p>Tweets are the name for messages sent across our social media platform.  They are sent to share your thoughts and expierences with teh world, eliciting reactions.</p>
-                 <b> How they work </b>
-                 <p>Once a tweet is sent, it is available for the whole world to see.  Of course, should you want to revoke a tweet, you can always delete it.</p>
-                 </center></div>
-                         <div class="col-lg-3 col-md-6">
-                             <div class="panel panel-grey">
-                                 <div class="panel-heading">
-                                     <div class="row">
-                                         
-                                         <div class="col-xs-9 text-right">
-                                         <!-- Pull this from something -->
-                                             <div class="huge"></div>
-                                             <div><h3>Profiles</h3></div>
-                                             
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <div><h4>
-                                     Your profile is who you are, learn how to maximize your personal customization here...
-                                 </h4></div>
-                                 <a href="profileHelp.php">
-                                     <div class="panel-footer">
-                                         <span class="pull-left">Profile Help</span>
-                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                 </a>
-                             </div>
-                        </div>                      
-                         <div class="col-lg-3 col-md-6">
-                             <div class="panel panel-grey">
-                                 <div class="panel-heading">
-                                     <div class="row">
-                                         
-                                         <div class="col-xs-9 text-right">
-                                         <!-- Pull this from something -->
-                                             <div class="huge"></div>
-                                             <div><h3>Hashtags</h3></div>
-                                             
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <div><h4>
-                                     Hashtags are keywords used to identify specific points of note, learn how to use them here...
-                                 </h4></div>
-                                 <a href="hashtagHelp.php">
-                                     <div class="panel-footer">
-                                         <span class="pull-left">Hashtag Help</span>
-                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                 </a>
-                             </div>
-                         </div>
-                         <div class="col-lg-3 col-md-6">
-                             <div class="panel panel-grey">
-                                 <div class="panel-heading">
-                                     <div class="row">
-                                         
-                                         <div class="col-xs-9 text-right">
-                                            <div class="huge"></div>
-                                             <div><h3>Tweets</h3></div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <div><h4>
-                                    Tweeting is the primary method of communication on this website, learn how to 'tweet' here...
-                                 </h4></div>
-                                 <a href="tweetHelp.php">
-                                     <div class="panel-footer">
-                                         <span class="pull-left">Tweet Help</span>
-                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                 </a>
-                             </div>
+
+         <!-- Page Content -->
+         <div id="page-content-wrapper">
+                    <div class="row">
+                         <div class="col-lg-12" align="right">
+                            <div class="pageshift">
+                            <h1 class="page-header" font size="18" align="left">
+                                 <font size="18" color="black">Posts/tweets</font><small><font color="grey"> A guide </small></font>
+                            </h1>
+                                <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
+                            </div>
                          </div>
                      </div>
-           
-    
-    
-    <script src="javascript/jquery.js"></script>
-     
+
+                     <div class="row" align="right">
+                         <h3>
+                            Tweets are the name for messages sent across our social media platform.  They are sent to share your thoughts and expierences with the world, eliciting reactions.
+                         </h3>
+                         <br>
+                         <h4>
+                            Once a tweet is sent, it is available for the whole world to see.  Of course, should you want to revoke a tweet, you can always delete it.
+                         </h4>
+                 </div>
+                 <!-- /.container-fluid -->
+
+             </div>
+         </div>
+         <!-- /#page-content-wrapper -->
+
+     </div>
+     <!-- /#wrapper -->
+
+     <!-- jQuery -->
+     <script src="javascript/jquery.js"></script>
+
+     <!-- Bootstrap Core JavaScript -->
      <script src="javascript/bootstrap.min.js"></script>
 
-     
      <!-- Menu Toggle Script -->
      <script>
-     //  32 is JavaScript SpaceBar keycode
+
+    //  32 is JavaScript SpaceBar keycode
 
      $("#menu-toggle").click(function(e) {
          e.preventDefault();
          $("#wrapper").toggleClass("toggled");
      });
      </script>
-     </body>
 
-</html>    
+ </body>
+ </html>
