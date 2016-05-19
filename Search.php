@@ -1,7 +1,7 @@
-/*
+<!--
 Coded by Charlie
 Uses SQL code to search the database
-*/
+-->
 
 
 <link href="images/web_assets/favicon.ico" rel="icon" />
