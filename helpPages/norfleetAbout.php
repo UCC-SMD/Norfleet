@@ -7,7 +7,6 @@
 	 Why does this even work? -->
 
 	 	<link href="images/web_assets/favicon.ico" rel="icon" />
-
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/sb-admin.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
@@ -91,7 +90,7 @@
                                          </div>
                                      </div>
                                  </div>
-                                 <a href="helpPages/profileHelp.php">
+                                 <a href="profileHelp.php">
                                      <div class="panel-footer">
                                          <span class="pull-left"> Profile Help </span>
                                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -113,7 +112,7 @@
                                          </div>
                                      </div>
                                  </div>
-                                 <a href="helpPages/hashtagHelp.php">
+                                 <a href="hashtagHelp.php">
                                      <div class="panel-footer">
                                          <span class="pull-left">View Hashtags</span>
                                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -135,7 +134,7 @@
                                          </div>
                                      </div>
                                  </div>
-                                 <a href="helpPages/tweetHelp.php">
+                                 <a href="tweetHelp.php">
                                      <div class="panel-footer">
                                          <span class="pull-left">Tweet Help</span>
                                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -157,7 +156,7 @@
                                          </div>
                                      </div>
                                  </div>
-                                 <a href="helpPages/norfleetAbout.php">
+                                 <a href="norfleetAbout.php">
                                      <div class="panel-footer">
                                          <span class="pull-left">Learn more about Norfleet</span>
                                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
