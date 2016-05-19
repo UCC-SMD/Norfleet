@@ -56,7 +56,7 @@
                  </li>
                  <br>
                  <li>
-                     <a href="#"> <i class="fa fa-fw fa-comments"></i> Posts </a>
+                     <a href="posts.php"> <i class="fa fa-fw fa-comments"></i> Posts </a>
                  </li>
                  <br>
                  <li>
@@ -69,9 +69,8 @@
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
-                             <a href="#"> <span class="fa fa-fw fa-comments"></span> Posts </a>
-                             <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
-                             <a href="logout.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
+                             <a href="postHelp.php"> <span class="fa fa-fw fa-comments"></span> Posts </a>
+                             <a href="hashtagHelp.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
                      </ul>
                  </li>
                  <br>
@@ -80,7 +79,7 @@
                  </li>
                  <br>
                  <li>
-                     <a href="aboutus.php"> <i class="fa fa-fw fa-male"></i> About Us </a>
+                     <a href="https://github.com/UCC-SMD/Norfleet/wiki/Team-Biographies"> <i class="fa fa-fw fa-male"></i> About Us </a>
                  </li>
              </ul>
          </div>

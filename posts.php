@@ -36,7 +36,7 @@
          <!-- Sidebar -->
          <div id="sidebar-wrapper">
              <ul class="sidebar-nav">
-                 <li class="sidebar-brand">
+                  <li class="sidebar-brand">
                      <a class="navbar-brand" href="dashboard.php">  <font size="10" face="avenir" color="white"> Norfleet </font> </a>
                  </li>
                  <li class="active">
@@ -44,7 +44,7 @@
                  </li>
                  <br>
                  <li>
-                     <a href="#"> <i class="fa fa-fw fa-comments"></i> Posts </a>
+                     <a href="posts.php"> <i class="fa fa-fw fa-comments"></i> Posts </a>
                  </li>
                  <br>
                  <li>
@@ -57,9 +57,9 @@
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
-                             <a href="#"> <span class="fa fa-fw fa-comments"></span> Posts </a>
+                             <a href="tweetHelp.php"> <span class="fa fa-fw fa-comments"></span> Posts </a>
                              <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
-                             <a href="logout.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
+                             <a href="hashtagHelp.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
                      </ul>
                  </li>
                  <br>
@@ -68,11 +68,7 @@
                  </li>
                  <br>
                  <li>
-                     <a href="norfleetAbout.php"> <i class="fa fa-fw fa-male"></i> About Us </a>
-                 </li>
-                 <br>
-                 <li>
-                     <a href="help.php"> <i class="fa fa-fw fa-comments"></i> Help! </a>
+                     <a href="https://github.com/UCC-SMD/Norfleet/wiki/Team-Biographies"> <i class="fa fa-fw fa-male"></i> About Us </a>
                  </li>
              </ul>
          </div>

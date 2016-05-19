@@ -63,7 +63,15 @@
                  </li>
                  <br>
                  <li>
-                     <a href="help.php"> <i class="fa fa-fw fa-bullhorn"></i> Help </a>
+                     <a href="javascript:;" data-toggle="collapse" data-target="#demo">
+                         <i class="fa fa-fw fa-user"></i> Help <i class="fa fa-fw fa-caret-down"></i>
+                       <br>
+                     </a>
+                     <ul id="demo" class="collapse">
+                             <a href="tweetHelp.php"> <span class="fa fa-fw fa-comments"></span> Posts </a>
+                             <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
+                             <a href="hashtagHelp.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
+                     </ul>
                  </li>
                  <br>
                  <li>
@@ -71,7 +79,7 @@
                  </li>
                  <br>
                  <li>
-                     <a href="norfleetAbout.php"> <i class="fa fa-fw fa-male"></i> About Us</a>
+                     <a href="https://github.com/UCC-SMD/Norfleet/wiki/Team-Biographies"> <i class="fa fa-fw fa-male"></i> About Us </a>
                  </li>
              </ul>
          </div>
@@ -110,8 +118,9 @@
                      </div> -->
                      <!-- /.row -->
                     <br>
+                    <br>
                      <div class="row">
-                         <div class="col-lg-3 col-md-6">
+                         <div class="col-lg-4 col-md-7">
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
                                      <div class="row">
@@ -134,7 +143,7 @@
                                  </a>
                              </div>
                          </div>
-                         <div class="col-lg-3 col-md-6">
+                         <div class="col-lg-4 col-md-7">
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
                                      <div class="row">
@@ -157,7 +166,7 @@
                                  </a>
                              </div>
                          </div>
-                         <div class="col-lg-3 col-md-6">
+<!--                          <div class="col-lg-3 col-md-6">
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
                                      <div class="row">
@@ -165,7 +174,6 @@
                                              <i class="fa fa-users fa-5x"></i>
                                          </div>
                                          <div class="col-xs-9 text-right">
-                                         <!-- Pull this from something -->
                                              <div class="huge"></div>
                                              <div><h3>Mentions</h3></div>
                                          </div>
@@ -179,8 +187,8 @@
                                      </div>
                                  </a>
                              </div>
-                         </div>
-                         <div class="col-lg-3 col-md-6">
+                         </div> -->
+                         <div class="col-lg-4 col-md-7">
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
                                      <div class="row">
@@ -206,10 +214,10 @@
                      </div>
                      <!-- <div class="element">
                       </div> -->
-                         <div class="col-lg-13">
+<!--                          <div class="col-lg-13">
                              <div class="panel panel-default">
                                  <div class="panel-heading">
-                                     <h3 class="panel-title"><!-- <i class="fa fa-clock-o fa-fw"></i> --> Posts</h3>
+                                     <h3 class="panel-title"> Posts</h3>
                                  </div>
                                  <div class="panel-body">
                                      <div class="list-group">
@@ -219,10 +227,9 @@
                                          </a>
                                      </div>
                                      <div class="text-right">
-                                         <!-- <a href="posts.php">View All Activity <i class="fa fa-arrow-circle-right"></i></a> -->
                                      </div>
                                  </div>
-                             </div>
+                             </div> -->
 
                      <!-- /.row -->
 
