@@ -94,29 +94,31 @@
     
          <div class="row">
              
-                         <div class="col-lg-3 col-md-6">
+                          <div class="col-lg-3 col-md-6">
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
-                                     <div class="rowone">
+                                     <div class="row">
+                                         
                                          <div class="col-xs-9 text-right">
+                                         <!-- Pull this from something -->
                                              <div class="huge"></div>
-                                              <!--Pull this from something -->
-                                             <div><h3>Profile Help</h3></div>
+                                             <div><h3>Profiles</h3></div>
+                                             
                                          </div>
                                      </div>
                                  </div>
                                  <div><h4>
                                      Your profile is who you are, learn how to maximize your personal customization here...
-                                  </h4></div>
-                                 <a href="helpPages/profileHelp.php">
+                                 </h4></div>
+                                 <a href="profileHelp.php">
                                      <div class="panel-footer">
-                                         <span class="pull-left"> Profile Help </span>
+                                         <span class="pull-left">Profile Help</span>
                                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                          <div class="clearfix"></div>
                                      </div>
                                  </a>
                              </div>
-                         </div>
+                        </div>     
                          <div class="col-lg-3 col-md-6">
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
@@ -125,7 +127,7 @@
                                          <div class="col-xs-9 text-right">
                                          <!-- Pull this from something -->
                                              <div class="huge"></div>
-                                             <div><h3>Hashtag Help</h3></div>
+                                             <div><h3>Hashtags</h3></div>
                                              
                                          </div>
                                      </div>
@@ -133,9 +135,9 @@
                                  <div><h4>
                                      Hashtags are keywords used to identify specific points of note, learn how to use them here...
                                  </h4></div>
-                                 <a href="helpPages/hashtagHelp.php">
+                                 <a href="hashtagHelp.php">
                                      <div class="panel-footer">
-                                         <span class="pull-left">View Hashtags</span>
+                                         <span class="pull-left">Hashtags Help</span>
                                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                          <div class="clearfix"></div>
                                      </div>
@@ -156,7 +158,7 @@
                                  <div><h4>
                                     Tweeting is the primary method of communication on this website, learn how to 'tweet' here...
                                  </h4></div>
-                                 <a href="helpPages/tweetHelp.php">
+                                 <a href="tweetHelp.php">
                                      <div class="panel-footer">
                                          <span class="pull-left">Tweet Help</span>
                                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>

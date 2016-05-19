@@ -1,11 +1,22 @@
-<!DOCTYPE html>
+<!--
+
+    _   __           ______          __
+   / | / /___  _____/ __/ /__  ___  / /_
+  /  |/ / __ \/ ___/ /_/ / _ \/ _ \/ __/
+ / /|  / /_/ / /  / __/ /  __/  __/ /_
+/_/ |_/\____/_/  /_/ /_/\___/\___/\__/
+
+            NICE WORK LADS
+ -->
+
+
+ <!DOCTYPE html>
  <html lang="en">
 
  <head>
 
-	 <!-- This is so many levels of bad all at one time.
-	 Why does this even work? -->
-
+	 <!-- These are the importations of boostrap, css, our font (font awesome), our icon, in addition to some technically browser-specific stuff. -->
+        <!-- This is the icon for the website -->
 	 	<link href="images/web_assets/favicon.ico" rel="icon" />
 
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,7 +28,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-     <title>Norfleet Help: Tweets</title>
+     <title>Norfleet</title>
 
      <!-- Bootstrap Core CSS -->
      <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -26,31 +37,21 @@
      <link href="css/simple-sidebar.css" rel="stylesheet">
 
  </head>
-     
-<body>
 
+
+
+
+ <body> 
      <div id="wrapper">
 
          <!-- Sidebar -->
          <div id="sidebar-wrapper">
              <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                     <a class="navbar-brand" href="dashboard.php">  <font size="10" color="white"> Norfleet </font> </a>
+                 <li class="sidebar-brand">
+                     <a class="navbar-brand" href="dashboard.php">  <font size="10" face="avenir" color="white"> Norfleet </font> </a>
                  </li>
-                 <li>
-                     <a href="javascript:;" data-toggle="collapse" data-target="#demo">
-                         <i class="fa fa-fw fa-user"></i> <?php echo $query; ?> <i class="fa fa-fw fa-caret-down"></i>
-                       <br>
-                     </a>
-                     <ul id="demo" class="collapse">
-                             <a href="profile.php"> <span class="fa fa-fw fa-user"></span> Profile </a>
-                             <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
-                             <a href="logout.php"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
-                     </ul>
-                 </li>
-                 <br>
                  <li class="active">
-                     <a href="#"> <i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                     <a href="dashboard.php"> <i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                  </li>
                  <br>
                  <li>
@@ -62,44 +63,68 @@
                  </li>
                  <br>
                  <li>
-                     <a href="mentions.php"> <i class="fa fa-fw fa-users"></i> Mentions </a>
+                     <a href="javascript:;" data-toggle="collapse" data-target="#demo">
+                         <i class="fa fa-fw fa-user"></i> Help <i class="fa fa-fw fa-caret-down"></i>
+                       <br>
+                     </a>
+                     <ul id="demo" class="collapse">
+                             <a href="helpPages/tweetHelp.php"> <span class="fa fa-fw fa-comments"></span> Posts </a>
+                             <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
+                             <a href="helpPages/hashtagHelp.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
+                     </ul>
                  </li>
                  <br>
                  <li>
-                     <a href="trendingEvents.php"> <i class="fa fa-fw fa-map-o"></i> Trending Events</a>
+                 <a href="logout.php"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
                  </li>
                  <br>
                  <li>
-                     <a href="help.php"> <i class="fa fa-fw fa-comments"></i> Help! </a>
+                     <a href="helpPages/norfleetAbout.php"> <i class="fa fa-fw fa-male"></i> About Us</a>
                  </li>
              </ul>
          </div>
-         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
-    </div>
+         <!-- /#sidebar-wrapper -->
+        <div class="pageshift">
+                    <h1 class="page-header" font size="18" align="left">
+                        <font size="18" color="black">Help: Hashtags</font>
+                        <small><font color="grey">  </small></font>
+                    </h1>
+                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
+        </div>
     
-    <div class="row">
+         <div class="row">
+             <div><center>
+                <h1> Help Page: Tweets</h1>
+                <b> What are they?</b>
+                <p>Tweets are the name for messages sent across our social media platform.  They are sent to share your thoughts and expierences with teh world, eliciting reactions.</p>
+                 <b> How they work </b>
+                 <p>Once a tweet is sent, it is available for the whole world to see.  Of course, should you want to revoke a tweet, you can always delete it.</p>
+                 </center></div>
                          <div class="col-lg-3 col-md-6">
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
                                      <div class="row">
                                          
                                          <div class="col-xs-9 text-right">
+                                         <!-- Pull this from something -->
                                              <div class="huge"></div>
-                                             <!-- Pull this from something -->
-                                             <div><h3>Profile</h3></div>
-                                             <div><h4>Your profile is who you are, learn how to maximize your personal customization here...</h4></div>
+                                             <div><h3>Profiles</h3></div>
+                                             
                                          </div>
                                      </div>
                                  </div>
+                                 <div><h4>
+                                     Your profile is who you are, learn how to maximize your personal customization here...
+                                 </h4></div>
                                  <a href="profileHelp.php">
                                      <div class="panel-footer">
-                                         <span class="pull-left"> Profile Help </span>
+                                         <span class="pull-left">Profile Help</span>
                                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                          <div class="clearfix"></div>
                                      </div>
                                  </a>
                              </div>
-                         </div>
+                        </div>                      
                          <div class="col-lg-3 col-md-6">
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
@@ -108,14 +133,17 @@
                                          <div class="col-xs-9 text-right">
                                          <!-- Pull this from something -->
                                              <div class="huge"></div>
-                                             <div><h3>Hashtag Help</h3></div>
-                                             <div><h4>Hashtags are keywords used to identify specific points of note, learn how to use them here...</h4></div>
+                                             <div><h3>Hashtags</h3></div>
+                                             
                                          </div>
                                      </div>
                                  </div>
+                                 <div><h4>
+                                     Hashtags are keywords used to identify specific points of note, learn how to use them here...
+                                 </h4></div>
                                  <a href="hashtagHelp.php">
                                      <div class="panel-footer">
-                                         <span class="pull-left">View Hashtags</span>
+                                         <span class="pull-left">Hashtag Help</span>
                                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                          <div class="clearfix"></div>
                                      </div>
@@ -128,13 +156,14 @@
                                      <div class="row">
                                          
                                          <div class="col-xs-9 text-right">
-                                         <!-- Pull this from something -->
-                                             <div class="huge"></div>
+                                            <div class="huge"></div>
                                              <div><h3>Tweets</h3></div>
-                                             <div><h4>Tweeting is the primary method of communication on this website, learn how to 'tweet' here...</h4></div>
                                          </div>
                                      </div>
                                  </div>
+                                 <div><h4>
+                                    Tweeting is the primary method of communication on this website, learn how to 'tweet' here...
+                                 </h4></div>
                                  <a href="tweetHelp.php">
                                      <div class="panel-footer">
                                          <span class="pull-left">Tweet Help</span>
@@ -144,35 +173,9 @@
                                  </a>
                              </div>
                          </div>
-                         <div class="col-lg-3 col-md-6">
-                             <div class="panel panel-grey">
-                                 <div class="panel-heading">
-                                     <div class="row">
-                                         
-                                         <div class="col-xs-9 text-right">
-                                             <!-- Pull this from something -->
-                                             <div class="huge"></div>
-                                             <div><h3>What is Norfleet?</h3></div>
-                                             <div><h4>Norfleet is the exciting and dynamic social media platform that you are on!</h4></div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <a href="norfleetAbout.php">
-                                     <div class="panel-footer">
-                                         <span class="pull-left">Learn more about Norfleet</span>
-                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                 </a>
-                             </div>
-                         </div>
                      </div>
+           
     
-    <div><center><h1> Help Page: Tweets</h1>
-<b> What are they?</b>
-<p>Tweets are the name for messages sent across our social media platform.  They are sent to share your thoughts and expierences with teh world, eliciting reactions.</p>
-<b> How they work </b>
-<p>Once a tweet is sent, it is available for the whole world to see.  Of course, should you want to revoke a tweet, you can always delete it.</p></center></div>
     
     <script src="javascript/jquery.js"></script>
      
@@ -189,21 +192,5 @@
      });
      </script>
      </body>
-     
-     
-     <?php 
 
-    // Obligatory
-    require("common.php");
-
-    $query = " 
-    SELECT 
-        id, 
-        username
-    FROM users 
-    WHERE 
-        username = $submitted_username "; 
-
-
-?>
-
+</html>    

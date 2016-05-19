@@ -86,37 +86,21 @@
          <!-- /#sidebar-wrapper -->
         <div class="pageshift">
                     <h1 class="page-header" font size="18" align="left">
-                        <font size="18" color="black">Help Homepage</font>
-                        <small><font color="grey"> Click on a relevant link to learn more </small></font>
+                        <font size="18" color="black">Help: Hashtags</font>
+                        <small><font color="grey">  </small></font>
                     </h1>
                     <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
         </div>
     
          <div class="row">
-             
-                         <div class="col-lg-3 col-md-6">
-                             <div class="panel panel-grey">
-                                 <div class="panel-heading">
-                                     <div class="rowone">
-                                         <div class="col-xs-9 text-right">
-                                             <div class="huge"></div>
-                                              <!--Pull this from something -->
-                                             <div><h3>Profile Help</h3></div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <div><h4>
-                                     Your profile is who you are, learn how to maximize your personal customization here...
-                                  </h4></div>
-                                 <a href="helpPages/profileHelp.php">
-                                     <div class="panel-footer">
-                                         <span class="pull-left"> Profile Help </span>
-                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                 </a>
-                             </div>
-                         </div>
+             <div><center>
+        <h1> Hashtags</h1>
+        <b> What are they?</b>
+        <p> Hashtags are words or phrases preceded by a pound sign (#) that are used to identify messages on a specific topic.</p>
+        <b> How they work </b>
+        <p> If a tweet is sent with a hashtag, it will automatically show up in the hashtag section, where a user can search for specific hashtags.</p>
+        </center></div>
+     </div>
                          <div class="col-lg-3 col-md-6">
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
@@ -125,7 +109,32 @@
                                          <div class="col-xs-9 text-right">
                                          <!-- Pull this from something -->
                                              <div class="huge"></div>
-                                             <div><h3>Hashtag Help</h3></div>
+                                             <div><h3>Profiles</h3></div>
+                                             
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div><h4>
+                                     Your profile is who you are, learn how to maximize your personal customization here...
+                                 </h4></div>
+                                 <a href="profileHelp.php">
+                                     <div class="panel-footer">
+                                         <span class="pull-left">Profile Help</span>
+                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                         <div class="clearfix"></div>
+                                     </div>
+                                 </a>
+                             </div>
+                        </div>                      
+                         <div class="col-lg-3 col-md-6">
+                             <div class="panel panel-grey">
+                                 <div class="panel-heading">
+                                     <div class="row">
+                                         
+                                         <div class="col-xs-9 text-right">
+                                         <!-- Pull this from something -->
+                                             <div class="huge"></div>
+                                             <div><h3>Hashtags</h3></div>
                                              
                                          </div>
                                      </div>
@@ -133,9 +142,9 @@
                                  <div><h4>
                                      Hashtags are keywords used to identify specific points of note, learn how to use them here...
                                  </h4></div>
-                                 <a href="helpPages/hashtagHelp.php">
+                                 <a href="hashtagHelp.php">
                                      <div class="panel-footer">
-                                         <span class="pull-left">View Hashtags</span>
+                                         <span class="pull-left">Hashtag Help</span>
                                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                          <div class="clearfix"></div>
                                      </div>
@@ -156,7 +165,7 @@
                                  <div><h4>
                                     Tweeting is the primary method of communication on this website, learn how to 'tweet' here...
                                  </h4></div>
-                                 <a href="helpPages/tweetHelp.php">
+                                 <a href="tweetHelp.php">
                                      <div class="panel-footer">
                                          <span class="pull-left">Tweet Help</span>
                                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -167,14 +176,7 @@
                          </div>
                      </div>
            
-    <div><center>
-        <h1> Help Page: Hashtags</h1>
-        <b> What are they?</b>
-        <p> Hashtags are words or phrases preceded by a pound sign (#) that are used to identify messages on a specific topic.</p>
-        <b> How they work </b>
-        <p> If a tweet is sent with a hashtag, it will automatically show up in the hashtag section, where a user can search for specific hashtags.</p>
-        </center></div>
-     </div>
+    
     
     <script src="javascript/jquery.js"></script>
      

@@ -63,15 +63,7 @@
                  </li>
                  <br>
                  <li>
-                     <a href="javascript:;" data-toggle="collapse" data-target="#demo">
-                         <i class="fa fa-fw fa-user"></i> Help <i class="fa fa-fw fa-caret-down"></i>
-                       <br>
-                     </a>
-                     <ul id="demo" class="collapse">
-                             <a href="helpPages/tweetHelp.php"> <span class="fa fa-fw fa-comments"></span> Posts </a>
-                             <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
-                             <a href="helpPages/hashtagHelp.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
-                     </ul>
+                     <a href="help.php"> <i class="fa fa-fw fa-bullhorn"></i> Help </a>
                  </li>
                  <br>
                  <li>
