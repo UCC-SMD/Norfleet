@@ -2,7 +2,9 @@
  <html lang="en">
 
  <head>
-
+     
+<!-- These are the importations of boostrap, css, our font (font awesome), our icon, in addition to some technically browser-specific stuff. -->
+     
 	 	<link href="images/web_assets/favicon.ico" rel="icon" />
 
 		<link href="css/bootstrap.min.css" rel="stylesheet">

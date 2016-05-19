@@ -3,7 +3,7 @@ Coded by Charlie
 Uses SQL code to search the database
 -->
 
-
+<!-- These are the importations of boostrap, css, our font (font awesome), and our icon.-->
 <link href="images/web_assets/favicon.ico" rel="icon" />
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <link href="css/font-awesome.min.css" rel="stylesheet" />

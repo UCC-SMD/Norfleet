@@ -15,8 +15,7 @@
 
  <head>
 
-     <!-- This is so many levels of bad all at one time.
-     Why does this even work? -->
+     <!-- These are the importations of boostrap, css, our font (font awesome), our icon, in addition to some technically browser-specific stuff. -->
 
         <link href="images/web_assets/favicon.ico" rel="icon" />
 

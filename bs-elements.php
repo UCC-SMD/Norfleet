@@ -11,7 +11,7 @@ later time or #3 old outdated code we haven't gotten around to cleaning up yet (
 <html lang="en">
 
 <head>
-
+<!-- These are the importations of boostrap, css, our font (font awesome), our icon, in addition to some technically browser-specific stuff. -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
