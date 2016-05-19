@@ -56,17 +56,6 @@
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
                          <i class="fa fa-fw fa-user">
                         </i> <?php require("common.php");//this code is so the username is displayed.
-                        if(empty($_SESSION['user'])) { 
-
-                            // If they are not, we redirect them to the login page. 
-                            $location = "http://" . $_SERVER['HTTP_HOST'] . "norfleet/index.php";
-                            echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL='.$location.'">';
-                            //exit;
-                         
-                            // Remember that this die statement is absolutely critical.  Without it, 
-                            // people can view your members-only content without logging in. 
-                            die("Redirecting so you can log in"); 
-                        }
 
 
                         // To access $_SESSION['user'] values put in an array, show user his username
