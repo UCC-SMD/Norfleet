@@ -34,7 +34,7 @@
          <div id="sidebar-wrapper">
              <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                     <a class="navbar-brand" href="dashboard.php">  <font size="10" color="white"> Norfleet </font> </a>
+                     <a class="navbar-brand" href="#">  <font size="10" color="white"> Norfleet </font> </a>
                  </li>
                  <li>
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
@@ -167,100 +167,117 @@
                          </div>
                      </div>
     
-    <div><center><h1> About Norfleet</h1>
-<b> What are we?</b>
-<p> Norfleet is a social media platform for people to share their thoughts, actions, and experiences with people all over the world!</p>
-</center></div><br>
-    <div><center>#Behold! A summary of every development made by our group! Updated every other day!
-
-<h1>Day One: May 3rd, 2016</h1>
-<h3>Objectives:</h3>
-- Get basic requirements on the Rubric done (Camran and Charlie)
-  - Secure login/logout
-  - Ability "tweet" with hashtags
-  - Ability to search for users, hashtags and tweets
-  - Errors for incorrect usernames/passwords
-- Start on an HTML page with some fancy CSS and Bootstrap (John/Campbell)
-- Keep updating the GitHub (John/Campbell)
-
-<h3>Accomplishments</h3>
-While John was away today, Charlie, Camran and I were pleasantly surprised to find that the GitHub had magically been set up for us (thanks a bunch John!). Camran started working on the back-end support for users and Error messages if a user incorrectly typed their username or password. Meanwhile Charlie started to work on a SQL search function based off of Mr Hoel's code. Charlie ended up finishing his project, Camran ended up scrapping part of his code to improve it next class and I (Campbell) am working hard to make sure that we have a great burndown chart and that the Wiki stays updated from class to class. We are all generally busy this week and hopefully after this weekend we can start devoting more time outside of class to this project to make it awesome!
-
-<h1>Day Two: May 5th, 2016</h1>
-<h3> Objectives:</h3>
-- Create register page
-  - Errors for incorrect usernames/passwords
-- Collect all code we have so far and put it in a website
-- Keep working on the webpage
-
-<h3>Accomplishments</h3>
-Today we all got GitHub desktop set up on our computers so that we could work on the project more efficiently without going into our browsers. Camran got the error notification on the login page working, John got working on a sidebar for our website, Charlie worked on our homepage and incorporated his SQL search function from last class into the home page, I am still here, typing away at our GitHub and leading the standup meetings... but alas, tis the life of a Scrum Master. But in all seriousness we were really productive today and Camran especially learned a lot about session variables (cool).
-
-<h1>Day Three: May 9th, 2016</h1>
-<h3> Objectives:</h3>
-- Create a hashtags, trending page and mentions
-- Implement some of the PHP code into the website
-- Working on hashtags
-- Getting registration secure and logical
-
-<h3> Accomplishments </h3>
-Happy Monday (not really though). John did some awesome work over the weekend getting the HTML, CSS and Bootstrap organized for our webpage. He did this by combining a few different bootstrap templates and it looks awesome. Camran worked on registration again today and succeeded in fixing the registration and got the error messages working. John got the dashboard of the front-end working, all that needs to be done now is a hashtag page. Charlie kept working on some PHPmyAdmin stuff that will be implemented into the front-end at a later time. I am starting on the burndown chart and am hoping to have it complete by the end of the week.
-
-<h1>Day Four: May 11th, 2016</h1>
-<h3> Objectives:</h3>
-- Clean up the GitHub
-
-<h3> Accomplishments </h3>
-Because this class was a 45 minute period, we spent the majority of our time today cleaning up the GitHub, along with making sure that all of our variables are properly named and descriptive. Camran also worked on password retrieval today. In other news, there has been an interesting development in our GitHub. We had a random GitHub user come and contribute on our code. He helped solve a problem with out icons and text.
-        
-        
-<h1>Day Five: May 13th, 2016</h1>
-<h3> Objectives:</h3>
-- Work on the password encryption function
-- Made enhancements to navbar and css; generally front-end work
-
-<h3> Accomplishments </h3>
-This class Campbell was away, so I (Charlie) have taken over his Scrum duties temporarily.  This class was a miscellaneous class that was split into three different tasks for the three different people.  Firstly, Camran worked on the registration, password-retrieval and encryption.  John worked on mostly front-end tasks for today: he redid the navbar and reworked the CSS file.  Charlie worked on the help/about pages and some minor front-end aesthetics.
-        
-<h1>Day Six: May 17th, 2016</h1>
-<h3> Objectives:</h3>
-- Finish up the project
-- Work on Presentation
-- Get design for business cards done
-
-<h3> Accomplishments </h3>
-A minor panic ensued as there was a critical error with the website. After extensive rollbacks, headscratching and debugging, the culprit of a small section of php code was found. After the crisis had been solved, we all got back to working on our tasks. John continued to work on posts, Camran worked on password retrieval, Charlie worked on the help and about pages, and I got an error page done.   </center></div>
+                <div><center><h1> About Norfleet</h1>
+                    <b> What are we?</b>
+                    <p> Norfleet is a social media platform for people to share their thoughts, actions, and experiences with people all over the world!</p>
+                </center></div><br>
     
-    <script src="javascript/jquery.js"></script>
+                <div><center>#Behold! A summary of every development made by our group! Updated every other day!
+
+                    <h1>Day One: May 3rd, 2016</h1>
+                        <h3>Objectives:</h3>
+                            - Get basic requirements on the Rubric done (Camran and Charlie)
+                            - Secure login/logout
+                            - Ability "tweet" with hashtags
+                            - Ability to search for users, hashtags and tweets
+                            - Errors for incorrect usernames/passwords
+                            - Start on an HTML page with some fancy CSS and Bootstrap (John/Campbell)
+                            - Keep updating the GitHub (John/Campbell)
+
+                        <h3>Accomplishments</h3>
+                            <p>While John was away today, Charlie, Camran and I were pleasantly surprised to find that the GitHub had magically been set up for us (thanks a bunch John!). Camran started working on the back-end support for users and Error messages if a user incorrectly typed their username or password. Meanwhile Charlie started to work on a SQL search function based off of Mr Hoel's code. Charlie ended up finishing his project, Camran ended up scrapping part of his code to improve it next class and I (Campbell) am working hard to make sure that we have a great burndown chart and that the Wiki stays updated from class to class. We are all generally busy this week and hopefully after this weekend we can start devoting more time outside of class to this project to make it awesome!</p>
+
+                    <h1>Day Two: May 5th, 2016</h1>
+                        <h3> Objectives:</h3>
+                            - Create register page
+                            - Errors for incorrect usernames/passwords
+                            - Collect all code we have so far and put it in a website
+                            - Keep working on the webpage
+
+                        <h3>Accomplishments</h3>
+                            <p>Today we all got GitHub desktop set up on our computers so that we could work on the project more efficiently without going into our browsers. Camran got the error notification on the login page working, John got working on a sidebar for our website, Charlie worked on our homepage and incorporated his SQL search function from last class into the home page, I am still here, typing away at our GitHub and leading the standup meetings... but alas, tis the life of a Scrum Master. But in all seriousness we were really productive today and Camran especially learned a lot about session variables.</p>
+
+                    <h1>Day Three: May 9th, 2016</h1>
+                        <h3> Objectives:</h3>
+                            - Create a hashtags, trending page and mentions
+                            - Implement some of the PHP code into the website
+                            - Working on hashtags
+                            - Getting registration secure and logical
+
+                        <h3> Accomplishments </h3>
+                            <p>Happy Monday (not really though). John did some awesome work over the weekend getting the HTML, CSS and Bootstrap organized for our webpage. He did this by combining a few different bootstrap templates and it looks awesome. Camran worked on registration again today and succeeded in fixing the registration and got the error messages working. John got the dashboard of the front-end working, all that needs to be done now is a hashtag page. Charlie kept working on some PHPmyAdmin stuff that will be implemented into the front-end at a later time. I am starting on the burndown chart and am hoping to have it complete by the end of the week.</p>
+
+                    <h1>Day Four: May 11th, 2016</h1>
+                        <h3> Objectives:</h3>
+                            - Clean up the GitHub
+
+                        <h3> Accomplishments </h3>
+                            <p>Because this class was a 45 minute period, we spent the majority of our time today cleaning up the GitHub, along with making sure that all of our variables are properly named and descriptive. Camran also worked on password retrieval today. In other news, there has been an interesting development in our GitHub. We had a random GitHub user come and contribute on our code. He helped solve a problem with out icons and text.</p>
+        
+        
+                    <h1>Day Five: May 13th, 2016</h1>
+                        <h3> Objectives:</h3>
+                            - Work on the password encryption function
+                            - Made enhancements to navbar and css; generally front-end work
+
+                        <h3> Accomplishments </h3>
+                            <p>This class Campbell was away, so I (Charlie) have taken over his Scrum duties temporarily.  This class was a miscellaneous class that was split into three different tasks for the three different people.  Firstly, Camran worked on the registration, password-retrieval and encryption.  John worked on mostly front-end tasks for today: he redid the navbar and reworked the CSS file.  Charlie worked on the help/about pages and some minor front-end aesthetics.</p>
+        
+                    <h1>Day Six: May 17th, 2016</h1>
+                        <h3> Objectives:</h3>
+                            - Finish up the project
+                            - Work on Presentation
+                            - Get design for business cards done
+
+                        <h3> Accomplishments </h3>
+                            <p>A minor panic ensued as there was a critical error with the website. After extensive rollbacks, headscratching and debugging, the culprit of a small section of php code was found. After the crisis had been solved, we all got back to working on our tasks. John continued to work on posts, Camran worked on password retrieval, Charlie worked on the help and about pages, and I got an error page done.</p>
+                </center></center></div>
      
-     <script src="javascript/bootstrap.min.js"></script>
+                <div>
+                    <center>
+                        <h1> The Development Team</h1>
+
+                        <h3>Campbell (Scrum Master)</h3>
+                            <p>- Chrome, Sublime Text 3</p>
+                        <h3>Camran (Leader of Backend Designer)</h3>
+                            <p>- Chrome, Sublime Text 3, GitHub Desktop</p>
+                        <h3>Charlie (Leader of Testing and General Development)</h3>
+                            <p>- Chrome, Sublime Text 3, GitHub Desktop</p>
+                        <h3>John (Leader of Graphic and Web Design)</h3>
+                            <p>- Chrome, Sublime Text 3, GitHub Desktop</p>
+                    </center>
+                </div>
+     
+
+    
+            <script src="javascript/jquery.js"></script>
+     
+            <script src="javascript/bootstrap.min.js"></script>
 
      
-     <!-- Menu Toggle Script -->
-     <script>
-     //  32 is JavaScript SpaceBar keycode
+            <!-- Menu Toggle Script -->
+            <script>
+            //  32 is JavaScript SpaceBar keycode
 
-     $("#menu-toggle").click(function(e) {
-         e.preventDefault();
-         $("#wrapper").toggleClass("toggled");
-     });
-     </script>
+                $("#menu-toggle").click(function(e) {
+                    e.preventDefault();
+                    $("#wrapper").toggleClass("toggled");
+                });
+            </script>
      </body>
      
      
      <?php 
 
-    // Obligatory
-    require("common.php");
+        // Obligatory
+        require("common.php");
 
-    $query = " 
-    SELECT 
-        id, 
-        username
-    FROM users 
-    WHERE 
-        username = $submitted_username "; 
+        $query = " 
+            SELECT 
+                id, 
+                username
+            FROM users 
+            WHERE 
+                username = $submitted_username "; 
 
-
-?>
-
+    ?>
