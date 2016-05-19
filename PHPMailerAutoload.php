@@ -1,6 +1,11 @@
-/*
-This program emails the user their password if they request it from the website
-*/
+<!--
+Programmed by Camran on May 17th, 2016
+For NORFLEET, social media for professionals
+Full team: Charlie, Campbell, Camran and John
+Object of code: This is the code that emails a user their password if they forget it and request a new one on the site
+*please note* Any code that is commented out is things that we either: #1 not working properly, #2 features we would like to implement at a
+later time or #3 old outdated code we haven't gotten around to cleaning up yet (we're lazy xD)
+-->
 
 <?php
 /**
