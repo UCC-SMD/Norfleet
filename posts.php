@@ -11,8 +11,8 @@
 		<link href="css/ourstyle.css" rel="stylesheet" />
 
      <meta charset="utf-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta http-equiv="X-UA-Compatible" in_content="IE=edge">
+     <meta name="viewport" in_content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
      <title>Norfleet</title>
 
@@ -76,8 +76,8 @@
          </div>
          <!-- /#sidebar-wrapper -->
 
-         <!-- Page Content -->
-         <div id="page-content-wrapper">
+         <!-- Page in_content -->
+         <div id="page-in_content-wrapper">
              <!-- <div class="container-fluid">
                  <div class="row">
                      <div class="col-lg-12">
@@ -85,8 +85,8 @@
                          <p>This template has a responsive menu toggling system.
                          The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens.
                          When toggled using the button below, the menu will appear/disappear.
-                         On small screens, the page content will be pushed off canvas.</p>
-                         <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+                         On small screens, the page in_content will be pushed off canvas.</p>
+                         <p>Make sure to keep all page in_content within the <code>#page-in_content-wrapper</code>.</p>
                          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
                      </div>
                  </div>
@@ -128,9 +128,9 @@
                      <!-- <div class="element">
                       </div> -->
                          <div class="col-lg-14">
-                             <div class="panel panel-default">
+                             <!-- <div class="panel panel-default">
                                      <div class="list-group">
-                                         <!-- <a href="#" class="list-group-item">
+                                         <a href="#" class="list-group-item">
                                              <span class="badge">just now</span>
                                              <i class="fa fa-fw fa-calendar"></i> Calendar updated
                                          </a>
@@ -171,9 +171,109 @@
                                          </a>
                                      </div>
                                      <div class="text-right">
-                                         <a href="#">View All Activity <i class="fa fa-arrow-circle-right"></i></a> -->
+                                         <a href="#">View All Activity <i class="fa fa-arrow-circle-right"></i></a>
                                      </div>
-                                 </div>
+                                 </div> -->
+
+<?php
+
+// pass in some info;
+require("common.php"); 
+
+if(empty($_SESSION['user'])) { 
+
+// If they are not, we redirect them to the login page. 
+$location = "http://" . $_SERVER['HTTP_HOST'] . "/login.php";
+echo '<META HTTP-EQUIV="refresh" in_content="0;URL='.$location.'">';
+//exit;
+
+// Remember that this die statement is absolutely critical.  Without it, 
+// people can view your members-only in_content without logging in. 
+die("Redirecting to login.php"); 
+} 
+
+// To access $_SESSION['user'] values put in an array, show user his username
+$arr = array_values($_SESSION['user']);
+echo "Welcome " . $arr[2];
+
+// open connection
+$connection = mysql_connect($host, $username, $password) or die ("Unable to connect!");
+
+// select database
+mysql_select_db($dbname) or die ("Unable to select database!");
+
+// create query
+$query = "SELECT * FROM posts";
+
+// execute query
+$result = mysql_query($query) or die ("Error in query: $query. ".mysql_error());
+
+// see if any rows were returned
+if (mysql_num_rows($result) > 0) {
+
+// print them one after another
+echo "<table cellpadding=10 border=1>";
+while($row = mysql_fetch_row($result)) {
+echo "<tr>";
+echo "<td>".$row[0]."</td>";
+echo "<td>" . $row[1]."</td>";
+echo "<td>".$row[2]."</td>";
+echo "<td><a href=".$_SERVER['PHP_SELF']."?id=".$row[0].">Delete</a></td>";
+echo "</tr>";
+}
+echo "</table>";
+
+} else {
+
+// print status message
+echo "No rows found!";
+}
+
+// free result set memory
+mysql_free_result($result);
+
+// set variable values to HTML form inputs
+$in_content = mysql_escape_string($_POST['in_content']);
+
+// check to see if user has entered anything
+if ($in_content != "") {
+// build SQL query
+$query = "INSERT INTO posts (`by`, `in_content`) VALUES ('$arr[1]', '$in_content')";
+// run the query
+$result = mysql_query($query) or die ("Error in query: $query. ".mysql_error());
+// refresh the page to show new update
+echo "<meta http-equiv='refresh' content='0'>";
+}
+
+// if DELETE pressed, set an id, if id is set then delete it from DB
+if (isset($_GET['id'])) {
+
+// create query to delete record
+echo $_SERVER['PHP_SELF'];
+$query = "DELETE FROM posts WHERE id = ".$_GET['id'];
+
+// run the query
+$result = mysql_query($query) or die ("Error in query: $query. ".mysql_error());
+
+// reset the url to remove id $_GET variable
+$location = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
+echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL='.$location.'">';
+exit;
+
+
+}
+
+// close connection
+mysql_close($connection);
+
+?>  
+
+<!-- This is the HTML form that appears in the browser -->
+<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+in_content: <input type="text" name="in_content">
+<input type="submit" name="submit">
+</form>
+<form action="logout.php" method="post"><button>Log out</button></form>
                              </div>
 
                      <!-- /.row -->
@@ -183,7 +283,7 @@
 
              </div>
          </div>
-         <!-- /#page-content-wrapper -->
+         <!-- /#page-in_content-wrapper -->
 
      </div>
      <!-- /#wrapper -->
@@ -208,3 +308,4 @@
  </body>
 
  </html>
+

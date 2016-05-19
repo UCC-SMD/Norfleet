@@ -368,7 +368,7 @@ function error() {
             
 
 
-            echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL=dashboard.php">';  
+            echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL=dashboard.php">';
         } 
         else 
         { 
