@@ -1,3 +1,12 @@
+<!--
+Programmed by Camran and John on May 17th, 2016
+For NORFLEET, social media for professionals
+Full team: Charlie, Campbell, Camran and John
+Object of code: Deals with passwords and login in on the website 
+*please note* Any code that is commented out is things that we either: #1 not working properly, #2 features we would like to implement at a
+later time or #3 old outdated code we haven't gotten around to cleaning up yet (we're lazy xD)
+-->
+
 <?php 
 
     // First we execute our common code to connection to the database and start the session 
