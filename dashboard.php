@@ -128,7 +128,8 @@
                     <br>
                     <br>
                      <div class="row">
-                         <div class="col-lg-4 col-md-7">
+                        <center>
+                         <div class="col-lg-6 col-md-7">
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
                                      <div class="row">
@@ -151,7 +152,7 @@
                                  </a>
                              </div>
                          </div>
-                         <div class="col-lg-4 col-md-7">
+                         <div class="col-lg-6 col-md-7">
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
                                      <div class="row">
@@ -196,7 +197,7 @@
                                  </a>
                              </div>
                          </div> -->
-                         <div class="col-lg-4 col-md-7">
+<!--                          <div class="col-lg-4 col-md-7">
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
                                      <div class="row">
@@ -204,7 +205,6 @@
                                               <i class="fa fa-map-o fa-5x"></i>
                                          </div>
                                          <div class="col-xs-9 text-right">
-                                             <!-- Pull this from something -->
                                              <div class="huge"></div>
                                              <div><h3>Events</h3></div>
                                          </div>
@@ -219,7 +219,7 @@
                                  </a>
                              </div>
                          </div>
-                     </div>
+                     </div> -->
                      <!-- <div class="element">
                       </div> -->
 <!--                          <div class="col-lg-13">
@@ -240,7 +240,7 @@
                              </div> -->
 
                      <!-- /.row -->
-
+                    </center>
                  </div>
                  <!-- /.container-fluid -->
 
