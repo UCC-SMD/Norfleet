@@ -6,8 +6,12 @@
  / /|  / /_/ / /  / __/ /  __/  __/ /_
 /_/ |_/\____/_/  /_/ /_/\___/\___/\__/
 
-	NICE WORK LADS
- -->
+
+Developed by John and Camran over May 11th to May 18th.
+Full team: Charlie, Campbell, Camran and John
+Purpose: Provide a login form for the user to access the rest of the website
+Version: 0.9
+-->
 
 
  <!DOCTYPE html>
@@ -15,23 +19,30 @@
 
  <head>
 
-	 <!-- These are the importations of boostrap, css, our font (font awesome), our icon, in addition to some technically browser-specific stuff. -->
-
+	       <!-- Imports -->
+           <!-- Import Favicon (The little image that you see in the browser tab -->
 	 	<link href="images/web_assets/favicon.ico" rel="icon" />
 
+            <!-- General Bootstrap CSS -->
 		<link href="css/bootstrap.css" rel="stylesheet">
+            <!-- Wrapper template -->
 		<link href="css/sb-admin.css" rel="stylesheet">
+            <!-- Sidebar suppliment -->
 		<link href="css/animate.css" rel="stylesheet">
+            <!-- Font Awesome: The source of the icons you see across the website, such as in the sidebar or the dashboard -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+            <!-- Custon CSS file for fine tuning other files by overriding the load process -->
 		<link href="css/ourstyle.css" rel="stylesheet" />
 
      <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Initial scale set to one -->
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <!-- The text that shows up in the browser tab (along with the favicon) -->
      <title>Norfleet</title>
 
-     <!-- Bootstrap Core CSS -->
+     <!-- Bootstrap Core CSS  -->
      <link href="css/bootstrap.min.css" rel="stylesheet">
 
      <!-- Custom CSS -->
@@ -43,10 +54,14 @@
 
 
  <body>
+
+ <!-- Script made by Camran that will display a banner alert if the user enters incirrect login credentials -->
+
 <script type="text/javascript">
 
 function error() {
     document.getElementById('errorbox').innerHTML = "Please change your login credentials, or register.";
+        // Sets the visibility of the alert to visible (or true)
     document.getElementById('alertbox').style.visibility = 'visible';
 };
 
@@ -55,41 +70,38 @@ function error() {
 
 
              
- <div class="row">
+<div class="row">
      <div class="col-lg-12" align="right">
         <div class="pageshift">
         <h1 class="page-header" font size="18" align="center">
              <font size="18" color="black"> Login </font><!-- <small><font color="grey"> Join the club </small></font> -->
         </h1>
         </div>
- </div>
+</div>
 
+<!-- Centers the form -->
 <center>
 
-
-<!-- <h1>Login</h1>  -->
-
-
-
+        <!-- Utilization of the PHP post method -->
 <form action="index.php" method="post"> 
-
-
 
     <h2>Username<br /> </h2>
     <input type="text" name="username" value="<?php echo $submitted_username; ?>" /> 
     <br /><br /> 
     <h2>Password<br /> </h2>
+    <!-- Sets input type to password -->
     <input type="password" name="password" value="" /> 
     <br /><br /> 
     <input type="submit" class="btn btn-default" value="Login" /> 
-</form> 
-<br>
-<div class="registerlink">
+    </form> 
+    <br>
+    <div class="registerlink">
+    <!-- Centered register button underneath form that redirects to register page -->
     <center>
         <a href="register.php" class="btn btn-default"> Register</a>
     </center>
-</div>
-<br>
+    </div>
+    <br>
 
 
 </center>
