@@ -55,7 +55,7 @@ Version: 0.9
 
  <body>
 
- <!-- Script made by Camran that will display a banner alert if the user enters incirrect login credentials -->
+ <!-- Script made by Camran that will display a banner alert if the user enters incorrect login credentials -->
 
 <script type="text/javascript">
 

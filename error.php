@@ -4,7 +4,7 @@ For NORFLEET, social media for professionals
 Full team: Charlie, Campbell, Camran and John
 Object of code: This is an error page that you are redirected to if something goes wrong
 *please note* Any code that is commented out is things that we either: #1 not working properly, #2 features we would like to implement at a
-later time or #3 old outdated code we haven't gotten around to cleaning up yet (we're lazy xD)
+later time or #3 old outdated code we haven't gotten around to cleaning up yet
 -->
 
 <html>

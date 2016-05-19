@@ -15,14 +15,14 @@
 
  <head>
 
-     <!-- These are the importations of boostrap, css, our font (font awesome), our icon, in addition to some technically browser-specific stuff. -->
+	 <!-- These are the importations of boostrap, css, our font (font awesome), our icon, in addition to some technically browser-specific stuff. -->
+        <!-- This is the icon for the website -->
+	 	<link href="images/web_assets/favicon.ico" rel="icon" />
 
-        <link href="images/web_assets/favicon.ico" rel="icon" />
-
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/sb-admin.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
-        <link href="css/ourstyle.css" rel="stylesheet" />
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/sb-admin.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+		<link href="css/ourstyle.css" rel="stylesheet" />
 
      <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,11 +41,7 @@
 
 
 
- <body>
-
-     <div id="wrapper">
-
-         <!-- Sidebar -->
+ <body> 
      <div id="wrapper">
 
          <!-- Sidebar -->
@@ -59,7 +55,7 @@
                  </li>
                  <br>
                  <li>
-                     <a href="#"> <i class="fa fa-fw fa-comments"></i> Posts </a>
+                     <a href="posts.php"> <i class="fa fa-fw fa-comments"></i> Posts </a>
                  </li>
                  <br>
                  <li>
@@ -72,9 +68,9 @@
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
-                             <a href="#"> <span class="fa fa-fw fa-comments"></span> Posts </a>
+                             <a href="helpPages/tweetHelp.php"> <span class="fa fa-fw fa-comments"></span> Posts </a>
                              <!-- <a href="#"> <i class="fa fa-fw fa-gear"></i> Settings  </a> -->
-                             <a href="logout.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
+                             <a href="helpPages/hashtagHelp.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
                      </ul>
                  </li>
                  <br>
@@ -83,24 +79,35 @@
                  </li>
                  <br>
                  <li>
-                     <a href="aboutus.php"> <i class="fa fa-fw fa-male"></i> About Us </a>
+                     <a href="helpPages/norfleetAbout.php"> <i class="fa fa-fw fa-male"></i> About Us</a>
                  </li>
              </ul>
          </div>
+         <!-- /#sidebar-wrapper -->
+        <div class="pageshift">
+                    <h1 class="page-header" font size="18" align="left">
+                        <font size="18" color="black">Help Homepage</font>
+                        <small><font color="grey"> Click on a relevant link to learn more </small></font>
+                    </h1>
+                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
+        </div>
     
-    <div class="row">
+         <div class="row">
+             
                          <div class="col-lg-3 col-md-6">
                              <div class="panel panel-grey">
                                  <div class="panel-heading">
                                      <div class="rowone">
                                          <div class="col-xs-9 text-right">
                                              <div class="huge"></div>
-                                             <!-- Pull this from something -->
-                                             <div><h3>Profile</h3></div>
-                                             <div><h4>Your profile is who you are, learn how to maximize your personal customization here...</h4></div>
+                                              <!--Pull this from something -->
+                                             <div><h3>Profile Help</h3></div>
                                          </div>
                                      </div>
                                  </div>
+                                 <div><h4>
+                                     Your profile is who you are, learn how to maximize your personal customization here...
+                                  </h4></div>
                                  <a href="helpPages/profileHelp.php">
                                      <div class="panel-footer">
                                          <span class="pull-left"> Profile Help </span>
@@ -119,10 +126,13 @@
                                          <!-- Pull this from something -->
                                              <div class="huge"></div>
                                              <div><h3>Hashtag Help</h3></div>
-                                             <div><h4>Hashtags are keywords used to identify specific points of note, learn how to use them here...</h4></div>
+                                             
                                          </div>
                                      </div>
                                  </div>
+                                 <div><h4>
+                                     Hashtags are keywords used to identify specific points of note, learn how to use them here...
+                                 </h4></div>
                                  <a href="helpPages/hashtagHelp.php">
                                      <div class="panel-footer">
                                          <span class="pull-left">View Hashtags</span>
@@ -140,10 +150,12 @@
                                          <div class="col-xs-9 text-right">
                                             <div class="huge"></div>
                                              <div><h3>Tweets</h3></div>
-                                             <div><h4>Tweeting is the primary method of communication on this website, learn how to 'tweet' here...</h4></div>
                                          </div>
                                      </div>
                                  </div>
+                                 <div><h4>
+                                    Tweeting is the primary method of communication on this website, learn how to 'tweet' here...
+                                 </h4></div>
                                  <a href="helpPages/tweetHelp.php">
                                      <div class="panel-footer">
                                          <span class="pull-left">Tweet Help</span>
@@ -153,29 +165,8 @@
                                  </a>
                              </div>
                          </div>
-                         <div class="col-lg-3 col-md-6">
-                             <div class="panel panel-grey">
-                                 <div class="panel-heading">
-                                     <div class="row">
-                                         
-                                         <div class="col-xs-9 text-right">
-                                             <!-- Pull this from something -->
-                                             <div class="huge"></div>
-                                             <div><h3>What is Norfleet?</h3></div>
-                                             <div><h4>Norfleet is the exciting and dynamic social media platform that you are on right now!</h4></div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <a href="helpPages/norfleetAbout.php">
-                                     <div class="panel-footer">
-                                         <span class="pull-left">Learn more about Norfleet</span>
-                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                 </a>
-                             </div>
-                         </div>
                      </div>
+         </div>
     
     <script src="javascript/jquery.js"></script>
      
