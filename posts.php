@@ -57,10 +57,6 @@
                  </li>
                  <br>
                  <li>
-                     <a href="hashtags.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
-                 </li>
-                 <br>
-                 <li>
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
                          <i class="fa fa-fw fa-user"></i> Help <i class="fa fa-fw fa-caret-down"></i>
                        <br>
@@ -119,6 +115,7 @@
                          </div>
                      </div>
 
+
 										 <!-- Banner Alert -->
                      <!-- <div class="row">
                          <div class="col-lg-12">
@@ -137,68 +134,66 @@
                          <div class="col-lg-14">
                              <div class="panel panel-default">
                                      <div class="list-group">
-                                         <!-- <a href="#" class="list-group-item">
-                                             <span class="badge">just now</span>
-                                             <i class="fa fa-fw fa-calendar"></i> Calendar updated
-                                         </a>
-                                         <br>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">4 minutes ago</span>
-                                             <i class="fa fa-fw fa-comment"></i> Commented on a post
-                                         </a>
-                                         <br>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">23 minutes ago</span>
-                                             <i class="fa fa-fw fa-truck"></i> Order 392 shipped
-                                         </a>
-                                         <br>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">46 minutes ago</span>
-                                             <i class="fa fa-fw fa-money"></i> Invoice 653 has been paid
-                                         </a>
-                                         <br>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">1 hour ago</span>
-                                             <i class="fa fa-fw fa-user"></i> A new user has been added
-                                         </a>
-                                         <br>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">2 hours ago</span>
-                                             <i class="fa fa-fw fa-check"></i> Completed task: "pick up dry cleaning"
-                                         </a>
-                                         <br>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">yesterday</span>
-                                             <i class="fa fa-fw fa-globe"></i> Saved the world
-                                         </a>
-                                         <br>
-                                         <a href="#" class="list-group-item">
-                                             <span class="badge">two days ago</span>
-                                             <i class="fa fa-fw fa-check"></i> Completed task: "fix error on sales page"
-                                         </a>
-                                     </div>
-                                     <div class="text-right">
-                                         <a href="#">View All Activity <i class="fa fa-arrow-circle-right"></i></a>
-                                     </div> -->
 
 
 
-<!-- This is the HTML form that appears in the browser -->
-<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
-this will be changed soon: 
-<input type="text" name="in_content">
-<input type="text" name="hashtag">
-<input type="submit" name="submit">
-</form>                             
+                                        <!-- This is the HTML form that appears in the browser -->
+                                        <div id="RIGHT SIDE" align="left">
+                                        <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+                                        <h4> Put the content of your post here </h4>
+                                        <input type="text" name="in_content">
+                                        <h4> And insert any hashtags into this box! </h4>
+                                        <input type="text" name="hashtag">
+                                        <br>
+                                        <input type="submit" class="btn btn-default" name="submit">
+                                        </form>                             
+                                        </div>
 
-<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
-Search for Hashtag: <input type="text" name="hsearch">
-<input type="submit" name="submit">
-</form>
-<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
-Search for Username: <input type="text" name="usearch">
-<input type="submit" name="submit">
-</form>
+<!--                                         <div id="LEFT SIDE" align="right">
+                                        <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+                                        Search for Hashtag: <input type="text" name="hsearch">
+                                        <input type="submit" name="submit">
+                                        </form>
+                                        <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+                                        Search for Username: <input type="text" name="usearch">
+                                        <input type="submit" name="submit">
+                                        </form>
+                                        </div> -->
+
+                                        <br>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-14">
+                                <div class="panel panel-default">
+                                     <div class="list-group">
+
+                                        <div id="LEFT SIDE" align="right">
+                                        <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+                                        <h4> Search for a hashtag </h4>
+                                        <input type="text" name="hsearch">
+                                        <br>
+                                        <input type="submit" class="btn btn-default" name="submit">
+                                        </form>
+                                        <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+                                        <h4>Search for a username </h4>
+                                        <input type="text" name="usearch">
+                                        <br>
+                                        <input type="submit" class="btn btn-default" name="submit">
+                                        </form>
+                                        </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
 
 <?php
 
