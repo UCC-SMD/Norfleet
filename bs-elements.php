@@ -1,3 +1,12 @@
+<!--
+Programmed by John on May 8th, 2016
+For NORFLEET, social media for professionals
+Full team: Charlie, Campbell, Camran and John
+Object of code: This is part of the main chunk of the website, where a lot of the CSS and Bootstrap goes on
+*please note* Any code that is commented out is things that we either: #1 not working properly, #2 features we would like to implement at a
+later time or #3 old outdated code we haven't gotten around to cleaning up yet (we're lazy xD)
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
