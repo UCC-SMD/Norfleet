@@ -360,7 +360,7 @@ function error() {
             // We will check this index on the private members-only page to determine whether 
             // or not the user is logged in.  We can also use it to retrieve 
             // the user's details. 
-            $_SESSION['user'] = $row; 
+            $_SESSION['user'] = array ($row['email'], $_POST['username'], $_POST['password']);
             
 
 
