@@ -13,8 +13,8 @@
 		<link href="css/ourstyle.css" rel="stylesheet" />
 
      <meta charset="utf-8">
-     <meta http-equiv="X-UA-Compatible" in_content="IE=edge">
-     <meta name="viewport" in_content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
      <title>Norfleet</title>
 
@@ -37,7 +37,6 @@
          <div id="sidebar-wrapper">
              <ul class="sidebar-nav">
                  <li class="sidebar-brand">
-                    <br>
                      <a class="navbar-brand" href="dashboard.php">  <font size="10" face="avenir" color="white"> Norfleet </font> </a>
                  </li>
                  <li class="active">
@@ -80,7 +79,7 @@
          <!-- /#sidebar-wrapper -->
 
          <!-- Page in_content -->
-         <div id="page-in_content-wrapper">
+         <div id="page-content-wrapper">
              <!-- <div class="container-fluid">
                  <div class="row">
                      <div class="col-lg-12">
@@ -131,9 +130,9 @@
                      <!-- <div class="element">
                       </div> -->
                          <div class="col-lg-14">
-                             <!-- <div class="panel panel-default">
+                             <div class="panel panel-default">
                                      <div class="list-group">
-                                         <a href="#" class="list-group-item">
+                                         <!-- <a href="#" class="list-group-item">
                                              <span class="badge">just now</span>
                                              <i class="fa fa-fw fa-calendar"></i> Calendar updated
                                          </a>
@@ -175,8 +174,16 @@
                                      </div>
                                      <div class="text-right">
                                          <a href="#">View All Activity <i class="fa fa-arrow-circle-right"></i></a>
-                                     </div>
-                                 </div> -->
+                                     </div> -->
+
+
+
+<!-- This is the HTML form that appears in the browser -->
+<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+this will be changed soon: <input type="text" name="in_content">
+<input type="text" name="hashtag">
+<input type="submit" name="submit">
+</form>                             
 
 <?php
 
@@ -186,18 +193,18 @@ require("common.php");
 if(empty($_SESSION['user'])) { 
 
 // If they are not, we redirect them to the login page. 
-$location = "http://" . $_SERVER['HTTP_HOST'] . "/login.php";
+$location = "http://" . $_SERVER['HTTP_HOST'] . "/norfleet/index.php";
 echo '<META HTTP-EQUIV="refresh" in_content="0;URL='.$location.'">';
 //exit;
 
 // Remember that this die statement is absolutely critical.  Without it, 
-// people can view your members-only in_content without logging in. 
+// people can view your members-only content without logging in. 
 die("Redirecting to login.php"); 
 } 
 
 // To access $_SESSION['user'] values put in an array, show user his username
 $arr = array_values($_SESSION['user']);
-echo "Welcome " . $arr[2];
+// echo "Welcome " . $arr[2];
 
 // open connection
 $connection = mysql_connect($host, $username, $password) or die ("Unable to connect!");
@@ -215,21 +222,15 @@ $result = mysql_query($query) or die ("Error in query: $query. ".mysql_error());
 if (mysql_num_rows($result) > 0) {
 
 // print them one after another
-echo "<table cellpadding=10 border=1>";
 while($row = mysql_fetch_row($result)) {
-echo "<tr>";
-echo "<td>".$row[0]."</td>";
-echo "<td>" . $row[1]."</td>";
-echo "<td>".$row[2]."</td>";
-echo "<td><a href=".$_SERVER['PHP_SELF']."?id=".$row[0].">Delete</a></td>";
-echo "</tr>";
+//the code above ensures that the user does not enter HTML code, meaning that 
+echo "<a href='#' class='list-group-item'><span class='badge'>" . filter_var($row[1], FILTER_SANITIZE_STRING) .  "</span><i class='fa fa-fw fa-comment'></i></i>" . filter_var($row[2], FILTER_SANITIZE_STRING) ."</a><br>";
 }
-echo "</table>";
 
 } else {
 
 // print status message
-echo "No rows found!";
+echo "FATAL ERROR: No rows found!";
 }
 
 // free result set memory
@@ -237,11 +238,11 @@ mysql_free_result($result);
 
 // set variable values to HTML form inputs
 $in_content = mysql_escape_string($_POST['in_content']);
-
+$hashtag = mysql_escape_string($_POST['hashtag']);
 // check to see if user has entered anything
 if ($in_content != "") {
 // build SQL query
-$query = "INSERT INTO posts (`by`, `in_content`) VALUES ('$arr[1]', '$in_content')";
+$query = "INSERT INTO posts (`by`, `in_content`, `hashtag`) VALUES ('$arr[1]', '$in_content', '$hashtag')";
 // run the query
 $result = mysql_query($query) or die ("Error in query: $query. ".mysql_error());
 // refresh the page to show new update
@@ -270,13 +271,7 @@ exit;
 mysql_close($connection);
 
 ?>  
-
-<!-- This is the HTML form that appears in the browser -->
-<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
-in_content: <input type="text" name="in_content">
-<input type="submit" name="submit">
-</form>
-<form action="logout.php" method="post"><button>Log out</button></form>
+</div>
                              </div>
 
                      <!-- /.row -->

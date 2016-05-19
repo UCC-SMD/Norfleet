@@ -24,5 +24,6 @@ ALTER TABLE `users`
 CREATE TABLE `posts` (
   `id` int(11) NOT NULL,
   `by` varchar(255) NOT NULL DEFAULT '',
-  `content` varchar(255) NOT NULL DEFAULT ''
+  `in_content` varchar(255) NOT NULL DEFAULT ''
+  `hashtag` varchar(255) NOT NULL DEFAULT ''
 ) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=latin1;

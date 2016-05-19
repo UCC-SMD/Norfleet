@@ -210,7 +210,6 @@ for motivation: http://i0.kym-cdn.com/photos/images/original/000/928/594/f78.gif
 
         if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) 
         { 
-            // echo "<script>alert(\"fuck you\");</script>";
             echo "<script>
             errors_lack.push('email');  
             displayerrors_lack();
@@ -257,15 +256,14 @@ for motivation: http://i0.kym-cdn.com/photos/images/original/000/928/594/f78.gif
         { 
             // die("This username is already in use");
             echo "<script>
-            alert(errors_lack.indexOf('username'));
+            // alert(errors_lack.indexOf('username'));
             if(errors_lack.indexOf('username')== -1){
-                alert('username');
+                // alert('username');
                 repeat_errors.push('username');
                 console.log('the user neesd to change their fuck');
             };
             </script>";
             $cont = FALSE;
-            // echo "<script>alert(\"fuck you\");</script>";
         } 
          
         // Now we perform the same type of check for the email address, in order 
@@ -299,7 +297,7 @@ for motivation: http://i0.kym-cdn.com/photos/images/original/000/928/594/f78.gif
             // die("This email address is already registered"); 
 
             echo "<script>
-            alert(errors_lack.indexOf('email'));
+            // alert(errors_lack.indexOf('email'));
             if(errors_lack.indexOf('email') == -1){
                 repeat_errors.push('email');
                 console.log('the user neesd to change their email');
@@ -344,7 +342,7 @@ for motivation: http://i0.kym-cdn.com/photos/images/original/000/928/594/f78.gif
                 // Execute the query to create the user 
                 $stmt = $db->prepare($query); 
                 $result = $stmt->execute($query_params); 
-                echo "<script>alert('Registration Successful');</script>";//imma get rid of this later
+                echo "<script>alert('Registration successful, please log in.');</script>";//imma get rid of this later
                                                                           //Dont' worry Camran, I got your back :3
                 // header("Location: login.php"); 
             } 
