@@ -70,11 +70,7 @@ Version: 0.9.3
                  </li>
                  <br>
                  <li>
-                     <a href="posts.php>"> <i class="fa fa-fw fa-comments"></i> Posts </a>
-                 </li>
-                 <br>
-                 <li>
-                     <a href="hashtags.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
+                     <a href="posts.php"> <i class="fa fa-fw fa-comments"></i> Posts </a>
                  </li>
                  <br>
                  <li>
@@ -115,11 +111,11 @@ Version: 0.9.3
 
                      <div class="row" align="right">
                          <h3>
-                            Hashtags are words or phrases preceded by a pound sign (#) that are used to identify messages on a specific topic.
+                            Hashtags are words or phrases preceded by an octothorpe, more commonly known as a pound sign (#) that are used to identify messages on a specific topic.
                          </h3>
                          <br>
                          <h4>
-                            If a tweet is sent with a hashtag, it will automatically show up in the hashtag section, where a user can search for specific hashtags.
+                            When you post something, you can put associate a hashtag with the post, which will then show up on the right of your post in bold, and italiscized. You can also search for hashtags.
                          </h4>
                  </div>
                  <!-- /.container-fluid -->

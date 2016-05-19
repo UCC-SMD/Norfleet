@@ -74,10 +74,6 @@ Version: 0.9.3
                  </li>
                  <br>
                  <li>
-                     <a href="hashtags.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
-                 </li>
-                 <br>
-                 <li>
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
                          <i class="fa fa-fw fa-user"></i> Help <i class="fa fa-fw fa-caret-down"></i>
                        <br>
@@ -119,7 +115,8 @@ Version: 0.9.3
                          </h3>
                          <br>
                          <h4>
-                            Once a tweet is sent, it is available for the whole world to see.  Of course, should you want to revoke a tweet, you can always delete it.
+                            Once a tweet is sent, it is available for the whole world to see. To post a tweet, simply click on the "post" page on the sidebar, and then fill out the fields required to post a tweet. You can even search for tweets by username or by hashtag included in the tweet.
+
                          </h4>
                  </div>
                  <!-- /.container-fluid -->

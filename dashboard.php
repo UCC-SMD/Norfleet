@@ -67,10 +67,6 @@
                  </li>
                  <br>
                  <li>
-                     <a href="hashtags.php"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
-                 </li>
-                 <br>
-                 <li>
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
                          <i class="fa fa-fw fa-user"></i> Help <i class="fa fa-fw fa-caret-down"></i>
                        <br>
