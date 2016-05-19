@@ -220,7 +220,7 @@ Because this class was a 45 minute period, we spent the majority of our time tod
 - Made enhancements to navbar and css; generally front-end work
 
 <h6> Accomplishments </h6>
-This class Campbell was away, so I (Charie) have taken over his Scrum duties temporarily.  This class was a miscalleneous class that was split into three different tasks for the three different people.  Firstly, Camran worked on the registration, password-retrieval and encryption.  John worked on mostly front-end tasks for today: he redid the navbar and reworked the CSS file.  Charlie worked on the help/about pages and some minor front-end aesthetics.
+This class Campbell was away, so I (Charlie) have taken over his Scrum duties temporarily.  This class was a miscellaneous class that was split into three different tasks for the three different people.  Firstly, Camran worked on the registration, password-retrieval and encryption.  John worked on mostly front-end tasks for today: he redid the navbar and reworked the CSS file.  Charlie worked on the help/about pages and some minor front-end aesthetics.
         
 <h1>Day Six: May 17th, 2016</h1>
 <h3> Objectives:</h3>

@@ -1,5 +1,5 @@
 /*
-Coded by Charlie and John
+Coded by Charlie
 Uses SQL code to search the database
 */
 
