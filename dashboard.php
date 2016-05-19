@@ -43,6 +43,10 @@
 
 
  <body> 
+    <!-- Last Ditch Effort -->
+    <!-- <script> console.log("Wag" <?php if(!(empty($_SESSION['username']['user']+$_POST['username']['user']))){echo "derp";}echo $_SESSION['user']['username']; ?>);</script> -->
+
+
      <div id="wrapper">
 
          <!-- Sidebar -->
@@ -50,10 +54,13 @@
              <ul class="sidebar-nav">
                 <br> <!-- Consider doing through CSS -->
                 <li class="sidebar-brand">
-                     <a class="navbar-brand" href="dashboard.php">  <font size="10" color="white"> Norfleet </font> </a>
+                     <a class="navbar-brand" href="dashboard.php">  <font size="10" face="avenir" color="white"> Norfleet </font> </a>
                  </li>
                  <li>
+                    <!-- NO -->
+                    <!-- <?php echo $_POST['username']['user']; ?> -->
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
+
                          <i class="fa fa-fw fa-user">
                         </i> <?php require("common.php");//this code is so the username is displayed.
 
@@ -61,10 +68,13 @@
                         // To access $_SESSION['user'] values put in an array, show user his username
                         $arr = array_values($_SESSION['user']); echo $arr[1]; ?> 
                     <i class="fa fa-fw fa-caret-down"></i>
+
+                         <!-- <i class="fa fa-fw fa-user"></i> User Actions <?php ?> <i class="fa fa-fw fa-caret-down"></i> -->
+
                        <br>
                      </a>
                      <ul id="demo" class="collapse">
-                             <a href="profile.php"> <span class="fa fa-fw fa-user"></span> Profile </a>
+                             <!-- <a href="profile.php"> <span class="fa fa-fw fa-user"></span> Profile </a> -->
                              <a href="logout.php"> <i class="fa fa-fw fa-power-off"></i> Log Out </a>
                      </ul>
                  </li>
@@ -86,7 +96,7 @@
                  </li>
                  <br>
                  <li>
-                     <a href="events.php"> <i class="fa fa-fw fa-map-o"></i> Events</a>
+                     <a href="events.php"> <i class="fa fa-fw fa-map-o"></i> Events </a>
                  </li>
                  <br>
                  <li>
@@ -275,3 +285,38 @@
  </body>
 
  </html>
+
+
+<?php
+
+require("common.php"); 
+        
+        // if(empty($_SESSION['user'])) { 
+  
+        //     // If they are not, we redirect them to the login page. 
+        //     $location = "http://" . $_SERVER['HTTP_HOST'] . "/norfleet/dashboard.php";
+        //     echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL='.$location.'">';
+        //     //exit;
+         
+        //     // Remember that this die statement is absolutely critical.  Without it, 
+        //     // people can view your members-only content without logging in. 
+        //     die("Redirecting to login.php"); 
+        // } 
+        
+        // // To access $_SESSION['user'] values put in an array, show user his username
+        // $arr = array_values($_SESSION['user']); !!!
+        // echo "Welcome " . $arr[1];
+        // Matt's version
+        // echo "$_SESSION['user']['username'];"
+
+
+        // $arr = array_values($_SESSION['user']);
+        // echo "Welcome " . $arr[1];
+
+?> 
+
+
+<?php //echo $_SESSION['user']['username']; ?>
+
+
+>>>>>>> Stashed changes

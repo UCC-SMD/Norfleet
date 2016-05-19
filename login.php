@@ -90,7 +90,7 @@
             echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL=index.php">'; 
             // Redirect the user to the private members-only page. 
             // header("Location: edit.php"); 
-            die("Redirecting to: edit.php"); 
+            die("Redirecting to: login.php"); 
         } 
         else 
         { 
