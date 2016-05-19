@@ -90,7 +90,7 @@ Version: 0.9.3
                  </li>
                  <br>
                  <li>
-                     <a href="norfleetAbout.php"> <i class="fa fa-fw fa-male"></i> About Us </a>
+                     <a href="https://github.com/UCC-SMD/Norfleet/wiki/Team-Biographies"> <i class="fa fa-fw fa-male"></i> About Us </a>
                  </li>
              </ul>
          </div>
