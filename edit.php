@@ -1,16 +1,19 @@
-<<<<<<< Updated upstream
 <!--
 Programmed by John on May 10th, 2016
 For NORFLEET, social media for professionals
 Full team: Charlie, Campbell, Camran and John
 Object of code: The main part of the front-end of the website, uses some SQL search function to retrieve values from a server
-*please note* Any code that is commented out is things that we either: #1 not working properly, #2 features we would like to implement at a
-later time or #3 old outdated code we haven't gotten around to cleaning up yet (we're lazy xD)
--->
-=======
-<!-- These are the importations of boostrap, css, our font (font awesome), and our icon. -->
->>>>>>> Stashed changes
 
+*Please Note* Any code that is commented out is things that we either: 
+#1 Not working properly.
+#2 Features we would like to implement at a later time.
+#3 Old code we haven't gotten around to cleaning up yet.
+
+
+
+These are the importations of boostrap, css, our font (font awesome), and our icon: -->
+
+<!-- This is the icon for the website -->
 <link href="images/web_assets/favicon.ico" rel="icon" />
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <link href="css/font-awesome.min.css" rel="stylesheet" />
