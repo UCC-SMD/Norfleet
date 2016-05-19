@@ -53,164 +53,28 @@ function error() {
 
 </script>
 
-     <div id="wrapper">
 
 
-<!--         <style> 
-        div {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            position: relative;
-            -webkit-animation-name: example; /* Chrome, Safari, Opera */
-            -webkit-animation-duration: 0.2s; /* Chrome, Safari, Opera */
-            animation-name: example;
-            animation-duration: 0.1s;
-            animation-iteration-count: infinite;
-        }
-
-        /* Chrome, Safari, Opera */
-        @-webkit-keyframes example {
-            0%   {background-color:red; left:0px; top:0px;}
-            25%  {background-color:yellow; left:200px; top:0px;}
-            50%  {background-color:blue; left:200px; top:200px;}
-            75%  {background-color:green; left:0px; top:200px;}
-            100% {background-color:red; left:0px; top:0px;}
-        }
-
-        /* Standard syntax */
-        @keyframes example {
-            0%   {background-color:red; left:0px; top:0px;}
-            25%  {background-color:yellow; left:200px; top:0px;}
-            50%  {background-color:blue; left:200px; top:200px;}
-            75%  {background-color:green; left:0px; top:200px;}
-            100% {background-color:red; left:0px; top:0px;}
-        }
-        </style> -->
-
-
-<!--    <style>
-
-            div {
-            animation-duration: 1s;
-            animation-name: slidein;
-            animation-iteration-count: 1;
-            }
-
-            @keyframes slide {
-            from {
-            margin-right: 100%;
-            width: 300%;
-
-            to {
-            margin-left: 0%;
-            width: 100%;
-            }
-
-            }
-            </style> -->
-
-         <!-- Sidebar -->
-         <div id="sidebar-wrapper">
-
-<!--    <style>
-
-            div {
-            animation-duration: 1s;
-            animation-name: slidein;
-            animation-iteration-count: 1;
-            }
-
-            @keyframes slidein {
-            from {
-            margin-right: 100%;
-            width: 300%;
-
-            to {
-            margin-left: 0%;
-            width: 100%;
-            }
-        }
-        </style> -->
-
-             <ul class="sidebar-nav">
-                <br> <!-- Consider doing through CSS -->
-                 <li class="sidebar-brand">
-                     <a class="navbar-brand" href="index.php">  <font size="10" color="white"> Norfleet </font> </a>
-                 </li>
-                 <br>
-                 <li class="active">
-                     <a href="#"> <i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
-                 </li>
-                 <br>
-                 <li>
-                     <a href="#"> <i class="fa fa-fw fa-comments"></i> Posts </a>
-                 </li>
-                 <br>
-                 <li>
-                     <a href="#"> <i class="fa fa-fw fa-bullhorn"></i> Hashtags </a>
-                 </li>
-                 <br>
-                 <li>
-                     <a href="#"> <i class="fa fa-fw fa-users"></i> Mentions </a>
-                 </li>
-                 <br>
-                 <li>
-                     <a href="#"> <i class="fa fa-fw fa-map-o"></i> Trending Events</a>
-                 </li>
-                 <br>
-                 <li>
-                     <a href="help.php"> <i class="fa fa-fw fa-comments"></i> Help! </a>
-                 </li>
-             </ul>
-         </div>
-         <!-- /#sidebar-wrapper -->
-
-         <!-- Page Content -->
-         <div id="page-content-wrapper">
-                    <div class="row">
-                         <div class="col-lg-12" align="right">
-                            <div class="pageshift">
-                            <h1 class="page-header" font size="18" align="left">
-                                 <font size="18" color="black"> Login </font><small><font color="grey"> Welcome back </small></font>
-                            </h1>
-                                <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
-                            </div>
-
+             
+ <div class="row">
+     <div class="col-lg-12" align="right">
+        <div class="pageshift">
+        <h1 class="page-header" font size="18" align="center">
+             <font size="18" color="black"> Login </font><!-- <small><font color="grey"> Join the club </small></font> -->
+        </h1>
+        </div>
+ </div>
 
 <center>
 
 
-
 <!-- <h1>Login</h1>  -->
-
-<link href="images/web_assets/favicon.ico" rel="icon" />
-<link href="css/bootstrap.min.css" rel="stylesheet" />
-<link href="css/font-awesome.min.css" rel="stylesheet" />
 
 
 
 <form action="index.php" method="post"> 
 
-<!--     <style>
 
-    form {
-    animation-duration: 1s;
-    animation-name: slidein;
-    animation-iteration-count: 1;
-    }
-
-     @keyframes slidein {
-    from {
-    margin-top: 100%;
-    width: 300%;
-
-        to {
-        margin-bottom: 0%;
-        width: 100%;
-        }
-    }
-    </style> -->
 
     <h2>Username<br /> </h2>
     <input type="text" name="username" value="<?php echo $submitted_username; ?>" /> 
@@ -227,27 +91,9 @@ function error() {
     </center>
 </div>
 <br>
-<!-- this is to do the alerts -->
-<div id="alertbox" class="alert alert-danger" style="visibility: hidden"role="alert">
-    <p id="errorbox"></p>
-    <p>put this here in a world where we have password retrieval.</p>
-</div>
+
 
 </center>
-
-
-
-                     <!-- /.row -->
-
-                 </div>
-                 <!-- /.container-fluid -->
-
-             </div>
-         </div>
-         <!-- /#page-content-wrapper -->
-
-     </div>
-     <!-- /#wrapper -->
 
      <!-- jQuery -->
      <script src="javascript/jquery.js"></script>
