@@ -43,10 +43,6 @@
 
 
  <body> 
-    <!-- Last Ditch Effort -->
-    <!-- <script> console.log("Wag" <?php if(!(empty($_SESSION['username']['user']+$_POST['username']['user']))){echo "derp";}echo $_SESSION['user']['username']; ?>);</script> -->
-
-
      <div id="wrapper">
 
          <!-- Sidebar -->
@@ -57,8 +53,6 @@
                      <a class="navbar-brand" href="dashboard.php">  <font size="10" face="avenir" color="white"> Norfleet </font> </a>
                  </li>
                  <li>
-                    <!-- NO -->
-                    <!-- <?php echo $_POST['username']['user']; ?> -->
                      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
 
                          <i class="fa fa-fw fa-user">
